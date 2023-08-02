@@ -1,21 +1,22 @@
 import './App.css';
 import Navbar from './components/Navbar';
 import Home from './pages/Home';
-import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
-
+import {BrowserRouter, Route, Routes} from 'react-router-dom';
+import SharedLayout from "./pages/SharedLayout"
 
 
 function App() {
   return (
     <div className="App">
-      <Router>
-        <Navbar />
+      <BrowserRouter>
         <Routes>
-          <Route path="/" exact component={Home} />
+          <Route>
+            <Route path="/" element={<SharedLayout/>}>
+              <Route index element={<Home />} />
+            </Route>
+          </Route>
         </Routes>
-      </Router>
-
-      {/* <h1 > hhhhhh</h1> */}
+      </BrowserRouter>
     </div>
   );
 }
