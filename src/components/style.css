@@ -1,0 +1,102 @@
+.navbar {
+    background-color: #e0f0ff;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-color: #e6e6e6;
+    height: 80px;
+    position: relative;
+    width: 1440px;
+}
+
+.navbar .left-nav {
+    height: 28px;
+    left: 919px;
+    overflow: hidden;
+    position: absolute;
+    top: 26px;
+    width: 478px;
+}
+
+.navbar .nav-item {
+    align-items: flex-end;
+    display: inline-flex;
+    gap: 4px;
+    left: 0;
+    padding: 4px 8px;
+    position: absolute;
+    top: 0;
+}
+
+.navbar .label {
+    color: var(--primary);
+    font-family: "Inter-Medium", Helvetica;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0;
+    line-height: 20px;
+    margin-top: -1px;
+    position: relative;
+    white-space: nowrap;
+    width: fit-content;
+}
+
+.navbar .menu-item-default {
+    align-items: flex-end;
+    display: inline-flex;
+    gap: 4px;
+    left: 76px;
+    padding: 4px 8px;
+    position: absolute;
+    top: 0;
+}
+
+.navbar .text-wrapper {
+    color: var(--neutral-900);
+    font-family: "Poppins-Regular", Helvetica;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: 20px;
+    margin-top: -1px;
+    position: relative;
+    white-space: nowrap;
+    width: fit-content;
+}
+
+.navbar .label-wrapper {
+    align-items: flex-end;
+    display: inline-flex;
+    gap: 4px;
+    left: 232px;
+    padding: 4px 8px;
+    position: absolute;
+    top: 0;
+}
+
+.navbar .div-wrapper {
+    align-items: center;
+    display: inline-flex;
+    gap: 4px;
+    left: 306px;
+    padding: 4px 8px;
+    position: absolute;
+    top: 0;
+}
+
+.navbar .div {
+    align-items: center;
+    display: inline-flex;
+    gap: 4px;
+    left: 388px;
+    padding: 4px 8px;
+    position: absolute;
+    top: 0;
+}
+
+.navbar .element {
+    height: 48px;
+    left: 118px;
+    position: absolute;
+    top: 16px;
+    width: 148px;
+}
