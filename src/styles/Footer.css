@@ -1,0 +1,590 @@
+@font-face {
+  font-family: "Inter-SemiBold";
+  src: local("Inter-SemiBold"),
+    url("../fonts/Inter/static/Inter-SemiBold.ttf") format("truetype")
+}
+
+@font-face {
+  font-family: "Poppins-Medium";
+  src: local("Poppins-Medium"),
+    url("../fonts/Poppins/Poppins-Medium.ttf") format("truetype")
+}
+
+@font-face {
+  font-family: "Poppins-SemiBold";
+  src: local("Poppins-SemiBold"),
+    url("../fonts/Poppins/Poppins-SemiBold.ttf") format("truetype")
+}
+
+@font-face {
+  font-family: "Poppins-SemiBold";
+  src: local("Poppins-SemiBold"),
+    url("../fonts/Poppins/Poppins-Regular.ttf") format("truetype")
+}
+
+@font-face {
+  font-family: "Nunito-Medium";
+  src: local("Nunito-Medium"),
+    url("../fonts/Nunito_Sans/static/NunitoSans_10pt-Medium.ttf") format("truetype")
+}
+
+@font-face {
+  font-family: "Inter-SemiBold";
+  src: local("Inter-SemiBold"),
+    url("../fonts/Inter/static/Inter-Medium.ttf") format("truetype")
+}
+
+@font-face {
+  font-family: "Inter-Regular";
+  src: local("Inter-Regular"),
+    url("../fonts/Inter/static/Inter-Regular.ttf") format("truetype")
+}
+
+.footer {
+  top: -30px;
+  position: relative;
+  background-color: #3884c4d9;
+  height: 700px;
+}
+
+.footer a {
+  text-decoration: none;
+  color: white;
+}
+
+.subscribe-box {
+  background-color: #3c3c45;
+  border: 1px none;
+  height: 528px;
+  position: relative;
+  width: 399px;
+  border-radius: 5px;
+  left: 100px;
+  top: 120px;
+}
+
+.subscribe-box .content {
+  height: 245px;
+  left: 53px;
+  position: absolute;
+  top: 244px;
+  width: 293px;
+}
+
+.subscribe-box .div {
+  height: 237px;
+  left: -12px;
+  position: relative;
+}
+
+.subscribe-box .overlap {
+  height: 119px;
+  left: 5px;
+  position: absolute;
+  top: 0;
+  width: 295px;
+}
+
+.subscribe-box .title {
+  height: 77px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 288px;
+}
+
+.subscribe-box .text-wrapper {
+  color: #ffffff;
+  font-family: "Inter-SemiBold", Helvetica;
+  font-size: 25px;
+  font-weight: 600;
+  left: 13px;
+  letter-spacing: 0;
+  line-height: 27.6px;
+  position: absolute;
+  text-align: center;
+  top: -1px;
+  white-space: nowrap;
+}
+
+.subscribe-box .button {
+  height: 62px;
+  left: 0;
+  position: absolute;
+  top: 57px;
+  width: 295px;
+}
+
+.subscribe-box .overlap-group {
+  background-image: url(../assets/buttonbg.png);
+  background-size: 100% 100%;
+  height: 62px;
+  position: relative;
+  width: 293px;
+}
+
+.subscribe-box .text-wrapper-2 {
+  color: #ffffff;
+  font-family: "Poppins-Medium", Helvetica;
+  font-size: 18px;
+  font-weight: 500;
+  left: 66px;
+  letter-spacing: 0;
+  line-height: 28.8px;
+  position: absolute;
+  top: 16px;
+  white-space: nowrap;
+}
+
+.emailtext {
+  color: #ffffff;
+  font-family: "Poppins-Medium", Helvetica;
+  font-size: 18px;
+  font-weight: 500;
+  left: 0px;
+  letter-spacing: 0;
+  line-height: 28.8px;
+  position: absolute;
+  top: 0px;
+  white-space: nowrap;
+  background-color: transparent;
+  border-color: transparent;
+}
+
+.subscribe-box .overlap-2 {
+  height: 62px;
+  left: 5px;
+  position: absolute;
+  top: 142px;
+  width: 295px;
+}
+
+.subscribe-box .overlap-wrapper {
+  height: 62px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 295px;
+}
+
+.subscribe-box .div-wrapper {
+  background-image: url(../assets/bluebuttonbg.png);
+  background-size: 100% 100%;
+  height: 62px;
+  position: relative;
+  width: 293px;
+}
+
+.subscribe-box .text-wrapper-3 {
+  color: #6cb5f3;
+  font-family: "Nunito-Medium", Helvetica;
+  font-size: 18px;
+  font-weight: 500;
+  left: 106px;
+  letter-spacing: 0;
+  line-height: 28.8px;
+  position: absolute;
+  top: 16px;
+  white-space: nowrap;
+}
+
+.subscribe-box .text-wrapper-4 {
+  color: #ffffff;
+  font-family: "Poppins-SemiBold", Helvetica;
+  font-size: 20px;
+  font-weight: 600;
+  left:0px;
+  letter-spacing: 0;
+  line-height: 32px;
+  position: absolute;
+  top: 1px;
+  width: 295px;
+  height: 60px;
+  white-space: nowrap;
+  background-color: transparent;
+  border-color: transparent;
+  cursor: pointer;
+}
+
+.subscribe-box .p {
+  color: #9da5af;
+  font-family: "Poppins-Regular", Helvetica;
+  font-size: 16px;
+  font-weight: 400;
+  left: 53px;
+  letter-spacing: -0.1px;
+  line-height: 24px;
+  position: absolute;
+  text-align: center;
+  top: 142px;
+  width: 288px;
+}
+
+.subscribe-box .element {
+  height: 90px;
+  left: 148px;
+  position: absolute;
+  top: 37px;
+  width: 89px;
+}
+
+.addresss {
+  border: 1px none;
+  height: 152px;
+  overflow-x: hidden;
+  position: relative;
+  left: 575px;
+  top: -415px;
+  width: 662px;
+}
+
+.addresss .elementone {
+  height: 104px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 297px;
+}
+
+.addresss .noida-uttar-pradesh {
+  color: #ffffff;
+  font-family: "Inter-Medium", Helvetica;
+  font-size: 18px;
+  font-weight: 500;
+  left: 9px;
+  letter-spacing: 0;
+  line-height: 28.2px;
+  position: absolute;
+  top: 47px;
+  width: 231px;
+}
+
+.addresss .locationsymbol {
+  height: 25px;
+  left: 9px;
+  position: absolute;
+  top: 7px;
+  width: 19px;
+}
+
+.addresss .title10 {
+  height: 30px;
+  left: 44px;
+  position: absolute;
+  top: -7px;
+  width: 107px;
+}
+
+.addresss .overlap-group10 {
+  height: 30px;
+  position: relative;
+  width: 105px;
+}
+
+.addresss .text-wrapper10 {
+  color: #ffffff;
+  font-family: "Inter-SemiBold", Helvetica;
+  font-size: 25px;
+  font-weight: 600;
+  left: 0;
+  letter-spacing: 0;
+  line-height: 27.6px;
+  position: absolute;
+  top: 0;
+  white-space: nowrap;
+}
+
+.addresss .calgary-alberta {
+  color: #ffffff;
+  font-family: "Inter-Medium", Helvetica;
+  font-size: 18px;
+  font-weight: 500;
+  left: 321px;
+  letter-spacing: 0;
+  line-height: 28.2px;
+  position: absolute;
+  top: 47px;
+}
+
+.firstline {
+  position: relative;
+  left: 575px;
+  top: -425px;
+  width: 625px;
+  overflow-x: hidden;
+}
+
+.features {
+  border: 1px none;
+  height: 288px;
+  position: relative;
+  width: 642px;
+  left: 575px;
+  top: -390px;
+}
+
+.features .pages {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 120px;
+}
+
+.features .title {
+  height: 30px;
+  position: relative;
+  width: 97px;
+}
+
+.features .text-wrapper {
+  color: #ffffff;
+  font-family: "Inter-Medium", Helvetica;
+  font-size: 20px;
+  font-weight: 500;
+  left: 36px;
+  letter-spacing: 0;
+  line-height: 22.1px;
+  position: absolute;
+  top: 4px;
+  white-space: nowrap;
+}
+
+.features .icon {
+  height: 30px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 30px;
+}
+
+.features .number {
+  height: 190px;
+  position: relative;
+  width: 114px;
+}
+
+.features .home-about-case {
+  color: #ffffff;
+  font-family: "Inter-Regular", Helvetica;
+  font-size: 18px;
+  font-weight: 400;
+  left: 0;
+  letter-spacing: 0;
+  line-height: 38.1px;
+  position: absolute;
+  top: 0;
+  user-select: none;
+}
+
+.features .uitility-pages {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  left: 231px;
+  position: absolute;
+  top: 0;
+  width: 183px;
+}
+
+.features .div {
+  height: 28px;
+  margin-right: -11px;
+  position: relative;
+  width: 194px;
+}
+
+.features .text-wrapper-2 {
+  color: #ffffff;
+  font-family: "Inter-Medium", Helvetica;
+  font-size: 20px;
+  font-weight: 500;
+  left: 34px;
+  letter-spacing: 0;
+  line-height: 22.1px;
+  position: absolute;
+  top: 3px;
+  white-space: nowrap;
+}
+
+.features .img {
+  height: 28px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 28px;
+}
+
+.features .new-product-build {
+  color: #ffffff;
+  font-family: "Inter-Regular", Helvetica;
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 38.1px;
+  margin-right: -39px;
+  position: relative;
+  width: fit-content;
+}
+
+.features .follows {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  left: 525px;
+  position: absolute;
+  top: 0;
+  width: 117px;
+}
+
+.features .title-2 {
+  height: 22px;
+  position: relative;
+  width: 103px;
+}
+
+.features .text-wrapper-3 {
+  color: #ffffff;
+  font-family: "Inter-Medium", Helvetica;
+  font-size: 20px;
+  font-weight: 500;
+  left: 29px;
+  letter-spacing: 0;
+  line-height: 22.1px;
+  position: absolute;
+  top: 0;
+  white-space: nowrap;
+}
+
+.features .icon-2 {
+  height: 18px;
+  left: -1px;
+  position: absolute;
+  top: 0;
+  width: 22px;
+}
+
+.features .facebook-twitter {
+  color: #ffffff;
+  font-family: "Inter-Regular", Helvetica;
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 38.1px;
+  position: relative;
+  width: fit-content;
+}
+
+.casesbutton {
+  position: relative;
+  color: #ffffff;
+  font-family: "Inter-Regular", Helvetica;
+  font-size: 18px;
+  font-weight: 400;
+  left: 0;
+  letter-spacing: 0;
+  /* line-height: 38.1px; */
+  text-align: left;
+  top: 0;
+  width: 130px;
+  cursor: pointer;
+  background-color: transparent;
+  border-radius: 25px;
+  border-color: transparent;
+  left: -8px;
+}
+
+.servicesbutton {
+  position: relative;
+  color: #ffffff;
+  font-family: "Inter-Regular", Helvetica;
+  font-size: 18px;
+  font-weight: 400;
+  left: 0;
+  letter-spacing: 0;
+  /* line-height: 38.1px; */
+  text-align: left;
+  top: 0;
+  width: 130px;
+  cursor: pointer;
+  background-color: transparent;
+  border-radius: 25px;
+  border-color: transparent;
+  left: -8px;
+}
+
+.newproductbutton {
+  position: relative;
+  color: #ffffff;
+  font-family: "Inter-Regular", Helvetica;
+  font-size: 18px;
+  font-weight: 400;
+  left: 0;
+  letter-spacing: 0;
+  /* line-height: 38.1px; */
+  text-align: left;
+  top: 0;
+  width: 175px;
+  cursor: pointer;
+  background-color: transparent;
+  border-radius: 25px;
+  border-color: transparent;
+  left: -8px;
+}
+
+.apbutton {
+  position: relative;
+  color: #ffffff;
+  font-family: "Inter-Regular", Helvetica;
+  font-size: 18px;
+  font-weight: 400;
+  left: 0;
+  letter-spacing: 0;
+  /* line-height: 38.1px; */
+  text-align: left;
+  top: 0;
+  width: 239px;
+  cursor: pointer;
+  background-color: transparent;
+  border-radius: 25px;
+  border-color: transparent;
+  left: -8px;
+}
+
+.accelbutton {
+  position: relative;
+  color: #ffffff;
+  font-family: "Inter-Regular", Helvetica;
+  font-size: 18px;
+  font-weight: 400;
+  left: 0;
+  letter-spacing: 0;
+  /* line-height: 38.1px; */
+  text-align: left;
+  top: 0;
+  width: 125px;
+  cursor: pointer;
+  background-color: transparent;
+  border-radius: 25px;
+  border-color: transparent;
+  left: -8px;
+}
+
+.secondline {
+  position: relative;
+  left: 575px;
+  top: -415px;
+  width: 625px;
+  overflow-x: hidden;
+}
+
+.pycraysig {
+  position: relative;
+  top: -365px;
+  left: -50px;
+}

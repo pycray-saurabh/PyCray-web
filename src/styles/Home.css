@@ -1,0 +1,1066 @@
+@font-face {
+  font-family: "Poppins-Regular";
+  src: local("Poppins-Regular"),
+    url("../fonts/Poppins/Poppins-Regular.ttf") format("truetype")
+}
+
+@font-face {
+  font-family: "Poppins-Medium";
+  src: local("Poppins-Medium"),
+    url("../fonts/Poppins/Poppins-Medium.ttf") format("truetype")
+}
+
+@font-face {
+  font-family: "Poppins-Bold";
+  src: local("Poppins-Bold"),
+    url("../fonts/Poppins/Poppins-Bold.ttf") format("truetype")
+}
+
+@font-face {
+  font-family: "Poppins-SemiBold";
+  src: local("Poppins-SemiBold"),
+    url("../fonts/Poppins/Poppins-SemiBold.ttf") format("truetype")
+}
+
+@font-face {
+  font-family: "Noto Sans-Medium";
+  src: local("Noto Sans-Medium"),
+    url("../fonts/Noto\ Sans-Medium.ttf") format("truetype")
+}
+
+.homepagediv {
+  height: 5500px;
+}
+
+.ellipseContainer {
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 741px;
+  width: 1677px;
+  z-index: 1;
+}
+
+.ellipseBox,
+.ellipseLine,
+.peopleTalking {
+  position: absolute;
+  top: -210px;
+  left: -60px;
+  z-index: 1;
+
+}
+
+.ellipseBox .ellipse,
+.ellipseLine .ellipse {
+  height: 712px;
+  width: 1440px;
+  top: 0;
+  left: 0;
+}
+
+.ellipseLine {
+  bottom: 300px;
+  /* Adjust this value to control the overlap between the two ellipses */
+  z-index: 1;
+}
+
+.peopleTalking {
+  /* Position the third SVG element as per your requirement */
+  width: 700px;
+  top: -40px;
+  /* Adjust the top value to position the third SVG vertically */
+  left: 550px;
+  /* Adjust the left value to position the third SVG horizontally */
+  z-index: 2;
+  /* Set z-index to a higher value to ensure it appears on top of the other elements */
+}
+
+.label {
+  border: 0px none;
+  height: 111px;
+  width: 550px;
+  z-index: -10;
+}
+
+.label .lets-make-your {
+  color: transparent;
+  font-family: "Poppins-Medium", Helvetica;
+  font-size: 20px;
+  font-weight: 400;
+  left: 18%;
+  letter-spacing: 0.5px;
+  line-height: 60px;
+  position: relative;
+  top: 100px;
+  width: 550px;
+}
+
+.label .text-wrapper {
+  color: #000000;
+  font-weight: 500;
+}
+
+.label .span {
+
+  font-family: "Poppins-Bold", Helvetica;
+  font-size: 33px;
+  font-weight: 700;
+  background-color: white;
+
+  /* Create the gradient. */
+  background-image: linear-gradient(45deg, #073E90, #0C91BB8C);
+
+  /* Set the background size and repeat properties. */
+  background-size: 100%;
+  background-repeat: repeat;
+
+  /* Use the text as a mask for the background. */
+  /* This will show the gradient as a text color rather than element bg. */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+}
+
+.maybetemptext {
+  position: relative;
+  z-index: 2;
+  top: 150px;
+  left: 90px;
+}
+
+.button-base {
+  background: linear-gradient(45deg, rgb(0, 157, 224) 0%, rgb(0, 166, 84) 100%);
+  background-color: rgba(255, 255, 255, 1);
+  border: 1px solid;
+  border-color: transparent;
+  border-radius: 7px;
+  height: 53px;
+  position: relative;
+  width: 176px;
+  left: 5.75%;
+  top: 40px;
+  z-index: 2;
+}
+
+.button-base .no-credit-card {
+  color: #ffffff;
+  background: transparent;
+  border-color: transparent;
+  font-family: "Poppins-Medium", Helvetica;
+  width: 176px;
+  height: 53px;
+  font-size: 22px;
+  font-weight: 150;
+  left: 0;
+  letter-spacing: 0;
+  line-height: 22px;
+  position: absolute;
+  top: 0;
+  white-space: nowrap;
+  z-index: 7;
+  cursor: pointer;
+}
+
+.homeProductGenesis {
+  position: relative;
+  top: 0px;
+  left: 0;
+  height: 1043px;
+  width: 1440px;
+}
+
+.vasesPic {
+  position: relative;
+  top: -150px;
+  left: 4.1%;
+}
+
+.box {
+  border: 0px none;
+  height: 643px;
+  width: 553px;
+  position: absolute;
+  /* Change position to fixed */
+  top: 120px;
+  /* Position the box vertically at 50% from the top */
+  right: 17%;
+  /* Position the box horizontally at 5% from the right */
+  transform: translateY(-50%);
+  /* Center the box vertically using transform */
+}
+
+.box .group {
+  height: 643px;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 553px;
+}
+
+.box .div {
+  height: 219px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 557px;
+}
+
+.box .be-in-the-trend-of {
+  color: #333333;
+  font-family: "Poppins-SemiBold", Helvetica;
+  font-size: 40px;
+  font-weight: 600;
+  height: 53px;
+  left: 0;
+  letter-spacing: 0;
+  line-height: 73px;
+  position: absolute;
+  top: 0;
+  white-space: nowrap;
+  width: 356px;
+}
+
+.box .every-week-we-create {
+  color: #858a8f;
+  font-family: "Poppins-Regular", Helvetica;
+  font-size: 20px;
+  font-weight: 400;
+  height: 149px;
+  left: 0;
+  letter-spacing: 0;
+  line-height: 35px;
+  position: absolute;
+  top: 87px;
+  width: 553px;
+}
+
+.box .overlap-group {
+  height: 174px;
+  left: 0;
+  position: absolute;
+  top: 246px;
+  width: 511px;
+}
+
+.box .group-2 {
+  height: 174px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 511px;
+}
+
+.box .group-3 {
+  height: 160px;
+  left: 104px;
+  position: absolute;
+  top: 14px;
+  width: 411px;
+}
+
+.box .we-adapt-to-you {
+  color: #333333;
+  font-family: "Poppins-SemiBold", Helvetica;
+  font-size: 24px;
+  font-weight: 600;
+  left: 0;
+  letter-spacing: 0;
+  line-height: 29px;
+  position: absolute;
+  top: 15px;
+  white-space: nowrap;
+  width: 224px;
+}
+
+.box .we-analyze-your {
+  color: #858a8f;
+  font-family: "Poppins-Regular", Helvetica;
+  font-size: 18px;
+  font-weight: 400;
+  left: 0;
+  letter-spacing: 0;
+  line-height: 35px;
+  position: absolute;
+  top: 42px;
+  width: 407px;
+}
+
+.box .group-4 {
+  background-color: #e5f1ff;
+  border-radius: 37px/39.59px;
+  height: 79px;
+  left: 0;
+  position: absolute;
+  top: 10px;
+  width: 74px;
+}
+
+.box .image {
+  height: 42px;
+  left: 17px;
+  object-fit: cover;
+  position: absolute;
+  top: 29px;
+  width: 39px;
+}
+
+.box .overlap {
+  height: 204px;
+  left: 0;
+  position: absolute;
+  top: 439px;
+  width: 543px;
+}
+
+.box .group-5 {
+  height: 204px;
+  left: 0;
+  position: absolute;
+  top: -9px;
+  width: 543px;
+}
+
+.box .group-6 {
+  height: 192px;
+  left: 104px;
+  position: absolute;
+  top: 12px;
+  width: 443px;
+}
+
+.box .your-music-your {
+  color: #333333;
+  font-family: "Poppins-SemiBold", Helvetica;
+  font-size: 24px;
+  font-weight: 600;
+  left: 0;
+  letter-spacing: 0;
+  line-height: 29px;
+  position: absolute;
+  top: 0;
+  white-space: nowrap;
+  width: 294px;
+}
+
+.box .you-can-import-your {
+  color: #858a8f;
+  font-family: "Poppins-Regular", Helvetica;
+  font-size: 18px;
+  font-weight: 400;
+  left: 0;
+  letter-spacing: 0;
+  line-height: 35px;
+  position: absolute;
+  top: 27px;
+  width: 439px;
+}
+
+.box .img {
+  height: 43px;
+  left: 17px;
+  object-fit: cover;
+  position: absolute;
+  top: 17px;
+  width: 40px;
+}
+
+.rectbox {
+  border: 0px none;
+  height: 97px;
+  /* overflow-x: hidden; */
+  width: 952px;
+}
+
+.rectbox .rectangle {
+  height: 105px;
+  left: 150px;
+  position: absolute;
+  top: 450px;
+  width: 960px;
+  z-index: 1;
+}
+
+.label2 {
+  border: 0px none;
+  height: 58px;
+  width: 534px;
+  top: 462px;
+  left: 200px;
+  position: absolute;
+  z-index: 2;
+}
+
+.label .your-music-your {
+  color: #333333;
+  font-family: "Poppins-Medium", Helvetica;
+  font-size: 18px;
+  font-weight: 500;
+  left: 0;
+  letter-spacing: 0;
+  line-height: 29px;
+  position: fixed;
+  top: 0;
+}
+
+.consultationButton {
+  background: linear-gradient(45deg, rgb(0, 157, 224) 0%, rgb(0, 166, 84) 100%);
+  background-color: rgba(255, 255, 255, 1);
+  border: 1px solid;
+  border-color: transparent;
+  border-radius: 7px;
+  height: 53px;
+  position: relative;
+  width: 310px;
+  left: 750px;
+  top: -101px;
+  z-index: 3;
+}
+
+.consultationButton .no-credit-card {
+  color: #ffffff;
+  background: transparent;
+  border-color: transparent;
+  font-family: "Poppins-Medium", Helvetica;
+  width: 176px;
+  height: 53px;
+  font-size: 22px;
+  font-weight: 150;
+  left: 20px;
+  letter-spacing: 0;
+  line-height: 22px;
+  position: absolute;
+  top: 0;
+  white-space: nowrap;
+  z-index: 7;
+  cursor: pointer;
+}
+
+.deliveryProcess {
+  border: 0px none;
+  height: 600px;
+  position: relative;
+  width: 609px;
+}
+
+/* .industries {
+  position: relative;
+  z-index: 10;
+
+} */
+
+/* .pageSplitLine {
+  position: relative;
+} */
+
+.deliveryProcess .tboxes {
+  height: 118px;
+  left: 350px;
+  position: absolute;
+  top: -465px;
+  width: 613px;
+}
+
+.deliveryProcess .contact-us-if-you {
+  color: #858a8f;
+  font-family: "Inter-Regular", Helvetica;
+  font-size: 20px;
+  font-weight: 400;
+  left: 0;
+  letter-spacing: 0;
+  line-height: 35px;
+  position: absolute;
+  text-align: center;
+  top: 83px;
+  white-space: nowrap;
+}
+
+/* change fonts or import later */
+
+.deliveryProcess .leave-a-message {
+  color: #333333;
+  font-family: "Inter-Bold", Helvetica;
+  font-size: 40px;
+  font-weight: 700;
+  left: 133px;
+  letter-spacing: 0;
+  line-height: 58px;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  white-space: nowrap;
+}
+
+.deliveryProcessPic {
+  left: 300px;
+  top: -375px;
+  position: absolute;
+}
+
+.delivUnderline {
+  position: absolute;
+  left: 599px;
+  top: -377px;
+}
+
+.pageSplitLine {
+  position: relative;
+  top: -350px;
+  left: 77px;
+}
+
+.industrytbox {
+  border: 0px none;
+  height: 700px;
+  overflow-x: hidden;
+  position: relative;
+  width: 659px;
+  z-index: 3;
+  left: 290px;
+  top: -340px;
+}
+
+.industrytbox .itboxes {
+  height: 153px;
+  left: 0;
+  position: absolute;
+  top: 0px;
+  width: 663px;
+  z-index: 7;
+}
+
+.industrytbox .contact-us-if-you {
+  color: #858a8f;
+  font-family: "Poppins-Regular", Helvetica;
+  font-size: 20px;
+  font-weight: 400;
+  left: 0;
+  letter-spacing: 0;
+  line-height: 35px;
+  position: absolute;
+  text-align: center;
+  top: 83px;
+  width: 659px;
+}
+
+.industrytbox .leave-a-message {
+  color: #333333;
+  font-family: "Poppins-SemiBold", Helvetica;
+  font-size: 40px;
+  font-weight: 600;
+  left: 228px;
+  letter-spacing: 0;
+  line-height: 58px;
+  position: absolute;
+  top: 0;
+  white-space: nowrap;
+}
+
+.indusUnderline {
+  position: absolute;
+  left: 300px;
+  top: 87px;
+}
+
+.industryPic {
+  position: absolute;
+  left: 150px;
+  top: 2400px;
+}
+
+.clientsh {
+  background-image: url(../assets/blueimg.png);
+  background-position: 50% 50%;
+  background-size: cover;
+  border: 1px none;
+  height: 325px;
+  position: relative;
+  left: -90px;
+  top: -400px;
+  width: 1440px;
+  z-index: 100;
+}
+
+.clientsh .our-fetaured-clients {
+  color: #333333;
+  font-family: "Poppins-SemiBold", Helvetica;
+  font-size: 40px;
+  font-weight: 600;
+  left: 511px;
+  letter-spacing: 0;
+  line-height: 58px;
+  position: absolute;
+  top: 19px;
+  white-space: nowrap;
+}
+
+.clientsh .clientBox {
+  height: 200px;
+  left: 128px;
+  position: absolute;
+  top: 94px;
+  width: 1184px;
+}
+
+.clientsh .rect {
+  background-color: #0b67b3;
+  border-radius: 2px;
+  height: 7px;
+  left: 555px;
+  position: absolute;
+  top: 15px;
+  width: 73px;
+}
+
+.clientsh .clientLogos {
+  height: 200px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 1184px;
+}
+
+.clientsh .p1 {
+  height: 200px;
+  left: 366px;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  width: 200px;
+}
+
+.clientsh .p2 {
+  height: 54px;
+  left: 0;
+  object-fit: cover;
+  position: absolute;
+  top: 73px;
+  width: 213px;
+}
+
+.clientsh .p3 {
+  height: 103px;
+  left: 742px;
+  object-fit: cover;
+  position: absolute;
+  top: 52px;
+  width: 103px;
+}
+
+.clientsh .p4 {
+  height: 95px;
+  left: 994px;
+  position: absolute;
+  top: 52px;
+  width: 190px;
+}
+
+.cpic {
+  position: relative;
+  left: -50px;
+  top: -770px;
+  z-index: 2;
+}
+
+.casestudies {
+  position: relative;
+  top: -400px;
+  left: 0px;
+  height: 850px;
+  background: linear-gradient(135deg, #c5e0f7 0%, #ffffff 100%)
+}
+
+.caseUnderline {
+  position: relative;
+  left: 360px;
+  top: 61px;
+}
+
+.headline-supporting {
+  border: 1px none;
+  height: 106px;
+  position: relative;
+  top: 50px;
+  left: 225px;
+  width: 800px;
+}
+
+.headline-supporting .headline {
+  color: #272d37;
+  font-family: "Poppins-SemiBold", Helvetica;
+  font-size: 40px;
+  font-weight: 600;
+  left: 0;
+  letter-spacing: -0.8px;
+  line-height: 40px;
+  position: absolute;
+  text-align: center;
+  top: -1px;
+  width: 800px;
+}
+
+.headline-supporting .subtitle {
+  color: #5f6d7e;
+  font-family: "Poppins-Regular", Helvetica;
+  font-size: 16px;
+  font-weight: 400;
+  left: 0;
+  letter-spacing: -0.1px;
+  line-height: 25px;
+  position: absolute;
+  text-align: center;
+  top: 74px;
+  width: 800px;
+}
+
+.casesbox {
+  border-color: #858a8f;
+  background-color: transparent;
+  border-radius: 20px;
+  border: 2px;
+  height: 500px;
+  width: 1150px;
+  position: relative;
+  left: 55px;
+  top: 125px;
+  border-style: ridge;
+}
+
+.laptopbackground {
+  border: 0px none;
+  height: 419px;
+  overflow: hidden;
+  width: 610px;
+  position: absolute;
+  left: 57px;
+  top: 41px;
+  border-radius: 20px;
+  box-shadow: 2px 2px lightgrey;
+}
+
+.laptopbackground .ltbg {
+  height: 419px;
+  left: 0;
+  top: 0;
+  width: 610px;
+}
+
+.ltpic {
+  position: relative;
+  z-index: 11;
+  top: -365px;
+  left: 95px;
+}
+
+.ptbox {
+  border: 0px none;
+  height: 372px;
+  overflow-x: hidden;
+  position: absolute;
+  width: 439px;
+  z-index: 10;
+  left: 730px;
+  top: 65px;
+}
+
+.ptbox .boxgroup {
+  height: 272px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 443px;
+}
+
+.ptbox .gestalt-psychology {
+  color: #272d37;
+  font-family: "Poppins-SemiBold", Helvetica;
+  font-size: 25px;
+  font-weight: 600;
+  left: 0;
+  letter-spacing: -0.27px;
+  line-height: 30px;
+  position: absolute;
+  top: 0;
+  width: 400px;
+}
+
+.ptbox .text-wrapper10 {
+  color: #5f6d7e;
+  font-family: "Poppins-Regular", Helvetica;
+  font-size: 13px;
+  font-weight: 400;
+  left: 0;
+  letter-spacing: -0.1px;
+  line-height: 24px;
+  position: absolute;
+  top: 80px;
+  width: 350px;
+}
+
+.tag {
+  align-items: center;
+  border: 1px none;
+  display: flex;
+  gap: 50px;
+  min-height: 45px;
+  min-width: 351px;
+  position: relative;
+  width: 100%;
+  left: 731px;
+  top: 25px;
+}
+
+.tag .overlap-group-wrapper {
+  height: 45px;
+  position: relative;
+  width: 125px;
+}
+
+.tag .iview {
+  /* background-image: url(blob:https://www.figma.com/78f0a84c-565b-45c6-ba78-5709a2c64984);
+  background-size: 100% 100%; */
+  height: 30px;
+  position: relative;
+  width: 107px;
+  top: 5px;
+  border-style: solid;
+  border-radius: 50px;
+}
+
+.tag .tw1 {
+  color: #292930;
+  font-family: "Poppins-Medium", Helvetica;
+  font-size: 16px;
+  font-weight: 500;
+  left: 17px;
+  letter-spacing: 0;
+  line-height: 28.8px;
+  position: absolute;
+  top: 1px;
+  white-space: nowrap;
+}
+
+.tag .september {
+  color: #292930;
+  font-family: "Noto Sans-Medium", Helvetica;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 2.02px;
+  line-height: 23.5px;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.learnmore {
+  border: 0px none;
+  height: 22px;
+  width: 175px;
+  position: relative;
+  left: 755px;
+  top: 307px;
+  z-index: 25;
+}
+
+.learnclicked {
+  color: #045a92c4;
+  font-family: "Inter-SemiBold", Helvetica;
+  font-size: 13px;
+  font-weight: 540;
+  left: -34px;
+  letter-spacing: 0;
+  line-height: 22px;
+  position: relative;
+  top: 0;
+  white-space: nowrap;
+  width: 100px;
+  text-align: left;
+  background-color: transparent;
+  border-radius: 25px;
+  border-color: transparent;
+  cursor: pointer;
+  z-index: 26;
+}
+
+.rarrow {
+  position: relative;
+  left: -55px;
+  top: 6px;
+  z-index: 20;
+}
+
+.dividerline {
+  position: relative;
+  left: 730px;
+  top: 310px;
+  width: 350px;
+  overflow-x: hidden;
+}
+
+.casebutton {
+  background: linear-gradient(45deg, rgb(0, 157, 224) 0%, rgb(0, 166, 84) 100%);
+  background-color: rgba(255, 255, 255, 1);
+  border: 1px solid;
+  border-color: transparent;
+  border-radius: 10px;
+  height: 53px;
+  position: relative;
+  width: 173px;
+  left: 730px;
+  top: 325px;
+  cursor: pointer;
+}
+
+.casebutton .all-case-study {
+  color: #ffffff;
+  background-color: transparent;
+  font-family: "Poppins-Medium", Helvetica;
+  font-size: 16px;
+  font-weight: 500;
+  left: 0px;
+  letter-spacing: 0;
+  line-height: 25.6px;
+  position: relative;
+  top: 2px;
+  white-space: nowrap;
+  text-align: left;
+  width: 175px;
+  height: 50px;
+  border-radius: 10px;
+  border-color: transparent;
+  cursor: pointer;
+}
+
+.casebutton .vector {
+  height: 14px;
+  left: 140px;
+  position: relative;
+  top: -33px;
+  width: 13px;
+}
+
+.toolsdivcomps {
+  position: relative;
+  top: 350px;
+}
+
+.helpdiv {
+  position: relative;
+  height: 720px;
+  top: -575px;
+  background-color: rgb(244, 244, 244);
+}
+
+.helptitle {
+  border: 0px none;
+  height: 73px;
+  width: 369px;
+}
+
+.helptitle .we-re-here-to-help {
+  color: #333333;
+  font-family: "Poppins-SemiBold", Helvetica;
+  font-size: 40px;
+  font-weight: 600;
+  height: 73px;
+  left: 460px;
+  letter-spacing: 0;
+  line-height: 73px;
+  position: relative;
+  top: 75px;
+  white-space: nowrap;
+}
+
+.helpunderline {
+  border: 0px none;
+  height: 7px;
+  width: 73px;
+}
+
+.helpunderline .recunder {
+  background-color: #0b67b3;
+  border-radius: 2px;
+  height: 7px;
+  left: 600px;
+  position: relative;
+  top: 75px;
+  width: 73px;
+}
+
+.helptext {
+  border: 0px none;
+  height: 70px;
+  width: 805px;
+}
+
+.helptext .contact-us-if-you {
+  color: #858a8f;
+  font-family: "Poppins-Medium", Helvetica;
+  font-size: 20px;
+  font-weight: 500;
+  left: 250px;
+  letter-spacing: 0;
+  line-height: 35px;
+  position: relative;
+  text-align: center;
+  top: 70px;
+  width: 805px;
+}
+
+.helpbuttons {
+  position: relative;
+  top: 100px;
+  left: 30px;
+}
+
+.dropinus {
+  position: relative;
+  left: 15px;
+}
+
+.bookcons {
+  position: relative;
+  left: 30px;
+}
+
+.buttonoverlays {
+  position: relative;
+  top:100px;
+}
+
+.emailbutton {
+  position: relative;
+  z-index: 1;
+  top: -170px;
+  left: 30px;
+  width: 200px;
+  height: 30px;
+  background-color: transparent;
+  cursor: pointer;
+  border-color: transparent;
+}
+
+.dropbutton {
+  position: relative;
+  z-index: 1;
+  top: -170px;
+  left: 235px;
+  width: 175px;
+  height: 30px;
+  background-color: transparent;
+  cursor: pointer;
+  border-color: transparent;
+}
+
+.bookbutton {
+  position: relative;
+  z-index: 1;
+  top: -170px;
+  left: 470px;
+  width: 150px;
+  height: 30px;
+  background-color: transparent;
+  cursor: pointer;
+  border-color: transparent;
+}
