@@ -21,9 +21,9 @@ function Footer() {
     alert('hello');
   };
 
-  function getData(val) {
-    setData(val.target.value)
-  }
+  // function getData(val) {
+  //   setData(val.target.value)
+  // }
   return (
     <div className='footer'>
       <div className="subscribe-box">
