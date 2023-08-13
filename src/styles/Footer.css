@@ -41,10 +41,10 @@
 }
 
 .footer {
-  top: -30px;
+  /* top: -30px; */
   position: relative;
   background-color: #3884c4d9;
-  height: 700px;
+  height: fit-content;
 }
 
 .footer a {

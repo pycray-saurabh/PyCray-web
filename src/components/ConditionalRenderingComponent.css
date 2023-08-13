@@ -26,9 +26,14 @@
     background-image: url(../assets/blueimg.png);
     background-position: -1000px -700px;
     background-repeat: no-repeat;
-    height: 1000px;
+    height: auto;
+    width: 100vw;
     position: relative;
-    top: -827px;
+    display: grid;
+    grid-template-rows: auto auto;
+    place-items: center;
+    gap: 15vw;
+    /* top: -827px; */
 }
 
 .tooltitle {
@@ -36,7 +41,7 @@
     font-family: "Poppins-SemiBold", Helvetica;
     font-size: 40px;
     font-weight: 400;
-    left: 200px;
+    /* left: 200px; */
     letter-spacing: -0.8px;
     line-height: 40px;
     position: fixed;
@@ -74,7 +79,7 @@
     font-family: "Poppins-Regular", Helvetica;
     font-size: 16px;
     font-weight: 400;
-    left: 240px;
+    /* left: 240px; */
     letter-spacing: -0.1px;
     line-height: 25px;
     position: fixed;
@@ -89,7 +94,8 @@
     position: relative;
     width: 1039px;
     left: 140px;
-    top: 175px;
+    transform: translateX(-12%);
+    /* top: 175px; */
 }
 
 .component .group {

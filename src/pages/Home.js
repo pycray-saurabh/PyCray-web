@@ -155,7 +155,7 @@ function Home() {
 
       <div className="homeProductGenesis">
         <div className="vasesPic">
-          <svg width="534.65" height="565.25" viewBox="0 0 629 665" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <svg viewBox="0 0 629 665" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M380.457 579.282L386.876 616.854L405.486 618.651L399.037 576.69L380.457 579.282Z" fill="#FCC9A7" />
             <path d="M384.314 614.263C384.697 612.938 386.081 612.437 387.082 613.232C388.996 614.822 392.441 616.736 397.358 616.059C402.482 615.382 404.308 612.261 404.985 610.082C405.338 608.933 406.428 608.315 407.399 608.757L442.234 623.362C444.177 624.245 445.708 625.982 446.503 628.161C447.269 630.222 445.944 632.49 444 632.519L386.935 632.873C384.815 632.873 383.107 630.87 383.224 628.426L383.725 616.53C383.725 616.324 383.754 616.147 383.813 615.941L384.314 614.263Z" fill="#1F252A" />
             <path d="M305.222 406.406H297.625V627.926H305.222V406.406Z" fill="#2A272D" />
@@ -311,8 +311,8 @@ function Home() {
 
       <div className="deliveryProcess">
         <div className="tboxes">
-          <p className="contact-us-if-you">Ensure successful Go LIVE with our streamlines delivery process</p>
           <h1 className="leave-a-message">Delivery Process</h1>
+          <p className="contact-us-if-you">Ensure successful Go LIVE with our streamlines delivery process</p>
         </div>
 
         <svg className="delivUnderline" width="73" height="7" viewBox="0 0 73 7" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -330,15 +330,16 @@ function Home() {
         </svg>
 
         <div className="industrytbox">
-          <svg className="indusUnderline" width="73" height="7" viewBox="0 0 73 7" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <rect width="73" height="7" rx="2" fill="#0C67B4" />
-          </svg>
-
           <div className="itboxes">
+            <h1 className="leave-a-message">Industries</h1>
+
+            <svg className="indusUnderline" width="73" height="7" viewBox="0 0 73 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="73" height="7" rx="2" fill="#0C67B4" />
+            </svg>
+
             <p className="contact-us-if-you">
               PyCray has created immense impact and gained domain knowledge across industries
             </p>
-            <h1 className="leave-a-message">Industries</h1>
           </div>
         </div>
 
@@ -346,12 +347,17 @@ function Home() {
       </div>
 
       <div className="clientsh">
-        <h1 className="our-fetaured-clients">Our Featured Clients</h1>
+        <div>
+          <h1 className="our-fetaured-clients">Our Featured Clients</h1>
+          <svg className="rect" width="73" height="7" viewBox="0 0 73 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="73" height="7" rx="2" fill="#0C67B4" />
+          </svg>
+        </div>
+
         <div className="clientBox">
-          <div className="rect" />
           <div className="clientLogos">
-            <img className="p1" alt="i1" src={clp2} />
-            <img className="p2" alt="i2" src={clp1} />
+            <img className="p1" alt="i1" src={clp1} />
+            <img className="p2" alt="i2" src={clp2} />
             <img className="p3" alt="i3" src={clp3} />
             <img className="p4" alt="i4" src={clp4} />
           </div>

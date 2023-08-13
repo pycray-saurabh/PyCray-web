@@ -52,6 +52,8 @@
   width: 100vw;
   /* margin-top: -200px; */
   /* width: 100%; */
+  z-index: 2;
+  overflow: hidden;
 }
 /* 
 .ellipseBox,
@@ -173,30 +175,39 @@
 
 
 .homeProductGenesis {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: 1fr;
+  /* justify-content: center;
+  align-items: center; */
+  height: auto;
+  width: 100vw;
   position: relative;
-  top: 0px;
-  left: 0;
-  height: 1043px;
-  width: 1440px;
+  overflow: hidden;
+  /* gap: 20vw; */
 }
 
 .vasesPic {
   position: relative;
-  top: -150px;
-  left: 4.1%;
+  width: 40vw;
+  height: auto;
+  left: 5vw;
 }
 
 .box {
   border: 0px none;
   height: 643px;
   width: 553px;
-  position: absolute;
+  position: relative;
+  right: 10vw;
+  /* justify-self: center; */
   /* Change position to fixed */
-  top: 120px;
+  /* top: 120px; */
   /* Position the box vertically at 50% from the top */
-  right: 17%;
+  /* right: 17%; */
   /* Position the box horizontally at 5% from the right */
-  transform: translateY(-50%);
+  transform: translateY(0%);
+  transform: translateX(-40%);
   /* Center the box vertically using transform */
 }
 
@@ -376,8 +387,12 @@
 }
 
 .rectbox {
+  position: relative;
+  top: -10px;
+  display: grid;
   border: 0px none;
   height: 97px;
+  justify-self: center;
   /* overflow-x: hidden; */
   width: 952px;
 }
@@ -386,7 +401,7 @@
   height: 105px;
   left: 150px;
   position: absolute;
-  top: 450px;
+  /* top: 450px; */
   width: 960px;
   z-index: 1;
 }
@@ -395,7 +410,7 @@
   border: 0px none;
   height: 58px;
   width: 534px;
-  top: 462px;
+  /* top: 462px; */
   left: 200px;
   position: absolute;
   z-index: 2;
@@ -413,17 +428,20 @@
   top: 0;
 }
 
-.consultationButton {
+.rectbox .consultationButton {
   background: linear-gradient(45deg, rgb(0, 157, 224) 0%, rgb(0, 166, 84) 100%);
   background-color: rgba(255, 255, 255, 1);
   border: 1px solid;
   border-color: transparent;
   border-radius: 7px;
   height: 53px;
+  left: 75%;
+  /* transform: translateY(50%); */
+  top: 22px;
   position: relative;
   width: 310px;
-  left: 750px;
-  top: -101px;
+  /* left: 750px;
+  top: -101px; */
   z-index: 3;
 }
 
@@ -448,9 +466,13 @@
 
 .deliveryProcess {
   border: 0px none;
-  height: 600px;
+  height: auto;
   position: relative;
-  width: 609px;
+  width: 100vw;
+  display: grid;
+  grid-template-rows: 10% 10% 1fr;
+  justify-content: center;
+  overflow: hidden;
 }
 
 /* .industries {
@@ -465,10 +487,12 @@
 
 .deliveryProcess .tboxes {
   height: 118px;
-  left: 350px;
-  position: absolute;
-  top: -465px;
+  /* left: 350px; */
+  position: relative;
+  /* top: -465px; */
   width: 613px;
+  justify-self: center;
+
 }
 
 .deliveryProcess .contact-us-if-you {
@@ -476,13 +500,14 @@
   font-family: "Inter-Regular", Helvetica;
   font-size: 20px;
   font-weight: 400;
-  left: 0;
+  /* left: 0; */
   letter-spacing: 0;
   line-height: 35px;
-  position: absolute;
+  position: relative;
   text-align: center;
-  top: 83px;
+  /* top: 83px; */
   white-space: nowrap;
+  /* justify-self: center; */
 }
 
 /* change fonts or import later */
@@ -492,49 +517,63 @@
   font-family: "Inter-Bold", Helvetica;
   font-size: 40px;
   font-weight: 700;
-  left: 133px;
+  /* left: 133px; */
   letter-spacing: 0;
   line-height: 58px;
-  position: absolute;
+  position: relative;
+  /* justify-self: center; */
   text-align: center;
-  top: 0;
+  /* top: 0; */
   white-space: nowrap;
 }
 
 .deliveryProcessPic {
-  left: 300px;
-  top: -375px;
-  position: absolute;
+  /* left: 300px; */
+  /* top: -375px; */
+  position: relative;
+  justify-self: center;
 }
 
 .delivUnderline {
-  position: absolute;
-  left: 599px;
-  top: -377px;
+  position: relative;
+  justify-self: center;
+  /* left: 599px; */
+  /* top: -377px; */
+}
+
+.industries {
+  position: relative;
+  display: grid;
+  height: auto;
+  width: 100vw;
+  justify-content: center;
+  grid-template-rows: auto auto auto;
+  overflow: hidden;
 }
 
 .pageSplitLine {
   position: relative;
-  top: -350px;
-  left: 77px;
+  /* top: -350px; */
+  /* left: 77px; */
 }
 
 .industrytbox {
   border: 0px none;
-  height: 700px;
-  overflow-x: hidden;
+  height: auto;
+  /* overflow-x: hidden; */
   position: relative;
   width: 659px;
   z-index: 3;
-  left: 290px;
-  top: -340px;
+  justify-self: center;
+  /* left: 290px; */
+  /* top: -340px; */
 }
 
 .industrytbox .itboxes {
   height: 153px;
-  left: 0;
+  /* left: 0;
   position: absolute;
-  top: 0px;
+  top: 0px; */
   width: 663px;
   z-index: 7;
 }
@@ -544,7 +583,7 @@
   font-family: "Poppins-Regular", Helvetica;
   font-size: 20px;
   font-weight: 400;
-  left: 0;
+  /* left: 0; */
   letter-spacing: 0;
   line-height: 35px;
   position: absolute;
@@ -573,9 +612,10 @@
 }
 
 .industryPic {
-  position: absolute;
-  left: 150px;
-  top: 2400px;
+  position: relative;
+  justify-self: center;
+  /* left: 150px;
+  top: 2400px; */
 }
 
 .clientsh {
@@ -583,12 +623,17 @@
   background-position: 50% 50%;
   background-size: cover;
   border: 1px none;
-  height: 325px;
+  height: auto;
   position: relative;
-  left: -90px;
-  top: -400px;
-  width: 1440px;
+  display: grid;
+  grid-template-rows: auto auto auto;
+  justify-content: center;
+  /* left: -90px; */
+  /* top: -400px; */
+  width: 100vw;
   z-index: 100;
+  overflow: hidden;
+  place-items: center;
 }
 
 .clientsh .our-fetaured-clients {
@@ -596,88 +641,88 @@
   font-family: "Poppins-SemiBold", Helvetica;
   font-size: 40px;
   font-weight: 600;
-  left: 511px;
   letter-spacing: 0;
   line-height: 58px;
-  position: absolute;
-  top: 19px;
+  position: relative;
+  /* justify-self: center; */
   white-space: nowrap;
 }
 
 .clientsh .clientBox {
-  height: 200px;
-  left: 128px;
-  position: absolute;
-  top: 94px;
-  width: 1184px;
+  height: auto;
+  justify-self: center;
+  position: relative;
+  width: fit-content;
 }
 
 .clientsh .rect {
   background-color: #0b67b3;
   border-radius: 2px;
   height: 7px;
-  left: 555px;
-  position: absolute;
-  top: 15px;
+  /* left: 555px; */
+  position: relative;
+  /* top: 15px; */
   width: 73px;
+  transform: translateX(210%);
+  top: -30px;
+  /* left: 175px; */
 }
 
 .clientsh .clientLogos {
-  height: 200px;
+  height: auto;
+  width: 100vw;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 10vw;
   left: 0;
-  position: absolute;
+  position: relative;
   top: 0;
-  width: 1184px;
 }
 
 .clientsh .p1 {
-  height: 200px;
-  left: 366px;
   object-fit: cover;
-  position: absolute;
-  top: 0;
-  width: 200px;
+  position: relative;
+  justify-self: center;
+  width: 17vw;
+  height: auto;
+  transform: translateY(75%);
 }
 
 .clientsh .p2 {
-  height: 54px;
-  left: 0;
   object-fit: cover;
-  position: absolute;
-  top: 73px;
-  width: 213px;
+  position: relative;
+  width: 17vw;
+  height: auto;
 }
 
 .clientsh .p3 {
-  height: 103px;
-  left: 742px;
   object-fit: cover;
-  position: absolute;
-  top: 52px;
-  width: 103px;
+  position: relative;
+  width: 11vw;
+  height: auto;
 }
 
 .clientsh .p4 {
-  height: 95px;
-  left: 994px;
-  position: absolute;
-  top: 52px;
-  width: 190px;
+  position: relative;
+  width: 17vw;
+  height: auto;
 }
 
-.cpic {
+/* .cpic {
   position: relative;
   left: -50px;
   top: -770px;
   z-index: 2;
-}
+} */
 
 .casestudies {
   position: relative;
-  top: -400px;
-  left: 0px;
-  height: 850px;
-  background: linear-gradient(135deg, #c5e0f7 0%, #ffffff 100%)
+  display: grid;
+  grid-template-rows: auto auto;
+  height: auto;
+  gap: 200px;
+  background: linear-gradient(135deg, #c5e0f7 0%, #ffffff 100%);
+  place-items: center;
 }
 
 .caseUnderline {
@@ -688,10 +733,11 @@
 
 .headline-supporting {
   border: 1px none;
-  height: 106px;
+  height: auto;
+  display: grid;
+  grid-template-rows: auto auto auto;
   position: relative;
-  top: 50px;
-  left: 225px;
+  /* top: 50px; */
   width: 800px;
 }
 
@@ -731,8 +777,8 @@
   height: 500px;
   width: 1150px;
   position: relative;
-  left: 55px;
-  top: 125px;
+  /* left: 55px; */
+  /* top: 125px; */
   border-style: ridge;
 }
 
@@ -951,13 +997,18 @@
 
 .toolsdivcomps {
   position: relative;
-  top: 350px;
+  /* top: 350px; */
 }
 
 .helpdiv {
   position: relative;
-  height: 720px;
-  top: -575px;
+  height: auto;
+  width: 100vw;
+  display: grid;
+  grid-template-rows: auto auto auto auto;
+  gap: 10vw;
+  place-items: center;
+  /* top: -575px; */
   background-color: rgb(244, 244, 244);
 }
 
@@ -973,11 +1024,11 @@
   font-size: 40px;
   font-weight: 600;
   height: 73px;
-  left: 460px;
+  /* left: 460px; */
   letter-spacing: 0;
   line-height: 73px;
   position: relative;
-  top: 75px;
+  /* top: 75px; */
   white-space: nowrap;
 }
 
@@ -991,9 +1042,9 @@
   background-color: #0b67b3;
   border-radius: 2px;
   height: 7px;
-  left: 600px;
+  /* left: 600px; */
   position: relative;
-  top: 75px;
+  /* top: 75px; */
   width: 73px;
 }
 
@@ -1008,18 +1059,18 @@
   font-family: "Poppins-Medium", Helvetica;
   font-size: 20px;
   font-weight: 500;
-  left: 250px;
+  /* left: 250px; */
   letter-spacing: 0;
   line-height: 35px;
   position: relative;
   text-align: center;
-  top: 70px;
+  /* top: 70px; */
   width: 805px;
 }
 
 .helpbuttons {
   position: relative;
-  top: 100px;
+  /* top: 100px; */
   left: 30px;
 }
 
