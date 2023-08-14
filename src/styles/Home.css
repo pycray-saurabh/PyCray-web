@@ -32,7 +32,7 @@
   display: grid;
   width: fit-content;
   margin: 0 auto;
-  grid-template-columns: 1fr;
+  grid-template-columns: auto;
   grid-template-rows: auto;
 }
 
@@ -43,7 +43,8 @@
   background-repeat: no-repeat;
   background-size: 100vw;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: auto auto;
+  gap: 20vw;
   grid-template-rows: auto;
   justify-content: center;
   align-items: center;
@@ -55,6 +56,7 @@
   z-index: 2;
   overflow: hidden;
 }
+
 /* 
 .ellipseBox,
 .ellipseLine,
@@ -125,6 +127,13 @@
   height: auto;
   width: 40vw;
   z-index: 2;
+  left: 15vw;
+}
+
+.button-wrap1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .button-base {
@@ -133,32 +142,36 @@
   border: 1px solid;
   border-color: transparent;
   border-radius: 7px;
-  height: 53px;
-  position: relative;
-  width: 176px;
-  left: 5.75%;
-  top: 0px;
+  height: 2vw;
+  /* Adjusted to auto */
+  min-width: 50px;
+  width: 11vw;
+  padding: 10px;
+  /* Add padding for better appearance */
   z-index: 2;
+  cursor: pointer;
+  display: flex;
+  /* Use flexbox for button alignment */
+  align-items: center;
+  /* Center content vertically */
+  justify-content: center;
 }
 
 .button-base .no-credit-card {
   color: #ffffff;
-  background: transparent;
+  background-color: transparent;
   border-color: transparent;
   font-family: "Poppins-Medium", Helvetica;
-  width: 176px;
-  height: 53px;
-  font-size: 22px;
+  font-size: 1.3rem;
   font-weight: 150;
-  left: 0;
   letter-spacing: 0;
   line-height: 22px;
-  position: absolute;
-  top: 0;
   white-space: nowrap;
-  z-index: 7;
   cursor: pointer;
+  justify-self: center;
+  display: inline-block;
 }
+
 
 /* Media queries for different screen sizes */
 @media (max-width: 1200px) {
@@ -166,9 +179,24 @@
   /* ... your styles ... */
 }
 
-@media (max-width: 768px) {
+@media (max-width: 950px) {
+
   /* Adjust styles for screens up to 768px wide */
   /* ... your styles ... */
+  .button-base .no-credit-card {
+    color: #ffffff;
+    background-color: transparent;
+    border-color: transparent;
+    font-family: "Poppins-Medium", Helvetica;
+    font-size: 0.75rem;
+    font-weight: 150;
+    letter-spacing: 0;
+    line-height: 22px;
+    white-space: nowrap;
+    cursor: pointer;
+    justify-self: center;
+    display: inline-block;
+  }
 }
 
 /* Add more media queries as needed for other screen sizes */
@@ -176,256 +204,375 @@
 
 .homeProductGenesis {
   display: grid;
-  grid-template-columns: 1fr 3fr;
-  grid-template-rows: 1fr;
-  /* justify-content: center;
-  align-items: center; */
+  /* grid-template-columns: auto auto; */
+  grid-template-rows: auto auto;
+  /* justify-content: center; */
+  align-items: center;
   height: auto;
   width: 100vw;
   position: relative;
   overflow: hidden;
-  /* gap: 20vw; */
+  gap: 0.1vw;
+  margin-top: 3vw;
+}
+
+.productpicandtext {
+  position: relative;
+  display: grid;
+  grid-template-columns: auto auto;
+  /* justify-content: center; */
+  place-items: top center;
+  height: auto;
+  width: 100vw;
+  gap: 10vw;
 }
 
 .vasesPic {
   position: relative;
   width: 40vw;
   height: auto;
-  left: 5vw;
+  left: 2vw;
+  margin-top: 9vw;
 }
 
-.box {
-  border: 0px none;
-  height: 643px;
-  width: 553px;
+.genesistextarea {
   position: relative;
-  right: 10vw;
-  /* justify-self: center; */
-  /* Change position to fixed */
-  /* top: 120px; */
-  /* Position the box vertically at 50% from the top */
-  /* right: 17%; */
-  /* Position the box horizontally at 5% from the right */
-  transform: translateY(0%);
-  transform: translateX(-40%);
-  /* Center the box vertically using transform */
+  display: grid;
+  grid-template-rows: auto auto;
+  height: auto;
+  gap: 3vw;
+  right: 2vw;
+  /* top: -40px; */
+  /* width: 50vw; */
 }
 
-.box .group {
-  height: 643px;
-  left: 0;
-  position: fixed;
-  top: 0;
-  width: 553px;
+.picsandtext {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 5vw;
 }
 
-.box .div {
-  height: 219px;
-  left: 0;
-  position: absolute;
-  top: 0;
-  width: 557px;
+.twopics {
+  display: grid;
+  grid-template-rows: auto auto;
+  gap: 1vw;
 }
 
-.box .be-in-the-trend-of {
-  color: #333333;
-  font-family: "Poppins-SemiBold", Helvetica;
-  font-size: 40px;
-  font-weight: 600;
-  height: 53px;
-  left: 0;
-  letter-spacing: 0;
-  line-height: 73px;
-  position: absolute;
-  top: 0;
-  white-space: nowrap;
-  width: 356px;
+.nexttext {
+  display: grid;
+  grid-template-rows: auto auto;
+  gap: 2vw;
 }
 
-.box .every-week-we-create {
-  color: #858a8f;
-  font-family: "Poppins-Regular", Helvetica;
-  font-size: 20px;
-  font-weight: 400;
-  height: 149px;
-  left: 0;
-  letter-spacing: 0;
-  line-height: 35px;
-  position: absolute;
-  top: 87px;
-  width: 553px;
+/* .nexttext .ptb1 {
+  display: grid;
+  grid-template-rows: auto auto;
+  gap: 0.1vw;
+  left: 500px;
 }
 
-.box .overlap-group {
-  height: 174px;
-  left: 0;
-  position: absolute;
-  top: 246px;
-  width: 511px;
-}
+.nexttext .ptb2 {
+  display: grid;
+  grid-template-rows: auto auto;
+  gap: 0.1vw;
+} */
 
-.box .group-2 {
-  height: 174px;
-  left: 0;
-  position: absolute;
-  top: 0;
-  width: 511px;
-}
-
-.box .group-3 {
-  height: 160px;
-  left: 104px;
-  position: absolute;
-  top: 14px;
-  width: 411px;
-}
-
-.box .we-adapt-to-you {
-  color: #333333;
-  font-family: "Poppins-SemiBold", Helvetica;
-  font-size: 24px;
-  font-weight: 600;
-  left: 0;
-  letter-spacing: 0;
-  line-height: 29px;
-  position: absolute;
-  top: 15px;
-  white-space: nowrap;
-  width: 224px;
-}
-
-.box .we-analyze-your {
-  color: #858a8f;
-  font-family: "Poppins-Regular", Helvetica;
-  font-size: 18px;
-  font-weight: 400;
-  left: 0;
-  letter-spacing: 0;
-  line-height: 35px;
-  position: absolute;
-  top: 42px;
-  width: 407px;
-}
-
-.box .group-4 {
-  background-color: #e5f1ff;
-  border-radius: 37px/39.59px;
-  height: 79px;
-  left: 0;
-  position: absolute;
-  top: 10px;
-  width: 74px;
-}
-
-.box .image {
-  height: 42px;
-  left: 17px;
+.image {
+  height: auto;
   object-fit: cover;
-  position: absolute;
-  top: 29px;
-  width: 39px;
+  position: relative;
+  width: 5.5vw;
+  min-width: 45px;
 }
 
-.box .overlap {
-  height: 204px;
-  left: 0;
-  position: absolute;
-  top: 439px;
-  width: 543px;
+.img {
+  height: auto;
+  object-fit: cover;
+  position: relative;
+  width: 5.5vw;
+  min-width: 45px;
 }
 
-.box .group-5 {
-  height: 204px;
-  left: 0;
-  position: absolute;
-  top: -9px;
-  width: 543px;
-}
-
-.box .group-6 {
-  height: 192px;
-  left: 104px;
-  position: absolute;
-  top: 12px;
-  width: 443px;
-}
-
-.box .your-music-your {
+.be-in-the-trend-of {
   color: #333333;
   font-family: "Poppins-SemiBold", Helvetica;
-  font-size: 24px;
+  font-size: 2.5rem;
   font-weight: 600;
-  left: 0;
+  height: auto;
   letter-spacing: 0;
-  line-height: 29px;
-  position: absolute;
-  top: 0;
+  line-height: 5.5vw;
+  position: relative;
   white-space: nowrap;
-  width: 294px;
+  /* width: 356px; */
 }
 
-.box .you-can-import-your {
+.every-week-we-create {
   color: #858a8f;
   font-family: "Poppins-Regular", Helvetica;
-  font-size: 18px;
+  font-size: 1.3rem;
   font-weight: 400;
-  left: 0;
+  height: auto;
   letter-spacing: 0;
-  line-height: 35px;
-  position: absolute;
-  top: 27px;
-  width: 439px;
+  line-height: 2.9vw;
+  position: relative;
+  width: 45vw;
 }
 
-.box .img {
-  height: 43px;
-  left: 17px;
-  object-fit: cover;
-  position: absolute;
-  top: 17px;
-  width: 40px;
+.we-adapt-to-you {
+  color: #333333;
+  font-family: "Poppins-SemiBold", Helvetica;
+  font-size: 1.5rem;
+  font-weight: 600;
+  letter-spacing: 0;
+  line-height: 2.2vw;
+  position: relative;
+  white-space: nowrap;
 }
+
+.we-analyze-your {
+  color: #858a8f;
+  font-family: "Poppins-Regular", Helvetica;
+  font-size: 1.1rem;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 2.75vw;
+  position: relative;
+  width: 35vw;
+}
+
+.your-music-your1 {
+  color: #333333;
+  font-family: "Poppins-SemiBold", Helvetica;
+  font-size: 1.5rem;
+  font-weight: 600;
+  letter-spacing: 0;
+  line-height: 2.2vw;
+  position: relative;
+  white-space: nowrap;
+}
+
+.you-can-import-your {
+  color: #858a8f;
+  font-family: "Poppins-Regular", Helvetica;
+  font-size: 1.1rem;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 2.75vw;
+  position: relative;
+  width: 35vw;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 576px) {
+  .be-in-the-trend-of {
+    color: #333333;
+    font-family: "Poppins-SemiBold", Helvetica;
+    font-size: 1.6rem;
+    font-weight: 600;
+    height: auto;
+    letter-spacing: 0;
+    line-height: 5.5vw;
+    position: relative;
+    white-space: nowrap;
+  }
+
+  .every-week-we-create {
+    color: #858a8f;
+    font-family: "Poppins-Regular", Helvetica;
+    font-size: 0.77rem;
+    font-weight: 400;
+    height: auto;
+    letter-spacing: 0;
+    line-height: 2.9vw;
+    position: relative;
+    width: 45vw;
+  }
+
+  .we-adapt-to-you {
+    color: #333333;
+    font-family: "Poppins-SemiBold", Helvetica;
+    font-size: 0.98rem;
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: 2.2vw;
+    position: relative;
+    white-space: nowrap;
+  }
+
+  .we-analyze-your {
+    color: #858a8f;
+    font-family: "Poppins-Regular", Helvetica;
+    font-size: 0.76rem;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: 2.75vw;
+    position: relative;
+    width: 35vw;
+  }
+
+  .your-music-your {
+    color: #333333;
+    font-family: "Poppins-SemiBold", Helvetica;
+    font-size: 0.98rem;
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: 2.2vw;
+    position: relative;
+    white-space: nowrap;
+  }
+
+  .you-can-import-your {
+    color: #858a8f;
+    font-family: "Poppins-Regular", Helvetica;
+    font-size: 0.76rem;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: 2.75vw;
+    position: relative;
+    width: 35vw;
+  }
+}
+
+/* Media query for medium-sized screens */
+@media (min-width: 577px) and (max-width: 992px) {
+  .be-in-the-trend-of {
+    color: #333333;
+    font-family: "Poppins-SemiBold", Helvetica;
+    font-size: 2.18rem;
+    font-weight: 600;
+    height: auto;
+    letter-spacing: 0;
+    line-height: 5.5vw;
+    position: relative;
+    white-space: nowrap;
+    /* width: 356px; */
+  }
+  
+  .every-week-we-create {
+    color: #858a8f;
+    font-family: "Poppins-Regular", Helvetica;
+    font-size: 1.13rem;
+    font-weight: 400;
+    height: auto;
+    letter-spacing: 0;
+    line-height: 2.9vw;
+    position: relative;
+    width: 45vw;
+  }
+  
+  .we-adapt-to-you {
+    color: #333333;
+    font-family: "Poppins-SemiBold", Helvetica;
+    font-size: 1.3rem;
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: 2.2vw;
+    position: relative;
+    white-space: nowrap;
+  }
+  
+  .we-analyze-your {
+    color: #858a8f;
+    font-family: "Poppins-Regular", Helvetica;
+    font-size: 0.96rem;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: 2.75vw;
+    position: relative;
+    width: 35vw;
+  }
+  
+  .your-music-your {
+    color: #333333;
+    font-family: "Poppins-SemiBold", Helvetica;
+    font-size: 1.3rem;
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: 2.2vw;
+    position: relative;
+    white-space: nowrap;
+  }
+  
+  .you-can-import-your {
+    color: #858a8f;
+    font-family: "Poppins-Regular", Helvetica;
+    font-size: 0.96rem;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: 2.75vw;
+    position: relative;
+    width: 35vw;
+  }
+}
+
+/* Media query for larger screens */
+/* @media (min-width: 993px) {
+  body {
+    font-size: 16px;
+  }
+} */
 
 .rectbox {
   position: relative;
-  top: -10px;
+  /* top: -10px; */
+  margin-bottom: 10vh;
+  /* margin-left: 10vw;
+  margin-right: 10vw; */
   display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  /* grid-template-columns: auto; */
   border: 0px none;
-  height: 97px;
+  height: auto;
   justify-self: center;
   /* overflow-x: hidden; */
-  width: 952px;
+  width: 80vw;
+  margin-bottom: 10vw;
 }
 
-.rectbox .rectangle {
-  height: 105px;
-  left: 150px;
-  position: absolute;
+.rectangle {
+  height: auto;
+  position: relative;
   /* top: 450px; */
-  width: 960px;
+  width: 80vw;
   z-index: 1;
+  /* grid-row: 1;
+  grid-column: 1; */
+  grid-column: 1/4;
+}
+
+.textthenbutton {
+  display: grid;
+  grid-template-columns: auto auto;
+  /* align-items: center; */
+  gap: 2vw;
+  /* place-items: center; */
+  /* grid-row: 1 /2 ; */
+}
+
+.rectangle .label2 {
+  grid-row: 1/2;
 }
 
 .label2 {
   border: 0px none;
-  height: 58px;
-  width: 534px;
+  height: auto;
+  width: 43vw;
   /* top: 462px; */
-  left: 200px;
-  position: absolute;
+  justify-self: left;  
+  position: relative;
   z-index: 2;
+  /* grid-row: 1; */
+  grid-column: 2/-1;
 }
 
-.label .your-music-your {
+.label2 .your-music-your2 {
   color: #333333;
   font-family: "Poppins-Medium", Helvetica;
   font-size: 18px;
   font-weight: 500;
-  left: 0;
   letter-spacing: 0;
   line-height: 29px;
-  position: fixed;
-  top: 0;
+  position: relative;
 }
 
 .rectbox .consultationButton {
@@ -435,14 +582,17 @@
   border-color: transparent;
   border-radius: 7px;
   height: 53px;
-  left: 75%;
   /* transform: translateY(50%); */
-  top: 22px;
   position: relative;
-  width: 310px;
+  width: 23vw;
   /* left: 750px;
   top: -101px; */
+  /* justify-self: right;
+  align-self: center; */
   z-index: 3;
+  /* right: 10vw; */
+  grid-row: 1;
+  grid-column: 1;
 }
 
 .consultationButton .no-credit-card {
@@ -454,14 +604,14 @@
   height: 53px;
   font-size: 22px;
   font-weight: 150;
-  left: 20px;
   letter-spacing: 0;
   line-height: 22px;
-  position: absolute;
-  top: 0;
+  position: relative;
   white-space: nowrap;
   z-index: 7;
   cursor: pointer;
+  /* right: 2vw; */
+  /* justify-self: right; */
 }
 
 .deliveryProcess {
@@ -1086,7 +1236,7 @@
 
 .buttonoverlays {
   position: relative;
-  top:100px;
+  top: 100px;
 }
 
 .emailbutton {
