@@ -6,7 +6,7 @@ import '../styles/Home.css'
 import pic2 from '../assets/productRe.svg'
 import pic1 from '../assets/projectIdea.svg'
 import deliv from '../assets/deliveryProcess.png'
-import indPic from '../assets/industryPic.png'
+// import indPic from '../assets/industryPic.png'
 import clp1 from '../assets/image-57.png'
 import clp2 from '../assets/image-56.png'
 import clp3 from '../assets/image-59.png'
@@ -329,14 +329,14 @@ function Home() {
                 Unlock Your Digital Potential: Schedule a Free Consultation <br />
                 Today!
               </p>
-              <div className="consultationButton">
-                <button className="no-credit-card" onClick={handleButtonClick}>
-                  Book Free Consultation
-                </button>
-              </div>
+            </div>
+            <div className="consultationButton">
+              <button className="no-credit-card" onClick={handleButtonClick}>
+                Book Free Consultation
+              </button>
             </div>
           </div>
-          <svg className="rectangle" viewBox="0 0 960 105" fill="none" xmlns="http://www.w3.org/2000/svg">
+          {/* <svg className="rectangle" viewBox="0 0 960 105" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g filter="url(#filter0_d_417_1751)">
               <path d="M4 7C4 3.13401 7.13401 0 11 0H949C952.866 0 956 3.13401 956 7V90C956 93.866 952.866 97 949 97H11C7.13401 97 4 93.866 4 90V7Z" fill="#85BAE7" fill-opacity="0.42" shape-rendering="crispEdges" />
             </g>
@@ -352,7 +352,7 @@ function Home() {
                 <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_417_1751" result="shape" />
               </filter>
             </defs>
-          </svg>
+          </svg> */}
         </div>
       </div>
 
@@ -367,14 +367,16 @@ function Home() {
         </svg>
 
         <div className="deliveryPic">
-          <img className="deliveryProcessPic" alt="dpic" src={deliv} width={731.25} height={724.5} />
+          <img className="deliveryProcessPic" alt="dpic" src={deliv} />
         </div>
       </div>
 
-      <div className="industries">
-        <svg className="pageSplitLine" width="1100" height="1" viewBox="0 0 1262 1" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <svg className="pageSplitLine" viewBox="0 0 1262 1" fill="none" xmlns="http://www.w3.org/2000/svg">
           <line y1="0.5" x2="1262" y2="0.5" stroke="#5C5C5C" stroke-opacity="0.81" />
         </svg>
+
+      <div className="industries">
+        
 
         <div className="industrytbox">
           <div className="itboxes">
@@ -390,7 +392,9 @@ function Home() {
           </div>
         </div>
 
-        <img className="industryPic" alt="ipic" src={indPic} />
+        <div className='industrycontainer'></div>
+
+        {/* <img className="industryPic" alt="ipic" src={indPic} /> */}
       </div>
 
       <div className="clientsh">
@@ -475,7 +479,7 @@ function Home() {
           </div>
 
           <div className="laptopbackground">
-            <svg className="ltbg" width="305" height="209.5 " viewBox="20 20 305 209.5" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg className="ltbg" viewBox="20 20 305 209.5" fill="none" xmlns="http://www.w3.org/2000/svg">
               <g filter="url(#filter0_d_264_20261)">
                 <path d="M2 24C2 11.8497 11.8497 2 24 2H590C602.15 2 612 11.8497 612 24V399C612 411.15 602.15 421 590 421H24C11.8497 421 2 411.15 2 399V24Z" fill="url(#paint0_linear_264_20261)" fill-opacity="0.15" shape-rendering="crispEdges" />
               </g>
@@ -497,7 +501,7 @@ function Home() {
               </defs>
             </svg>
 
-            <img className="ltpic" alt="lpic" src={laptopPic} width={487.5} height={309.5} />
+            <img className="ltpic" alt="lpic" src={laptopPic} />
           </div>
         </div>
       </div>
