@@ -19,13 +19,13 @@ const ConditionalRenderingComponent = () => {
 
             <div className='toolstext'>
                 <h1 className="tooltitle">
-                    <svg className="toolUnderline" width="73" height="7" viewBox="0 0 73 7" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect width="73" height="7" rx="2" fill="#0C67B4" />
-                    </svg>
-
                     <span className="tooltextwrapper">Tools &amp; Technology we use in </span>
                     <span className="span">PyCray</span>
                 </h1>
+
+                <svg className="toolUnderline" width="73" height="7" viewBox="0 0 73 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="73" height="7" rx="2" fill="#0C67B4" />
+                </svg>
 
                 <div className="toolp">
                     <p className="toolps">
@@ -40,58 +40,52 @@ const ConditionalRenderingComponent = () => {
                 <button onClick={() => showDiv('div2')}>Button 2</button>
                 <button onClick={() => showDiv('div3')}>Button 3</button> */}
 
-                <div className="overlap">
+                <div className='componentbuttons'>
                     <button
                         onClick={() => showDiv('pgmTools')}
-                        className={`text-wrapper ${selectedDiv === 'pgmTools' ? 'selected' : ''}`}
+                        className={`buttonformat ${selectedDiv === 'pgmTools' ? 'selected' : ''}`}
                     >
                         Programming Tools
                     </button>
-                </div>
-                <div className="overlap-group">
+
                     <button
                         onClick={() => showDiv('mAndS')}
-                        className={`div ${selectedDiv === 'mAndS' ? 'selected' : ''}`}
+                        className={`buttonformat ${selectedDiv === 'mAndS' ? 'selected' : ''}`}
                     >
                         Messaging and Streaming
                     </button>
-                </div>
-                <div className="div-wrapper">
+
                     <button
                         onClick={() => showDiv('infraorch')}
-                        className={`text-wrapper-2 ${selectedDiv === 'infraorch' ? 'selected' : ''}`}
+                        className={`buttonformat ${selectedDiv === 'infraorch' ? 'selected' : ''}`}
                     >
                         Infra and orchestration
                     </button>
-                </div>
-                <div className="overlap-2">
+
                     <button
                         onClick={() => showDiv('datab')}
-                        className={`text-wrapper-3 ${selectedDiv === 'datab' ? 'selected' : ''}`}
+                        className={`buttonformat ${selectedDiv === 'datab' ? 'selected' : ''}`}
                     >
                         Databases
                     </button>
-                </div>
-                <div className="overlap-3">
+
                     <button
                         onClick={() => showDiv('logmng')}
-                        className={`text-wrapper-4 ${selectedDiv === 'logmng' ? 'selected' : ''}`}
+                        className={`buttonformat ${selectedDiv === 'logmng' ? 'selected' : ''}`}
                     >
                         Log Management
                     </button>
-                </div>
-                <div className="overlap-4">
+
                     <button
                         onClick={() => showDiv('clouds')}
-                        className={`text-wrapper-5 ${selectedDiv === 'clouds' ? 'selected' : ''}`}
+                        className={`buttonformat ${selectedDiv === 'clouds' ? 'selected' : ''}`}
                     >
                         Cloud Platforms
                     </button>
-                </div>
-                <div className="overlap-5">
+
                     <button
                         onClick={() => showDiv('apicomp')}
-                        className={`text-wrapper-6 ${selectedDiv === 'apicomp' ? 'selected' : ''}`}
+                        className={`buttonformat ${selectedDiv === 'apicomp' ? 'selected' : ''}`}
                     >
                         API
                     </button>
@@ -99,7 +93,7 @@ const ConditionalRenderingComponent = () => {
 
                 <div className='displayedTools'>
                     <div style={{ display: selectedDiv === 'pgmTools' ? 'block' : 'none' }}>
-                        <svg width="593" height="511" viewBox="0 0 593 511" fill="none" xmlns="http://www.w3.org/2000/svg" xlinkHref="http://www.w3.org/1999/xlink">
+                        <svg className='picv1' viewBox="0 0 593 511" fill="none" xmlns="http://www.w3.org/2000/svg" xlinkHref="http://www.w3.org/1999/xlink">
                             <rect x="1.03259" width="102.277" height="102.277" rx="10" fill="#85BAE7" />
                             <rect x="164.263" width="102.277" height="102.277" rx="10" fill="#85BAE7" />
                             <rect x="327.493" width="102.277" height="102.277" rx="10" fill="#85BAE7" />
@@ -187,27 +181,27 @@ const ConditionalRenderingComponent = () => {
                     </div>
 
                     <div style={{ display: selectedDiv === 'mAndS' ? 'block' : 'none' }}>
-                        <img src={mspic} alt="mspng" width={592} height={146.94} />
+                        <img className='picv1' src={mspic} alt="mspng"  />
                     </div>
 
                     <div style={{ display: selectedDiv === 'infraorch' ? 'block' : 'none' }}>
-                        <img src={inforch} alt="iorch" width={592} height={146.94} />
+                        <img className='picv1' src={inforch} alt="iorch" />
                     </div>
 
                     <div style={{ display: selectedDiv === 'datab' ? 'block' : 'none' }}>
-                        <img src={db} alt="db1" width={592} height={325.45} />
+                        <img className='picv1' src={db} alt="db1" />
                     </div>
 
                     <div style={{ display: selectedDiv === 'logmng' ? 'block' : 'none' }}>
-                        <img src={lgmng} alt="lgmg" width={430.41} height={147} />
+                        <img className='picv2' src={lgmng} alt="lgmg" />
                     </div>
 
                     <div style={{ display: selectedDiv === 'clouds' ? 'block' : 'none' }}>
-                        <img src={cloudservs} alt="clss" width={430.41} height={147} />
+                        <img className='picv2' src={cloudservs} alt="clss"  />
                     </div>
 
                     <div style={{ display: selectedDiv === 'apicomp' ? 'block' : 'none' }}>
-                        <img src={apipic} alt="apip" width={568.75} height={147} />
+                        <img className='picv1' src={apipic} alt="apip"  />
                     </div>
 
                 </div>
