@@ -6,6 +6,7 @@ import locationpic from '../assets/locationpic.png'
 import foldersicon from '../assets/foldersicon.png'
 import pencilicon from '../assets/pencilicon.png'
 import megaphoneicon from '../assets/megaphoneicon.png'
+import logo3 from '../assets/pycraylogo2.svg'
 
 function Footer() {
   const [val, setData] = useState('null');
@@ -38,6 +39,41 @@ function Footer() {
             <button className="submitbuttontext" onClick={handleEmailClick}>Submit</button>
           </div>
 
+        </div>
+
+        <div className="emailcolumns">
+
+          <div>
+            <img className="logo3pic" alt="lg3pic" src={logo3} />
+
+            <div className="locationgroup2">
+              <img className="locationsymbol" alt="vc" src={locationpic} />
+              <h1 className="loctitle">Location</h1>
+            </div>
+
+            <div className="addressgroup2">
+              <div className="noida-uttar-pradesh">
+                Noida, Uttar Pradesh, India
+                <br />
+                110025
+              </div>
+              <div className="calgary-alberta">
+                Calgary, Alberta, Canada <br />
+                T3P0W2
+              </div>
+            </div>
+          </div>
+
+          <div className="emailrows2">
+            <p className="p">Generate outside the box thinking with the possibility to target the low.</p>
+
+            <div className="emailtext">
+              <h1 className="enotifheader">Get Email Notification</h1>
+              <input className="emailbuttontext" defaultValue={'Enter Your Email...'} type='text' onChange={change} />
+              <button className="submitbuttontext" onClick={handleEmailClick}>Submit</button>
+            </div>
+
+          </div>
         </div>
       </div>
 
@@ -85,11 +121,13 @@ function Footer() {
               <br />
               <Link to="/about"> About </Link>
               <br />
-              <button className="casesbutton" onClick={handleButtonClick}>Case Studies</button>
+              <Link to="/"> Case Studies </Link>
+              {/* <button className="casesbutton" onClick={handleButtonClick}>Case Studies</button> */}
               <br />
               <Link to="/contactus"> Contact Us </Link>
               <br />
-              <button className="servicesbutton" onClick={handleButtonClick}>Services</button>
+              <Link to="/"> Services </Link>
+              {/* <button className="servicesbutton" onClick={handleButtonClick}>Services</button> */}
             </div>
           </div>
 

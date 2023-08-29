@@ -41,6 +41,8 @@
     grid-template-rows: auto auto auto;
     gap: 1vw;
     place-items: center;
+    width: 100vw;
+    height: auto;
 }
 
 .tooltitle {
@@ -104,12 +106,12 @@
 .component {
     height: auto;
     position: relative;
-    width: 100vw;
+    width: 98vw;
     /* left: 140px; */
     /* transform: translateX(-12%); */
     display: grid;
     grid-template-columns: auto auto;
-    gap: 1vw;
+    gap: 3vw;
     margin-left: 2vw;
     margin-bottom: 5vw;
     /* top: 175px; */
@@ -121,6 +123,7 @@
     gap: 1vw;
     /* width: 30vw; */
     height: 45vw;
+    width: 29vw;
 }
 
 .buttonformat {
@@ -136,7 +139,7 @@
     padding-right: 0.25vw;
     padding-top: 0.1vw;
     padding-bottom: 0.1vw;
-    border-radius: 10px;
+    border-radius: 5px;
     border-color: #0b67b3;
     background-color: transparent;
     cursor: pointer;
@@ -156,6 +159,7 @@
     /* left: 425px; */
     /* top: -10px; */
     justify-self: center;
+    width: 65vw;
 }
 
 .picv1 {
@@ -170,6 +174,66 @@
     width: 45vw;
     height: auto;
     max-width: 90%;
+}
+
+@media (max-width: 576px) {
+    .component {
+        height: auto;
+        position: relative;
+        width: 98vw;
+        /* left: 140px; */
+        /* transform: translateX(-12%); */
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto;
+        gap: 3vw;
+        /* margin-left: 2vw; */
+        margin-bottom: 5vw;
+        /* top: 175px; */
+    }
+
+    .componentbuttons {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto auto auto;
+        row-gap: 1vw;
+        gap: 1vw;
+        /* width: 30vw; */
+        height: 20vw;
+        width: 50vw;
+        justify-self: center;
+    }
+
+    .displayedTools {
+        position: relative;
+        /* left: 425px; */
+        top: 20px;
+        justify-self: center;
+        width: 78vw;
+    }
+
+    .picv1 {
+        position: relative;
+        width: 80vw;
+        height: auto;
+        max-width: 90%;
+        left: 1vw;
+    }
+    
+    .picv2 {
+        position: relative;
+        width: 53vw;
+        height: auto;
+        max-width: 90%;
+        left: 10vw;
+    }
+
+    .buttonformat {
+        font-size: 0.5125rem;
+        line-height: 0.9rem;
+        height: 5vw;
+    }
+    
 }
 
 @media (min-width: 577px) and (max-width: 992px) {

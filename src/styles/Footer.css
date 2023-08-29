@@ -48,6 +48,7 @@
   display: grid;
   grid-template-columns: auto auto;
   padding-bottom: 5vw;
+  gap: 1vw;
 }
 
 .footer a {
@@ -73,6 +74,10 @@
   grid-row: auto auto auto;
   gap: 1vw;
   place-items: center;
+}
+
+.emailcolumns {
+  display: none;
 }
 
 .element {
@@ -167,6 +172,8 @@
 .rightsidetext {
   margin-top: 10vw;
   left: 2vw;
+  width: 60vw;
+  height: auto;
   display: grid;
   grid-template-rows: auto auto auto auto auto auto auto;
   place-items: left;
@@ -186,6 +193,7 @@
   height: auto;
   position: relative;
   width: 2vw;
+  min-width: 20px;
   top: 1vw;
 }
 
@@ -237,47 +245,30 @@
   position: relative;
   /* left: 575px; */
   /* top: -425px; */
-  width: 60vw;
+  width: 57vw;
   overflow-x: hidden;
-  left: -3vw;
+  left: -1vw;
 }
 
 .textheaders {
   display: grid;
-  grid-template-columns: auto auto auto;
-  /* width: 60vw; */
-  width: 60vw;
-  gap: 1vw;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10vw; /* Adjust outer column gap */
+  width: 50vw;
 }
 
-.title {
-  position: relative;
-  display: grid;
-  grid-template-columns: auto auto;
-  /* width: 10vw; */
-}
-
-.div {
-  position: relative;
-  display: grid;
-  grid-template-columns: auto auto;
-  /* width: 22vw; */
-  gap: 0.5vw;
-}
-
+.title,
+.div,
 .title-2 {
-  position: relative;
   display: grid;
   grid-template-columns: auto auto;
-  /* width: 8vw; */
   gap: 0.5vw;
-
 }
 
 .text-wrapper {
   color: #ffffff;
   font-family: "Inter-Medium", Helvetica;
-  font-size: 1.25;
+  font-size: 1.25rem; /* Add "rem" unit */
   font-weight: 500;
   letter-spacing: 0;
   line-height: 1.381rem;
@@ -285,26 +276,15 @@
   white-space: nowrap;
 }
 
-.icon {
-  height: auto;
-  position: relative;
-  width: 2.5vw;
-  top: -0.25vw;
-}
-
-.div .pencimg {
-  height: auto;
-  position: relative;
-  width: 2.5vw;
-  top: -0.5vw;
-}
-
+.icon,
+.pencimg,
 .icon-2 {
   height: auto;
+  width: 2.5vw;
   position: relative;
-  width: 2.3vw;
-  top: -0.15vw;
+  top: -0.25vw; /* Adjust vertically if needed */
 }
+
 
 .footerbuttonstext {
   display: grid;
@@ -354,8 +334,9 @@
   position: relative;
   /* left: 575px; */
   /* top: -425px; */
-  width: 60vw;
+  width: 57vw;
   overflow-x: hidden;
+  left: -1vw;
 }
 
 .pycraysig {
@@ -366,14 +347,13 @@
 
 
 
-.casesbutton {
+/* .casesbutton {
   position: relative;
   color: #ffffff;
   font-family: "Inter-Regular", Helvetica;
   font-size: 1.125rem;
   font-weight: 400;
   letter-spacing: 0;
-  /* line-height: 38.1px; */
   text-align: left;
   width: 130px;
   cursor: pointer;
@@ -389,14 +369,13 @@
   font-size: 1.125rem;
   font-weight: 400;
   letter-spacing: 0;
-  /* line-height: 38.1px; */
   text-align: left;
   width: 130px;
   cursor: pointer;
   background-color: transparent;
   border-radius: 25px;
   border-color: transparent;
-}
+} */
 
 .newproductbutton {
   position: relative;
@@ -445,4 +424,261 @@
   background-color: transparent;
   border-radius: 25px;
   border-color: transparent;
+}
+
+@media (max-width: 576px) {
+  .footer {
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+  }
+
+  .emailinputbox {
+    background-color: #3c3c45;
+    border: 1px none;
+    height: auto;
+    padding-left: 3vw;
+    padding-bottom: 5vw;
+    padding-top: 5vw;
+    position: relative;
+    width: 87vw;
+    border-radius: 7px;
+    /* margin-left: 11.5vw; */
+    margin-right: 11.5vw;
+    margin-top: 10vw;
+    justify-self: center;
+  }
+
+  .emailrows {
+    display: none;
+  }
+
+  .firstline {
+    display: none;
+  }
+
+  .emailcolumns {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 0.1vw;
+  }
+
+  .logo3pic {
+    width: 30vw;
+    height: auto;
+    /* left: 5vw; */
+  }
+
+  .emailrows2 {
+    display: grid;
+    grid-row: auto auto auto;
+    gap: 1vw;
+    place-items: center;
+    /* left: 20vw; */
+  }
+
+  .locationgroup {
+    display: none;
+  }
+
+  .addressgroup {
+    display: none;
+  }
+
+  .locationgroup2 {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 1vw;
+    position: relative;
+    width: 12vw;
+    left: 5vw;
+  }
+
+  .locationgroup2 .locationsymbol {
+    height: auto;
+    position: relative;
+    width: 2vw;
+    min-width: 10px;
+    top: 3vw;
+  }
+  
+  .locationgroup2 .loctitle{
+    color: #ffffff;
+    font-family: "Inter-SemiBold", Helvetica;
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: 1rem;
+    position: relative;
+    white-space: nowrap;
+  }
+
+  .addressgroup2 {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+    gap: 2vw;
+    /* top: -1vw; */
+    position: relative;
+    width: 7vw;
+    left: 5vw;
+    /* place-self: center; */
+  }
+
+  .p {
+    font-size: 0.5625rem;
+    line-height: 1.06rem;
+    width: 40vw;
+  }
+  
+  .emailtext .enotifheader {
+    font-size: 0.625rem;
+    line-height: 1.1rem;
+    width: auto;
+  }
+
+  .emailtext .emailbuttontext {
+    font-size: 0.331rem;
+    line-height: 0.5375rem;
+  }
+  
+  .emailtext .submitbuttontext {
+    font-size: 0.369rem;
+    line-height: 0.594rem;
+  }
+
+  .locationgroup .loctitle{
+    font-size: 0.544rem;
+    line-height: 0.6rem;
+  }
+  
+  .noida-uttar-pradesh {
+    font-size: 0.438rem;
+    line-height: 0.688rem;
+  }
+  
+  .calgary-alberta {
+    font-size: 0.438rem;
+    line-height: 0.688rem;
+  }
+
+  .rightsidetext {
+    margin-top: 10vw;
+    left: 15vw;
+    width: 60vw;
+    height: auto;
+    display: grid;
+    grid-template-rows: auto auto auto auto;
+    place-items: center;
+    gap: 1vw;
+    position: relative;
+  }
+
+  .textheaders {
+    left: -60px;
+    position: relative;
+    gap: 15vw;
+  }
+
+  .text-wrapper {
+    font-size: 0.438rem;
+    line-height: 0.689rem;
+  }
+
+  .home-about-case {
+    font-size: 0.438rem;
+    line-height: 1.188rem;
+  }
+  
+  .new-product-build {
+    font-size: 0.438rem;
+    line-height: 1.188rem;
+    left: 10vw;
+  }
+  
+  .facebook-twitter {
+    font-size: 0.438rem;
+    line-height: 1.188rem;
+    left: -10vw;
+  }
+
+  .newproductbutton {
+    font-size: 0.438rem;
+  }
+  
+  .apbutton {
+    font-size: 0.438rem;
+  }
+  
+  .accelbutton {
+    font-size: 0.438rem;
+  }
+}
+
+@media (min-width: 577px) and (max-width: 992px) {
+  .p {
+    font-size: 0.87rem;
+    line-height: 1.3rem;
+  }
+  
+  .emailtext .enotifheader {
+    font-size: 0.98rem;
+    line-height: 1.57rem;
+  }
+
+  .emailtext .emailbuttontext {
+    font-size: 0.98rem;
+    line-height: 1.57rem;
+  }
+  
+  .emailtext .submitbuttontext {
+    font-size: 1.09rem;
+    line-height: 1.74rem;
+  }
+
+  .locationgroup .loctitle{
+    font-size: 1.36rem;
+    line-height: 1.5rem;
+  }
+  
+  .noida-uttar-pradesh {
+    font-size: 0.98rem;
+    line-height: 1.53rem;
+  }
+  
+  .calgary-alberta {
+    font-size: 0.98rem;
+    line-height: 1.53rem;
+  }
+
+  .text-wrapper {
+    font-size: 0.98rem;
+    line-height: 1.2rem;
+  }
+
+  .home-about-case {
+    font-size: 0.98rem;
+    line-height: 2.07rem;
+  }
+  
+  .new-product-build {
+    font-size: 0.98rem;
+    line-height: 2.07rem;
+  }
+  
+  .facebook-twitter {
+    font-size: 0.98rem;
+    line-height: 2.07rem;
+  }
+
+  .newproductbutton {
+    font-size: 0.98rem;
+  }
+  
+  .apbutton {
+    font-size: 0.98rem;
+  }
+  
+  .accelbutton {
+    font-size: 0.98rem;
+  }
 }

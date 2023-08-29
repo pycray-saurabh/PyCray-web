@@ -1,0 +1,172 @@
+@font-face {
+    font-family: "Poppins-Regular";
+    src: local("Poppins-Regular"),
+        url("../fonts/Poppins/Poppins-Regular.ttf") format("truetype")
+}
+
+@font-face {
+    font-family: "Poppins-Medium";
+    src: local("Poppins-Medium"),
+        url("../fonts/Poppins/Poppins-Medium.ttf") format("truetype")
+}
+
+@font-face {
+    font-family: "Inter-Regular";
+    src: local("Inter-Regular"),
+        url("../fonts/Inter/static/Inter-Regular.ttf") format("truetype")
+}
+
+@font-face {
+    font-family: "Inter-Medium";
+    src: local("Inter-Medium"),
+      url("../fonts/Inter/static/Inter-Medium.ttf") format("truetype")
+  }
+
+.contactuspage {
+    position: relative;
+    display: grid;
+    grid-row: auto auto;
+    /* justify-self: center; */
+}
+
+.getintouch {
+    position: relative;
+    background-color: #cdeff6;
+    /* padding-left: 15vw;
+    padding-right: 15vw; */
+    /* padding-top: 1vw; */
+    width: 100vw;
+    height: 40vw;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: auto;
+    place-items: center;
+}
+
+.gtpic {
+    width: 70vw;
+    top: 1vw;
+    height: auto;
+    /* justify-self: center; */
+    /* place-self: center; */
+    position: relative;
+}
+
+.whiterect {
+    position: relative;
+    background-color: #ffffff;
+    border-radius: 37px 37px 0px 0px;
+    padding-top: 2vw;
+    padding-bottom: 2vw;
+    height: 9vw;
+    width: 40vw;
+    top: -11vw;
+    /* left: 16vw; */
+}
+
+.gettouchtext {
+    text-align: center;
+    color: #292f36;
+    font-family: "Poppins-Medium", Helvetica;
+    font-size: 2.5rem;
+    font-weight: 500;
+    letter-spacing: 0;
+    line-height: 3.75rem;
+}
+
+.homeandcontact {
+    text-align: center;
+    color: #4d4f52;
+    font-family: "Inter-Regular", Helvetica;
+    font-size: 1.375rem;
+    font-weight: 400;
+    height: 2.063rem;
+    letter-spacing: 0.22px;
+    line-height: 2.0625rem;
+}
+
+.contactcolumns {
+    background-color: #f9faff;
+    position: relative;
+    display: grid;
+    grid-template-columns: auto auto;
+    padding-left: 5vw;
+    padding-top: 7vw;
+    padding-right: 2vw;
+    padding-bottom: 7vw;
+    gap: 4vw;
+}
+
+.contacttext {
+    position: relative;
+    width: 45vw;
+}
+
+.title {
+    color: #000000;
+    font-family: "Poppins-Medium", Helvetica;
+    font-size: 2.181rem;
+    font-weight: 500;
+}
+
+.body {
+    color: #4d4f52;
+    font-family: "Poppins-Regular", Helvetica;
+    font-size: 1.063rem;
+    font-weight: 400;
+    letter-spacing: 0.17px;
+    line-height: 1.59rem;
+}
+
+.contactform {
+    display: grid;
+    grid-template-rows: auto auto auto;
+    gap: 2vw;
+}
+
+.forminput {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    row-gap: 1vw;
+    column-gap: 2vw;
+}
+
+.labels {
+    /* color: transparent; */
+    color: #000000;
+    font-family: "Inter-Medium", Helvetica;
+    font-size: 0.875rem;
+    font-weight: 500;
+    letter-spacing: 0;
+    line-height: 1.25rem;
+    position: relative;
+    white-space: nowrap;
+}
+
+.labels .span {
+    color: #ff0000;
+}
+
+.inputlabel {
+    border-style: solid;
+    border-color: lightgray;
+    border-radius: 2px;
+    border-width: 1px;
+}
+
+.sec {
+    display: grid;
+    grid-template-rows: auto auto;
+}
+
+.descriptioninput {
+    display: grid;
+    grid-template-rows: auto auto auto;
+}
+
+.bropic {
+    position: relative;
+    width: 45vw;
+    height: auto;
+}
