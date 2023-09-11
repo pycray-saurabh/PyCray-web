@@ -56,12 +56,12 @@
   position: relative;
   width: 100vw;
   height: auto;
-  top: -55px;
+  top: -140px;
 }
 
 .ellipsecolumns {
   position: absolute;
-  top: 12vw;
+  top: 0vw;
   display: grid;
   grid-template-columns: auto auto;
   gap: 13vw;
@@ -70,6 +70,11 @@
   height: auto;
   width: 90vw;
   align-items: center;
+}
+
+.textBody {
+  position: relative;
+  top: 65px;
 }
 
 /* 
@@ -96,11 +101,11 @@
 .peopleTalking {
   position: relative;
   height: auto;
-  width: 50vw;
-  top: 0px;
+  width: 45vw;
+  top: 97px;
   /* max-width: 1000px; */
   justify-self: right;
-  margin-right: 15%;
+  margin-right: -10%;
   z-index: 3;
 }
 
@@ -140,10 +145,10 @@
   position: relative;
   justify-self: center;
   height: auto;
-  width: 40vw;
+  width: 36vw;
   z-index: 2;
   left: 10vw;
-  top: -5vw;
+  top: 0vw;
 }
 
 .ellipsebutton {
@@ -167,6 +172,7 @@
   min-width: 80px;
   min-height: 30px;
   position: relative;
+  margin-top: 12px;
 }
 
 /* .button-wrap1 {
@@ -255,7 +261,7 @@
   width: 100vw;
   position: relative;
   overflow: hidden;
-  gap: 3vw;
+  gap: 5vw;
   /* margin-top: 3vw; */
 }
 
@@ -267,15 +273,15 @@
   place-items: top center;
   height: auto;
   width: 100vw;
-  gap: 10vw;
+  gap: 17vw;
 }
 
 .vasesPic {
   position: relative;
-  width: 40vw;
+  width: 42vw;
   height: auto;
-  left: 2vw;
-  margin-top: 9vw;
+  left: 5vw;
+  margin-top: 1vw;
 }
 
 .genesistextarea {
@@ -283,7 +289,7 @@
   display: grid;
   grid-template-rows: auto auto;
   height: auto;
-  gap: 3vw;
+  gap: 1vw;
   right: 5vw;
   /* top: -40px; */
   /* width: 50vw; */
@@ -291,8 +297,15 @@
 
 .picsandtext {
   display: grid;
-  grid-template-columns: auto auto;
-  gap: 5vw;
+  /* grid-template-columns: auto auto; */
+  gap: 2vw;
+  grid: none;
+}
+
+.picWithText {
+  display: flex;
+  align-items: start;
+  gap: 30px;
 }
 
 .twopics {
@@ -306,6 +319,13 @@
   grid-template-rows: auto auto;
   gap: 2vw;
 }
+
+.ptb {
+  top: 15px;
+  position: relative;
+}
+
+
 
 /* .nexttext .ptb1 {
   display: grid;
@@ -324,7 +344,7 @@
   height: auto;
   object-fit: cover;
   position: relative;
-  width: 5.5vw;
+  width: 11.5vw;
   min-width: 45px;
 }
 
@@ -332,7 +352,7 @@
   height: auto;
   object-fit: cover;
   position: relative;
-  width: 5.5vw;
+  width: 14.5vw;
   min-width: 45px;
 }
 
@@ -343,7 +363,7 @@
   font-weight: 600;
   height: auto;
   letter-spacing: 0;
-  line-height: 5.5vw;
+  line-height: 2.5vw;
   position: relative;
   white-space: nowrap;
   /* width: 356px; */
@@ -355,10 +375,10 @@
   font-size: 1.3rem;
   font-weight: 400;
   height: auto;
-  letter-spacing: 0;
-  line-height: 2.9vw;
+  letter-spacing: 1px;
+  line-height: 2.4vw;
   position: relative;
-  width: 45vw;
+  width: 42vw;
 }
 
 .we-adapt-to-you {
@@ -375,12 +395,14 @@
 .we-analyze-your {
   color: #858a8f;
   font-family: "Poppins-Regular", Helvetica;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   font-weight: 400;
   letter-spacing: 0;
-  line-height: 2.75vw;
+  line-height: 2.4vw;
   position: relative;
-  width: 35vw;
+  /* width: 35vw; */
+  width: 84%;
+  margin-top: 0.5em;
 }
 
 .your-music-your1 {
@@ -393,19 +415,6 @@
   position: relative;
   white-space: nowrap;
 }
-
-.you-can-import-your {
-  color: #858a8f;
-  font-family: "Poppins-Regular", Helvetica;
-  font-size: 1.1rem;
-  font-weight: 400;
-  letter-spacing: 0;
-  line-height: 2.75vw;
-  position: relative;
-  width: 35vw;
-}
-
-
 
 /* Media query for larger screens */
 /* @media (min-width: 993px) {
@@ -427,7 +436,7 @@
   height: auto;
   justify-self: center;
   /* overflow-x: hidden; */
-  width: 80vw;
+  width: 65vw;
   margin-bottom: 1vw;
   /* background-image: url(../assets/rectanglebg.svg);
   background-repeat: no-repeat; */
@@ -465,7 +474,8 @@
 .label2 {
   border: 0px none;
   height: auto;
-  width: 49vw;
+  width: 36vw;
+  margin-left: 30px;
   /* top: 462px; */
   /* justify-self: left;   */
   position: relative;
@@ -509,7 +519,7 @@
   border-radius: 7px;
   height: 7vw;
   max-height: 50px;
-  width: 35vw;
+  width: 18vw;
   max-width: 290px;
   min-width: 150px;
   position: relative;
@@ -517,7 +527,7 @@
   border-color: transparent;
   font-family: "Poppins-Medium", Helvetica;
   /* width: 176px; */
-  font-size: 1.3rem;
+  font-size: 1rem;
   font-weight: 150;
   letter-spacing: 0;
   line-height: 1.375rem;
