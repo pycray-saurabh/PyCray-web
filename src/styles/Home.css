@@ -591,11 +591,15 @@
   position: relative;
   /* top: -465px; */
   width: 60vw;
-  margin-left: 20vw;
-  margin-right: 20vw;
+  /* margin-left: 20vw;
+  margin-right: 20vw; */
   justify-self: center;
   place-items: center;
+}
 
+.deliveryProcess .deliveryPic {
+  display: flex;
+  justify-content: center;
 }
 
 .deliveryProcess .contact-us-if-you {
@@ -636,11 +640,11 @@
 .deliveryProcessPic {
   /* left: 300px; */
   /* top: -375px; */
-  position: relative;
-  justify-self: center;
-  margin-left: 15vw;
-  margin-right: 15vw;
-  width: 70vw;
+  /* position: relative; */
+  /* justify-self: center; */
+  /* margin-left: 15vw;
+  margin-right: 15vw; */
+  width: 55%;
 }
 
 .deliveryProcess .delivUnderline {
@@ -651,23 +655,29 @@
 }
 
 .industries {
-  margin-top: 5vw;
+  margin-top: 3vw;
   position: relative;
   display: grid;
   height: auto;
   width: 100vw;
   justify-content: center;
-  grid-template-rows: auto auto 5vw;
+  grid-template-rows: auto auto;
   overflow: hidden;
+}
+
+.pageSplit {
+  display: flex;
+  justify-content: center;
 }
 
 .pageSplitLine {
   position: relative;
   width: 85vw;
   height: auto;
-  margin-left: 7.5vw;
-  margin-right: 7.5vw;
-  top: -15px;
+  margin-top: 50px;
+  /* margin-left: 7.5vw;
+  margin-right: 7.5vw; */
+  /* top: -15px; */
   /* left: 77px; */
 }
 
@@ -706,7 +716,7 @@
   position: absolute;
   text-align: center;
   top: 83px;
-  width: 90vw;
+  width: 90%;
 }
 
 .industrytbox .leave-a-message {
@@ -731,20 +741,24 @@
 }
 
 .industrycontainer {
-  margin-top: 5vw;
-  position: relative;
+  margin: 3vw 0 1vw 0;
+  /* position: relative; */
   height: 30vw;
   width: 75vw;
-  background-image: url(../assets/industryPic.png);
-  background-size: contain;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-image: url(../assets/industryPic.png); */
+  /* background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
-  justify-self: center;
+  justify-self: center; */
 }
 
 .industryPic {
-  position: relative;
-  justify-self: center;
+  width: 110%;
+  /* position: relative;
+  justify-self: center; */
   /* left: 150px;
   top: 2400px; */
 }

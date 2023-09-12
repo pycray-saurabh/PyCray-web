@@ -6,7 +6,7 @@ import '../styles/Home.css'
 import pic2 from '../assets/productRe.svg'
 import pic1 from '../assets/projectIdea.svg'
 import deliv from '../assets/deliveryProcess.png'
-// import indPic from '../assets/industryPic.png'
+import indPic from '../assets/industryPic.png'
 import clp1 from '../assets/image-57.png'
 import clp2 from '../assets/image-56.png'
 import clp3 from '../assets/image-59.png'
@@ -356,10 +356,12 @@ function Home() {
           <img className="deliveryProcessPic" alt="dpic" src={deliv} />
         </div>
       </div>
-
-      <svg className="pageSplitLine" viewBox="0 0 1262 1" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <line y1="0.5" x2="1262" y2="0.5" stroke="#5C5C5C" stroke-opacity="0.81" />
-      </svg>
+      
+      <div className='pageSplit'>
+        <svg className="pageSplitLine" viewBox="0 0 1262 1" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <line y1="0.5" x2="1262" y2="0.5" stroke="#5C5C5C" stroke-opacity="0.81" />
+        </svg>
+      </div>
 
       <div className="industries">
 
@@ -378,7 +380,9 @@ function Home() {
           </div>
         </div>
 
-        <div className='industrycontainer'></div>
+        <div className='industrycontainer'>
+          <img className="industryPic" alt="ipic" src={indPic} />
+        </div>
 
         {/* <img className="industryPic" alt="ipic" src={indPic} /> */}
       </div>
