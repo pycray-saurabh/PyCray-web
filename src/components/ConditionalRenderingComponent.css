@@ -39,9 +39,9 @@
 .toolstext {
     display: grid;
     grid-template-rows: auto auto auto;
-    gap: 1vw;
+    /* gap: 1vw; */
     place-items: center;
-    width: 100vw;
+    width: 100%;
     height: auto;
 }
 
@@ -53,15 +53,17 @@
     /* left: 200px; */
     letter-spacing: -0.8px;
     line-height: 2.5rem;
-    place-self: center;
-    justify-self: center;
+    /* place-self: center;
+    justify-self: center; */
     text-align: center;
     /* top: 100px; */
-    margin-top: 10vw;
-    width: 65vw;
-    margin-left: 17.5vw;
-    margin-right: 17.5vw;
-    position: relative;
+    margin-top: 6vw;
+    width: 50%;
+    /* margin-left: 17.5vw;
+    margin-right: 17.5vw; */
+    /* position: relative; */
+    display: flex;
+    justify-content: center;
 }
 
 .tooltextwrapper {
@@ -75,17 +77,19 @@
 }
 
 .toolUnderline {
-    position: relative;
+    /* position: relative; */
     /* left: 50%; */
     /* top: 3vw; */
-    justify-self: center;
+    /* justify-self: center; */
+    display: flex;
+    justify-content: center;
 }
 
 .toolp {
     border: 0px none;
     height: auto;
-    width: 65vw;
-    position: relative;
+    width: 50%;
+    /* position: relative; */
 }
 
 .toolp .toolps {
@@ -96,34 +100,38 @@
     /* left: 240px; */
     letter-spacing: -0.1px;
     line-height: 1.563rem;
-    justify-self: center;
+    /* justify-self: center; */
     text-align: center;
     /* top: 2vw; */
-    width: 65vw;
-    position: relative;
+    width: 100%;
+    /* position: relative; */
+    display: flex;
+    justify-content: center;
 }
 
 .component {
     height: auto;
-    position: relative;
-    width: 98vw;
+    /* position: relative; */
+    width: 100%;
     /* left: 140px; */
     /* transform: translateX(-12%); */
     display: grid;
     grid-template-columns: auto auto;
-    gap: 3vw;
-    margin-left: 2vw;
+    /* gap: 3vw; */
+    /* margin-left: 2vw; */
     margin-bottom: 5vw;
     /* top: 175px; */
+    justify-content: center;
+    justify-items: center;
 }
 
 .componentbuttons {
     display: grid;
     grid-template-rows: auto auto auto auto auto auto auto;
-    gap: 1vw;
+    gap: 2vw;
     /* width: 30vw; */
-    height: 45vw;
-    width: 29vw;
+    /* height: 45vw; */
+    width: 107%;
 }
 
 .buttonformat {
@@ -155,11 +163,14 @@
 }
 
 .displayedTools {
-    position: relative;
+    /* position: relative; */
     /* left: 425px; */
     /* top: -10px; */
-    justify-self: center;
-    width: 65vw;
+    /* justify-self: center; */
+    width: 65%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .picv1 {

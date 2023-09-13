@@ -19,8 +19,7 @@ const ConditionalRenderingComponent = () => {
 
             <div className='toolstext'>
                 <h1 className="tooltitle">
-                    <span className="tooltextwrapper">Tools &amp; Technology we use in </span>
-                    <span className="span">PyCray</span>
+                    <span className="tooltextwrapper">Tools &amp; Technology we use in <span className="span">PyCray</span></span>
                 </h1>
 
                 <svg className="toolUnderline" width="73" height="7" viewBox="0 0 73 7" fill="none" xmlns="http://www.w3.org/2000/svg">

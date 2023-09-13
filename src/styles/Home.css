@@ -1186,20 +1186,21 @@
 .helpdiv {
   position: relative;
   height: auto;
-  width: 100vw;
+  width: 100%;
   display: grid;
   grid-template-rows: auto auto auto auto;
-  gap: 1vw;
+  /* gap: 1vw; */
   place-items: center;
   /* top: -575px; */
-  background-color: rgb(244, 244, 244);
+  background-color: #FAFBFF;
 }
 
-/* .helptitle {
-  border: 0px none;
+.helptitle {
+  /* border: 0px none;
   height: 73px;
-  width: 369px;
-} */
+  width: 369px; */
+  margin-top: 7%;
+}
 
 .helptitle .we-re-here-to-help {
   color: #333333;
@@ -1231,12 +1232,14 @@
   width: 73px;
 }
 
-/* 
+
 .helptext {
-  border: 0px none;
+  /* border: 0px none;
   height: 70px;
-  width: 805px;
-} */
+  width: 805px; */
+  display: flex;
+  justify-content: center;
+}
 
 .helptext .contact-us-if-you {
   color: #858a8f;
@@ -1246,26 +1249,35 @@
   /* left: 250px; */
   letter-spacing: 0;
   line-height: 2.18rem;
-  position: relative;
+  /* position: relative; */
   text-align: center;
   /* top: 70px; */
-  width: 65vw;
+  width: 65%;
 }
 
 .helpbuttons {
   display: grid;
   grid-template-columns: auto auto auto;
-  gap: 0.5vw;
+  /* gap: 0.5vw; */
   place-items: center;
-  justify-content: center;
-  margin-left: 1vw;
+  /* justify-content: center; */
+  /* margin-left: 1vw; */
+  margin-bottom: 7%;
+}
+
+.emailsection {
+  margin-left: 25%;
+}
+
+.booksection {
+  margin-right: 25%;
 }
 
 .emailsection,
 .dropinsection,
 .booksection {
   position: relative;
-  width: 30vw;
+  width: 80%;
   height: auto;
 }
 
