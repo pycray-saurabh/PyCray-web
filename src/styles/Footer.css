@@ -48,7 +48,7 @@
   display: grid;
   grid-template-columns: auto auto;
   padding-bottom: 5vw;
-  gap: 1vw;
+  gap: 4vw;
 }
 
 .footer a {
@@ -60,10 +60,10 @@
   background-color: #3c3c45;
   border: 1px none;
   height: auto;
-  padding-bottom: 5vw;
+  padding-bottom: 7vw;
   padding-top: 2vw;
   position: relative;
-  width: 30vw;
+  width: 73%;
   border-radius: 5px;
   margin-left: 5vw;
   margin-top: 10vw;
@@ -72,7 +72,7 @@
 .emailrows {
   display: grid;
   grid-row: auto auto auto;
-  gap: 1vw;
+  /* gap: 1vw; */
   place-items: center;
 }
 
@@ -95,8 +95,8 @@
   line-height: 1.5rem;
   position: relative;
   text-align: center;
-  width: 80%;
-  top: -0.5vw;
+  width: 73%;
+  /* top: -0.5vw; */
 }
 
 .emailtext {
@@ -111,10 +111,10 @@
 .emailtext .enotifheader {
   color: #ffffff;
   font-family: "Poppins-Medium", Helvetica;
-  font-size: 1.125rem;
-  font-weight: 500;
+  font-size: 25px;
+  font-weight: 600;
   letter-spacing: 0;
-  line-height: 1.8rem;
+  line-height: 110.5%;
   position: relative;
   white-space: nowrap;
   background-color: transparent;
@@ -129,19 +129,20 @@
   border-radius: 5px;
   color: #ffffff;
   font-family: "Poppins-Medium", Helvetica;
-  font-size: 1.125rem;
+  font-size: 18px;
   font-weight: 500;
   letter-spacing: 0;
-  line-height: 1.8rem;
+  line-height: 160%;
   position: relative;
-  width: 22.3vw;
-  height: 4vw;
+  width: 81%;
+  height: 168%;
   white-space: nowrap;
   background-color: transparent;
   border-color: transparent;
   justify-self: center;
   place-self: center;
   text-align: center;
+  text-transform: capitalize;
   /* margin-left: 5%;
   margin-right: 5%; */
 }
@@ -153,30 +154,31 @@
   border-radius: 5px;
   color: #ffffff;
   font-family: "Poppins-SemiBold", Helvetica;
-  font-size: 1.25rem;
+  font-size: 20px;
   font-weight: 600;
   letter-spacing: 0;
-  line-height: 2rem;
+  line-height: 160%;
   position: relative;
-  width: 23vw;
-  height: 4.5vw;
+  width: 81%;
+  height: 168%;
   white-space: nowrap;
   background-color: transparent;
   border-color: transparent;
   cursor: pointer;
-  top: 1vw;
+  top: 2vw;
+  text-transform: capitalize;
   /* margin-left: 5%;
   margin-right: 5%; */
 }
 
 .rightsidetext {
   margin-top: 10vw;
-  left: 2vw;
-  width: 60vw;
+  /* left: 2vw; */
+  width: 81%;
   height: auto;
   display: grid;
   grid-template-rows: auto auto auto auto auto auto auto;
-  place-items: left;
+  /* place-items: left; */
   gap: 1vw;
   position: relative;
 }
@@ -184,15 +186,15 @@
 .locationgroup {
   display: grid;
   grid-template-columns: auto auto;
-  gap: 0.1vw;
+  /* gap: 0.1vw; */
   position: relative;
-  width: 12vw;
+  width: 11vw;
 }
 
 .locationgroup .locationsymbol {
   height: auto;
   position: relative;
-  width: 2vw;
+  width: 0.5vw;
   min-width: 20px;
   top: 1vw;
 }
@@ -211,10 +213,10 @@
 .addressgroup {
   display: grid;
   grid-template-columns: auto auto;
-  gap: 0.5vw;
+  /* gap: 0.5vw; */
   top: -1vw;
   position: relative;
-  width: 50vw;
+  width: 94%;
 }
 
 .noida-uttar-pradesh {
@@ -227,7 +229,7 @@
   line-height: 1.763rem;
   position: relative;
   /* top: 47px; */
-  width: 19vw;
+  width: 65%;
 }
 
 .calgary-alberta {
@@ -238,23 +240,24 @@
   letter-spacing: 0;
   line-height: 1.763rem;
   position: relative;
-  width: 19vw;
+  width: 71%;
 }
 
 .firstline {
   position: relative;
   /* left: 575px; */
   /* top: -425px; */
-  width: 57vw;
+  /* width: 57vw; */
   overflow-x: hidden;
-  left: -1vw;
+  /* left: -1vw; */
 }
 
 .textheaders {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 10vw; /* Adjust outer column gap */
-  width: 50vw;
+  gap: 8vw; /* Adjust outer column gap */
+  width: 94%;
+  margin-top: 20px;
 }
 
 .title,
@@ -263,6 +266,7 @@
   display: grid;
   grid-template-columns: auto auto;
   gap: 0.5vw;
+  margin-bottom: 2vw;
 }
 
 .text-wrapper {
@@ -280,7 +284,7 @@
 .pencimg,
 .icon-2 {
   height: auto;
-  width: 2.5vw;
+  width: 2vw;
   position: relative;
   top: -0.25vw; /* Adjust vertically if needed */
 }
@@ -289,6 +293,7 @@
 .footerbuttonstext {
   display: grid;
   grid-template-columns: auto auto auto;
+  width: 81%;
 }
 
 /* .number {
@@ -316,7 +321,7 @@
   letter-spacing: 0;
   line-height: 2.381rem;
   position: relative;
-  width: fit-content;
+  width: 80%;
 }
 
 .facebook-twitter {
@@ -334,9 +339,9 @@
   position: relative;
   /* left: 575px; */
   /* top: -425px; */
-  width: 57vw;
+  /* width: 57vw; */
   overflow-x: hidden;
-  left: -1vw;
+  /* left: -1vw; */
 }
 
 .pycraysig {

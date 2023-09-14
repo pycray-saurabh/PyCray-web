@@ -100,51 +100,60 @@ function Footer() {
         </svg>
 
         <div className="textheaders">
-          <div className="title">
-            <img className="icon" alt="Icon" src={foldersicon} />
-            <div className="text-wrapper">Pages</div>
+          <div>
+            <div className="title">
+              <img className="icon" alt="Icon" src={foldersicon} />
+              <div className="text-wrapper">Pages</div>
+            </div>
+            <div className="number">
+              <div className="home-about-case">
+                <Link to="/"> Home </Link>
+                <br />
+                <Link to="/about"> About </Link>
+                <br />
+                <Link to="/"> Case Studies </Link>
+                {/* <button className="casesbutton" onClick={handleButtonClick}>Case Studies</button> */}
+                <br />
+                <Link to="/contactus"> Contact Us </Link>
+                <br />
+                <Link to="/"> Services </Link>
+                {/* <button className="servicesbutton" onClick={handleButtonClick}>Services</button> */}
+              </div>
+            </div>
           </div>
-          <div className="div">
-            <img className="pencimg" alt="Ico" src={pencilicon} />
-            <div className="text-wrapper">Product Genesis</div>
+          <div>
+            <div className="div">
+              <img className="pencimg" alt="Ico" src={pencilicon} />
+              <div className="text-wrapper">Product Genesis</div>
+            </div>
+            <div className="new-product-build">
+              <button className="newproductbutton" onClick={handleButtonClick}>New Product Build</button>
+              <br />
+              <button className="apbutton" onClick={handleButtonClick}>Application Modernization</button>
+              <br />
+              <button className="accelbutton" onClick={handleButtonClick}>Accelerators</button>
+            </div>
           </div>
-          <div className="title-2">
-            <img className="icon-2" alt="Ic" src={megaphoneicon} />
-            <div className="text-wrapper">Follows</div>
+          <div>
+            <div className="title-2">
+              <img className="icon-2" alt="Ic" src={megaphoneicon} />
+              <div className="text-wrapper">Follows</div>
+            </div>
+            <div className="facebook-twitter">
+              Facebook <br />
+              Twitter <br />
+              Instagram <br />
+              LinkedIn
+            </div>
           </div>
         </div>
 
         <div className="footerbuttonstext">
-          <div className="number">
-            <div className="home-about-case">
-              <Link to="/"> Home </Link>
-              <br />
-              <Link to="/about"> About </Link>
-              <br />
-              <Link to="/"> Case Studies </Link>
-              {/* <button className="casesbutton" onClick={handleButtonClick}>Case Studies</button> */}
-              <br />
-              <Link to="/contactus"> Contact Us </Link>
-              <br />
-              <Link to="/"> Services </Link>
-              {/* <button className="servicesbutton" onClick={handleButtonClick}>Services</button> */}
-            </div>
-          </div>
+          
 
-          <div className="new-product-build">
-            <button className="newproductbutton" onClick={handleButtonClick}>New Product Build</button>
-            <br />
-            <button className="apbutton" onClick={handleButtonClick}>Application Modernization</button>
-            <br />
-            <button className="accelbutton" onClick={handleButtonClick}>Accelerators</button>
-          </div>
+          
 
-          <div className="facebook-twitter">
-            Facebook <br />
-            Twitter <br />
-            Instagram <br />
-            LinkedIn
-          </div>
+          
         </div>
 
         <svg className='secondline' width="703" height="2" viewBox="0 0 703 2" fill="none" xmlns="http://www.w3.org/2000/svg">
