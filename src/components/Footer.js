@@ -35,7 +35,7 @@ function Footer() {
 
           <div className="emailtext">
             <h1 className="enotifheader">Get Email Notification</h1>
-            <input className="emailbuttontext" defaultValue={'Enter Your Email...'} type='text' onChange={change} />
+            <input className="emailbuttontext" placeholder={' Enter Your Email...'} type='text' onChange={change} />
             <button className="submitbuttontext" onClick={handleEmailClick}>Submit</button>
           </div>
 

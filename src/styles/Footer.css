@@ -111,7 +111,7 @@
 .emailtext .enotifheader {
   color: #ffffff;
   font-family: "Poppins-Medium", Helvetica;
-  font-size: 25px;
+  font-size: 1.3rem;
   font-weight: 600;
   letter-spacing: 0;
   line-height: 110.5%;
@@ -129,22 +129,22 @@
   border-radius: 5px;
   color: #ffffff;
   font-family: "Poppins-Medium", Helvetica;
-  font-size: 18px;
+  font-size: 1.13rem;
   font-weight: 500;
   letter-spacing: 0;
   line-height: 160%;
-  position: relative;
+  /* position: relative; */
   width: 81%;
-  height: 168%;
   white-space: nowrap;
   background-color: transparent;
   border-color: transparent;
-  justify-self: center;
-  place-self: center;
-  text-align: center;
+  /* justify-self: center;
+  place-self: center; */
+  /* text-align: center; */
   text-transform: capitalize;
   /* margin-left: 5%;
   margin-right: 5%; */
+  padding: 1vw 0vw;
 }
 
 .emailtext .submitbuttontext {
@@ -154,13 +154,12 @@
   border-radius: 5px;
   color: #ffffff;
   font-family: "Poppins-SemiBold", Helvetica;
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: 600;
   letter-spacing: 0;
   line-height: 160%;
   position: relative;
   width: 81%;
-  height: 168%;
   white-space: nowrap;
   background-color: transparent;
   border-color: transparent;
@@ -169,6 +168,7 @@
   text-transform: capitalize;
   /* margin-left: 5%;
   margin-right: 5%; */
+  padding: 1vw 0vw;
 }
 
 .rightsidetext {

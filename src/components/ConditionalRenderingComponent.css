@@ -112,16 +112,16 @@
 .component {
     height: auto;
     /* position: relative; */
-    width: 100%;
+    width: 80%;
     /* left: 140px; */
     /* transform: translateX(-12%); */
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: 1fr 1fr;
     /* gap: 3vw; */
     /* margin-left: 2vw; */
     margin-bottom: 5vw;
     /* top: 175px; */
-    justify-content: center;
+    /* justify-content: center; */
     justify-items: center;
 }
 
@@ -131,7 +131,7 @@
     gap: 2vw;
     /* width: 30vw; */
     /* height: 45vw; */
-    width: 107%;
+    /* width: 107%; */
 }
 
 .buttonformat {
@@ -143,10 +143,11 @@
     line-height: 2.188rem;
     position: relative;
     white-space: nowrap;
-    padding-left: 0.25vw;
+    padding: 0.1vw 1.25vw;
+    /* padding-left: 1.25vw;
     padding-right: 0.25vw;
     padding-top: 0.1vw;
-    padding-bottom: 0.1vw;
+    padding-bottom: 0.1vw; */
     border-radius: 5px;
     border-color: #0b67b3;
     background-color: transparent;
@@ -167,15 +168,16 @@
     /* left: 425px; */
     /* top: -10px; */
     /* justify-self: center; */
-    width: 65%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    /* width: 65%; */
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    justify-self: center;
 }
 
 .picv1 {
     position: relative;
-    width: 60vw;
+    width: 38vw;
     height: auto;
     max-width: 90%;
 }
