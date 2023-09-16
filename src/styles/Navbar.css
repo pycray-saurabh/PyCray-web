@@ -86,7 +86,7 @@
     }
 
     .navbar .leftSide {
-        padding-left: 50px;
+        padding-left: 0px;
     }
 }
 
@@ -102,6 +102,14 @@
 
     .navbar .rightSide button {
         display: inherit;
+    }
+
+    .navbar .leftSide {
+        padding-left: 0px;
+    }
+
+    .navbar .leftSide img {
+        width: 140px;
     }
 }
 

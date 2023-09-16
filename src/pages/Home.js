@@ -236,6 +236,9 @@ function Home() {
           <div className='genesistextarea'>
             <div className='initialtext'>
               <h1 className="be-in-the-trend-of">Product Genesis</h1>
+              <svg className="productGenesisUnderline" width="73" height="7" viewBox="0 0 73 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="73" height="7" rx="2" fill="#0C67B4" />
+              </svg>
               <p className="every-week-we-create">
                 This is where the your product vision transforms into a marvel with our way of Doing More With Less! We
                 harness the power of design, user experience (UX), and engineering to craft exceptional digital products.
@@ -256,7 +259,7 @@ function Home() {
               </div>
 
               <div className="picWithText">
-              <img className="img" alt="Image2" src={pic2} />
+              <img className="image" alt="Image2" src={pic2} />
               <div className='ptb'>
                   <div className="we-adapt-to-you">Product Re-engineering</div>
                   <p className="we-analyze-your">
@@ -312,8 +315,7 @@ function Home() {
           <div className='textthenbutton'>
             <div className="label2">
               <p className="your-music-your2">
-                Unlock Your Digital Potential: Schedule a Free Consultation <br />
-                Today!
+                Unlock Your Digital Potential: <br className='linebreak'></br>Schedule a Free Consultation Today!
               </p>
             </div>
             <div className="consultationButton">
