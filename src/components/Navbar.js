@@ -30,7 +30,7 @@ function Navbar() {
             <div className="rightSide">
                 <Link to="/"> Home </Link>
                 <Link to="/productgenesis"> Product Genesis </Link>
-                <Link to="/team"> Team </Link>
+                <Link to="/Teams"> Team </Link>
                 <Link to="/about"> About </Link>
                 <Link to="/contactus"> Contact Us </Link>
                 <button onClick={toggleNavbar}>
