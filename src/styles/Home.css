@@ -510,9 +510,11 @@
 }
 
 .deliveryProcess .tboxes {
+  display: flex;
+  flex-flow: column;
   height: auto;
   position: relative;
-  width: 60vw;
+  width: 100vw;
   justify-self: center;
   place-items: center;
 }
@@ -527,9 +529,7 @@
   font-family: "Inter-Regular", Helvetica;
   font-size: 1.25rem;
   font-weight: 400;
-  width: 80vw;
   height: auto;
-  left: -17%;
   letter-spacing: 0;
   line-height: 2.19rem;
   position: relative;
@@ -559,7 +559,7 @@
 .deliveryProcess .delivUnderline {
   position: relative;
   justify-self: center;
-  top: -70px;
+  /* top: -70px; */
 }
 
 .industries {
@@ -640,13 +640,17 @@
   margin: 3vw 0 1vw 0;
   height: 30vw;
   width: 75vw;
-  display: flex;
-  justify-content: center;
+  display: grid;
+  justify-self: center;
   align-items: center;
 }
 
 .industryPic {
-  width: 110%;
+  width: 100%;
+}
+
+.industryMobileView {
+  display: none;
 }
 
 .clientsh {
@@ -833,6 +837,7 @@
   display: grid;
   grid-template-columns: auto 90%;
   gap: 4vw;
+  justify-self: center;
 }
 
 .laptopbackground {
@@ -862,6 +867,8 @@
   letter-spacing: -0.27px;
   line-height: 1.875rem;
   position: relative;
+  justify-content: center;
+  display: flex;
 }
 
 .text-wrapper10 {
@@ -877,7 +884,7 @@
 
 .tw1 {
   color: #292930;
-  font-family: "Poppins-Medium", Helvetica;
+  font-family: "Poppins-Inter", Helvetica;
   font-size: 1rem;
   font-weight: 500;
   letter-spacing: 0;
@@ -900,7 +907,7 @@
   line-height: 1.47rem;
   position: relative;
   white-space: nowrap;
-  width: 10vw;
+  /* width: 10vw; */
 }
 
 .learnmorebuttondiv {
@@ -1117,7 +1124,7 @@
 
 
 /* Media query for smaller screens */
-@media (max-width: 576px) {
+@media (max-width: 600px) {
 
   .your-music-your1 {
     color: #333333;
@@ -1187,27 +1194,28 @@
     position: relative;
     justify-self: center;
     /* left: 599px; */
-    top: -45px;
+    /* top: -45px; */
   }
-
+  
   .industrytbox .contact-us-if-you {
     color: #858a8f;
     font-family: "Poppins-Regular", Helvetica;
-    font-size: 0.625rem;
+    font-size: 0.9rem;
     font-weight: 400;
     /* left: 0; */
     letter-spacing: 0;
     line-height: 1.27rem;
     position: absolute;
     text-align: center;
-    top: 60px;
+    /* top: 60px; */
     width: 90vw;
+    margin: 5vw;
   }
 
   .industrytbox .leave-a-message {
     color: #333333;
     font-family: "Poppins-SemiBold", Helvetica;
-    font-size: 1.589rem;
+    font-size: 2.59rem;
     font-weight: 600;
     /* justify-self: center; */
     letter-spacing: 0;
@@ -1221,16 +1229,16 @@
 
   .indusUnderline {
     position: absolute;
-    left: 300px;
-    top: 55px;
+    /* left: 300px;
+    top: 55px; */
   }
 
   .industrycontainer {
-    margin-top: -5vw;
+    /* margin-top: -5vw; */
     position: relative;
-    height: 70vw;
+    height: 140vw;
     width: 75vw;
-    background-image: url(../assets/indussmall.svg);
+    /* background-image: url(../assets/indussmall.svg); */
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -1254,6 +1262,10 @@
     top: -15px;
   }
 
+  .headline-supporting {
+    margin-top: 12vw;
+  }
+
   .headline-supporting .headline {
     color: #272d37;
     font-family: "Poppins-SemiBold", Helvetica;
@@ -1271,14 +1283,14 @@
   .headline-supporting .subtitle {
     color: #5f6d7e;
     font-family: "Poppins-Regular", Helvetica;
-    font-size: 0.58rem;
+    font-size: 0.7rem;
     font-weight: 400;
-    letter-spacing: -0.1px;
+    letter-spacing: 0.1px;
     line-height: 1.27rem;
     justify-self: center;
     position: relative;
     text-align: center;
-    width: 85vw;
+    width: 95vw;
   }
 
   .ptbox .gestalt-psychology {
@@ -1334,7 +1346,38 @@
     width: fit-content;
   }
 
+  .deliveryProcess {
+    margin-top: 14vw;
+  }
 
+  .deliveryProcess .leave-a-message {
+    font-size: 2.59rem;
+  }
+
+  .deliveryProcess .contact-us-if-you {
+    font-size: 0.9rem;
+    text-align: center;
+  }
+
+  .deliveryProcessPic {
+    width: 95%;
+  }
+
+  .industryPic {
+    display: none;
+  }
+
+  .industryMobileView {
+    display: block;
+    width: 95%;
+  }
+
+}
+
+@media (max-width: 450px) {
+  .deliveryProcess .contact-us-if-you {
+    font-size: 0.7rem;
+  }
 }
 
 /* Media query for medium-sized screens */
@@ -1405,38 +1448,6 @@
     position: relative;
   }
 
-  .deliveryProcess .contact-us-if-you {
-    color: #858a8f;
-    font-family: "Inter-Regular", Helvetica;
-    font-size: 1.09rem;
-    font-weight: 400;
-    /* left: 0; */
-    letter-spacing: 0;
-    line-height: 1.9rem;
-    position: relative;
-    text-align: center;
-    /* top: 83px; */
-    white-space: nowrap;
-    /* justify-self: center; */
-  }
-
-  /* change fonts or import later */
-
-  .deliveryProcess .leave-a-message {
-    color: #333333;
-    font-family: "Inter-Bold", Helvetica;
-    font-size: 2.18rem;
-    font-weight: 700;
-    /* left: 133px; */
-    letter-spacing: 0;
-    line-height: 3.15rem;
-    position: relative;
-    justify-self: center;
-    text-align: center;
-    /* top: 0; */
-    white-space: nowrap;
-  }
-
   .headline-supporting .subtitle {
     color: #5f6d7e;
     font-family: "Poppins-Regular", Helvetica;
@@ -1505,7 +1516,7 @@
 
   .caseleftside {
     position: relative;
-    margin-left: 1vw;
+    margin: 7vw 7vw 4vw 7vw;
   }
 
   .casecolumns {
@@ -1519,15 +1530,14 @@
 
   .caserightside {
     position: relative;
-    margin-right: 1vw;
-    margin-top: auto;
+    margin: 0vw; 
   }
 
   .laptopbackground {
     border: 0px none;
-    height: 32.6vw;
+    height: 50.6vw;
+    width: 75vw;
     overflow: hidden;
-    width: 65.65vw;
     position: relative;
     border-radius: 20px;
     box-shadow: 2px 2px lightgrey;
@@ -1536,16 +1546,20 @@
   .ltpic {
     position: relative;
     z-index: 11;
-    top: -41.5vw;
-    left: 16.5vw;
-    width: 38.5vw;
+    top: -41vw;
+    left: 16vw;
+    width: 50vw;
     height: auto;
   }
 
   .datelabel {
     display: grid;
     grid-template-columns: auto 90%;
-    gap: 30vw;
+    gap: 20vw;
+  }
+
+  .tw1 {
+    padding: 0vw 1vw;
   }
 
   .gestalt-psychology {
@@ -1560,6 +1574,7 @@
 
   .text-wrapper10 {
     width: 81vw;
+    margin: 6vw 0vw;
   }
 
   .casedividerline {
@@ -1568,5 +1583,11 @@
     width: 81vw;
     overflow-x: hidden;
   }
+
+  .casetext {
+    padding: 4vw;
+  }
+
+
 
 }

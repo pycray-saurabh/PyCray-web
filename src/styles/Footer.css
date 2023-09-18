@@ -463,8 +463,7 @@
 
   .emailcolumns {
     display: grid;
-    grid-template-columns: auto auto;
-    gap: 0.1vw;
+    grid-template-columns: 40% 60%;
   }
 
   .logo3pic {
@@ -476,7 +475,6 @@
   .emailrows2 {
     display: grid;
     grid-row: auto auto auto;
-    gap: 1vw;
     place-items: center;
     /* left: 20vw; */
   }
@@ -524,31 +522,43 @@
     gap: 2vw;
     /* top: -1vw; */
     position: relative;
-    width: 7vw;
-    left: 5vw;
+    width: 30vw;
+    padding: 0vw 5vw;
     /* place-self: center; */
   }
 
   .p {
-    font-size: 0.5625rem;
+    font-size: 0.54rem;
     line-height: 1.06rem;
+    width: 40vw;
+    text-align: left;
+  }
+
+  .emailtext {
+    justify-content: flex-start;
     width: 40vw;
   }
   
   .emailtext .enotifheader {
     font-size: 0.625rem;
     line-height: 1.1rem;
-    width: auto;
+    width: 100%;
   }
 
   .emailtext .emailbuttontext {
     font-size: 0.331rem;
     line-height: 0.5375rem;
+    justify-self: flex-start;
+    border-radius: 3px;
+    text-align: center;
   }
   
   .emailtext .submitbuttontext {
     font-size: 0.369rem;
     line-height: 0.594rem;
+    justify-self: flex-start;
+    border-radius: 3px;
+    margin-top: 4px;
   }
 
   .locationgroup .loctitle{
@@ -557,31 +567,37 @@
   }
   
   .noida-uttar-pradesh {
-    font-size: 0.438rem;
+    font-size: 0.5rem;
     line-height: 0.688rem;
+    color: #CFCFCF;
+    width: 100%;
   }
   
   .calgary-alberta {
-    font-size: 0.438rem;
+    font-size: 0.5rem;
     line-height: 0.688rem;
+    color: #CFCFCF;
+    width: 100%;
   }
 
   .rightsidetext {
-    margin-top: 10vw;
+    /* margin-top: 10vw;
     left: 15vw;
     width: 60vw;
-    height: auto;
+    height: auto; */
     display: grid;
     grid-template-rows: auto auto auto auto;
     place-items: center;
-    gap: 1vw;
+    /* gap: 1vw; */
     position: relative;
+    width: 100vw;
   }
 
   .textheaders {
-    left: -60px;
+    /* left: -60px; */
     position: relative;
     gap: 15vw;
+    display: flex;
   }
 
   .text-wrapper {
@@ -597,13 +613,14 @@
   .new-product-build {
     font-size: 0.438rem;
     line-height: 1.188rem;
-    left: 10vw;
+    /* left: 10vw; */
+    width: fit-content;
   }
   
   .facebook-twitter {
     font-size: 0.438rem;
     line-height: 1.188rem;
-    left: -10vw;
+    /* left: -10vw; */
   }
 
   .newproductbutton {
@@ -616,6 +633,65 @@
   
   .accelbutton {
     font-size: 0.438rem;
+  }
+
+  .title, .div, .title-2 {
+    width: fit-content;
+  }
+
+  .textheaders {
+    gap: 0vw;
+    width: fit-content;
+    margin-top: 0px;
+  }
+
+  .newproductbutton {
+    width: fit-content;
+  }
+  
+  .apbutton {
+    width: fit-content;
+  }
+
+  .accelbutton {
+    width: fit-content;
+  }
+
+  .rightsidetext {
+    margin-top: 5vw;
+  }
+
+  .title {
+    margin-right: 0px;
+  }
+
+  .rightsidetext {
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    justify-self: center;
+  }
+
+  .home-about-case {
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+  }
+
+  .textheaders > div:nth-child(1), .textheaders > div:nth-child(2), .textheaders > div:nth-child(3) {
+    width: fit-content;
+  }
+
+  .new-product-build {
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+  }
+
+  .facebook-twitter {
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
   }
 }
 

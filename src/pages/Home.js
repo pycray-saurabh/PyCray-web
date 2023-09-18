@@ -7,6 +7,7 @@ import pic2 from '../assets/productRe.svg'
 import pic1 from '../assets/projectIdea.svg'
 import deliv from '../assets/deliveryProcess.png'
 import indPic from '../assets/industryPic.png'
+import industriesMobileView from '../assets/industries_mobile_view.png'
 import clp1 from '../assets/image-57.png'
 import clp2 from '../assets/image-56.png'
 import clp3 from '../assets/image-59.png'
@@ -347,12 +348,11 @@ function Home() {
       <div className="deliveryProcess">
         <div className="tboxes">
           <h1 className="leave-a-message">Delivery Process</h1>
+          <svg className="delivUnderline" width="73" height="7" viewBox="0 0 73 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="73" height="7" rx="2" fill="#0C67B4" />
+          </svg>
           <p className="contact-us-if-you">Ensure successful Go LIVE with our streamlines delivery process</p>
         </div>
-
-        <svg className="delivUnderline" width="73" height="7" viewBox="0 0 73 7" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <rect width="73" height="7" rx="2" fill="#0C67B4" />
-        </svg>
 
         <div className="deliveryPic">
           <img className="deliveryProcessPic" alt="dpic" src={deliv} />
@@ -366,8 +366,6 @@ function Home() {
       </div>
 
       <div className="industries">
-
-
         <div className="industrytbox">
           <div className="itboxes">
             <h1 className="leave-a-message">Industries</h1>
@@ -375,6 +373,8 @@ function Home() {
             <svg className="indusUnderline" width="73" height="7" viewBox="0 0 73 7" fill="none" xmlns="http://www.w3.org/2000/svg">
               <rect width="73" height="7" rx="2" fill="#0C67B4" />
             </svg>
+
+            
 
             <p className="contact-us-if-you">
               PyCray has created immense impact and gained domain knowledge across industries
@@ -384,6 +384,7 @@ function Home() {
 
         <div className='industrycontainer'>
           <img className="industryPic" alt="ipic" src={indPic} />
+          <img className='industryMobileView' alt='industries' src={industriesMobileView} />
         </div>
 
         {/* <img className="industryPic" alt="ipic" src={indPic} /> */}
