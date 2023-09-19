@@ -20,7 +20,7 @@ function ContactUs() {
           <div className='contacttext'>
             <div className='title'>Contact Us</div>
             <p className="body">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+              We’re here to help! Tell us what you’re looking for and we’ll get you connected to the right people. 
             </p>
           </div>
 

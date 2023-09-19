@@ -243,6 +243,11 @@ function Home() {
               <p className="every-week-we-create">
                 This is where the your product vision transforms into a marvel with our way of Doing More With Less! We
                 harness the power of design, user experience (UX), and engineering to craft exceptional digital products.
+                Our goal is to develop reliable, scalable, and sustainable custom products that resonates with our clients and delights their users.
+              </p>
+
+              <p className="every-week-we-create">
+                Together, let's embark on a journey of innovation and bring your digital dreams to reality. 
               </p>
             </div>
 
