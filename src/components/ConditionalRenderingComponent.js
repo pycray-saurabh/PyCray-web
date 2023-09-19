@@ -91,7 +91,7 @@ const ConditionalRenderingComponent = () => {
                 </div>
 
                 <div className='displayedTools'>
-                    <div style={{ display: selectedDiv === 'pgmTools' ? 'block' : 'none' }}>
+                    <div style={{ display: selectedDiv === 'pgmTools' ? 'flex' : 'none' }}>
                         <svg className='picv1' viewBox="0 0 593 511" fill="none" xmlns="http://www.w3.org/2000/svg" xlinkHref="http://www.w3.org/1999/xlink">
                             <rect x="1.03259" width="102.277" height="102.277" rx="10" fill="#85BAE7" />
                             <rect x="164.263" width="102.277" height="102.277" rx="10" fill="#85BAE7" />

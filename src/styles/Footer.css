@@ -623,16 +623,9 @@
     /* left: -10vw; */
   }
 
-  .newproductbutton {
+  .newproductbutton, .apbutton, .accelbutton {
     font-size: 0.438rem;
-  }
-  
-  .apbutton {
-    font-size: 0.438rem;
-  }
-  
-  .accelbutton {
-    font-size: 0.438rem;
+    width: fit-content;
   }
 
   .title, .div, .title-2 {
@@ -640,58 +633,33 @@
   }
 
   .textheaders {
-    gap: 0vw;
-    width: fit-content;
+    gap: 15vw;
+    width: 90vw;
     margin-top: 0px;
-  }
-
-  .newproductbutton {
-    width: fit-content;
-  }
-  
-  .apbutton {
-    width: fit-content;
-  }
-
-  .accelbutton {
-    width: fit-content;
+    justify-content: center;
   }
 
   .rightsidetext {
     margin-top: 5vw;
+    gap: 3vw;
+    justify-content: center;
   }
 
   .title {
     margin-right: 0px;
   }
 
-  .rightsidetext {
-    flex-flow: column;
-    justify-content: center;
-    align-items: center;
-    justify-self: center;
-  }
-
-  .home-about-case {
-    display: flex;
-    flex-flow: column;
-    justify-content: flex-start;
-  }
-
   .textheaders > div:nth-child(1), .textheaders > div:nth-child(2), .textheaders > div:nth-child(3) {
     width: fit-content;
   }
 
-  .new-product-build {
-    display: flex;
-    flex-flow: column;
-    justify-content: flex-start;
+  .secondline {
+    width: 90vw;
   }
 
-  .facebook-twitter {
-    display: flex;
-    flex-flow: column;
-    justify-content: flex-start;
+  .pycraysig {
+    justify-self: flex-start;
+    width: 53vw;
   }
 }
 

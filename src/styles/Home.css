@@ -867,7 +867,7 @@
   letter-spacing: -0.27px;
   line-height: 1.875rem;
   position: relative;
-  justify-content: center;
+  justify-content: flex-start;
   display: flex;
 }
 
@@ -1370,6 +1370,44 @@
   .industryMobileView {
     display: block;
     width: 95%;
+  }
+
+  .helptitle .we-re-here-to-help {
+    font-size: 2rem;
+    font-weight: 500;
+  }
+
+  .helptext .contact-us-if-you {
+    font-size: 0.75rem;
+    line-height: 1.5rem;
+    width: 90vw;
+  }
+
+  .helpbuttons {
+    margin: 5vw 0vw;
+  }
+
+  .learnmorebuttondiv {
+    padding: 0vw 4vw;
+    display: flex;
+    height: auto;
+    width: auto;
+    gap: 0vw;
+    left: auto;
+    top: auto;
+    align-items: center;
+  }
+
+  .casedividerline {
+    display: none;
+  }
+
+  .casebuttonwp {
+    margin: 4vw;
+  }
+
+  .rarrow {
+    top: auto;
   }
 
 }

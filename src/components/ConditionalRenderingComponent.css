@@ -193,7 +193,7 @@
     .component {
         height: auto;
         position: relative;
-        width: 98vw;
+        width: 90vw;
         /* left: 140px; */
         /* transform: translateX(-12%); */
         display: grid;
@@ -209,20 +209,25 @@
         display: grid;
         grid-template-columns: auto auto;
         grid-template-rows: auto auto auto auto;
-        row-gap: 1vw;
-        gap: 1vw;
+        /* row-gap: 1vw;
+        gap: 1vw; */
         /* width: 30vw; */
-        height: 20vw;
-        width: 50vw;
-        justify-self: center;
+        /* height: 20vw; */
+        gap: 0vw;
+        width: 90vw;
+        justify-content: center;
     }
 
     .displayedTools {
+        display: flex;
         position: relative;
         /* left: 425px; */
-        top: 20px;
+        /* top: 20px; */
         justify-self: center;
         width: 78vw;
+        margin: 5vw;
+        min-height: 62vw;
+        align-items: center;
     }
 
     .picv1 {
@@ -230,9 +235,13 @@
         width: 80vw;
         height: auto;
         max-width: 90%;
-        left: 1vw;
+        /* left: 1vw; */
     }
     
+    .displayedTools > div:nth-child(1) {
+        justify-content: center;
+    }
+
     .picv2 {
         position: relative;
         width: 53vw;
@@ -242,11 +251,34 @@
     }
 
     .buttonformat {
-        font-size: 0.5125rem;
+        font-weight: 500;
+        font-size: 0.513rem;
         line-height: 0.9rem;
-        height: 5vw;
+        padding: 1.5vw 1.25vw;
+        /* height: 5vw; */
+        width: 40vw;
+        margin: 2vw;
+    }
+
+    .tooltextwrapper {
+        font-weight: 500;
     }
     
+    .tooltitle {
+      font-size: 2rem;
+      letter-spacing: 0px;
+      margin-top: 10vw;
+      width: 90vw;
+    }
+
+    .toolp {
+      width: 90vw;
+    }
+
+    .toolp .toolps {
+      font-size: 0.8rem;
+    }
+
 }
 
 @media (min-width: 577px) and (max-width: 992px) {
