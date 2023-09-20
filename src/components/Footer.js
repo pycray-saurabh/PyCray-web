@@ -53,9 +53,11 @@ function Footer() {
 
             <div className="addressgroup2">
               <div className="noida-uttar-pradesh">
+                B-7, First Floor, B Block, Sector 2
+                <br />
                 Noida, Uttar Pradesh, India
                 <br />
-                110025
+                201301
               </div>
               {/* <div className="calgary-alberta">
                 Calgary, Alberta, Canada <br />
@@ -85,9 +87,11 @@ function Footer() {
 
         <div className="addressgroup">
           <div className="noida-uttar-pradesh">
+            B-7, First Floor, B Block, Sector 2
+            <br />
             Noida, Uttar Pradesh, India
             <br />
-            110025
+            201301
           </div>
           {/* <div className="calgary-alberta">
             Calgary, Alberta, Canada <br />
