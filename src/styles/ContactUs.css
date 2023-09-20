@@ -22,12 +22,12 @@
       url("../fonts/Inter/static/Inter-Medium.ttf") format("truetype")
   }
 
-.contactuspage {
+/* .contactuspage {
     position: relative;
     display: grid;
     grid-row: auto auto;
-    /* justify-self: center; */
-}
+    justify-self: center;
+} */
 
 .getintouch {
     position: relative;
@@ -60,7 +60,7 @@
     padding-bottom: 2vw;
     height: 9vw;
     width: 40vw;
-    top: -11vw;
+    top: -13vw;
     /* left: 16vw; */
 }
 
@@ -88,12 +88,13 @@
 .contactcolumns {
     background-color: #f9faff;
     position: relative;
-    display: grid;
-    grid-template-columns: auto auto;
-    padding-left: 5vw;
-    padding-top: 7vw;
-    padding-right: 2vw;
-    padding-bottom: 7vw;
+    /* display: grid;
+    grid-template-columns: auto auto; */
+    padding: 0 50px;
+    /* padding-left: 5vw; */
+    /* padding-top: 7vw; */
+    /* padding-right: 2vw; */
+    /* padding-bottom: 7vw; */
     gap: 4vw;
 }
 
@@ -148,16 +149,25 @@
     color: #ff0000;
 }
 
-.inputlabel {
-    border-style: solid;
-    border-color: lightgray;
-    border-radius: 2px;
-    border-width: 1px;
+.contactInput {
+    background-color: #fff;
+    border: 1px solid #D0D5DD;
+    box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+    padding: 15px;
+    color: #D0D5DD;
 }
-
+.teamCheck{
+    display: inline-block;
+    margin-left: 5px;
+    margin-top: -5px;
+}
+.contactButton{
+    width: 200px;
+    float: right;
+}
 .sec {
-    display: grid;
-    grid-template-rows: auto auto;
+    display: flex;
+    flex-direction: column;
 }
 
 .descriptioninput {
@@ -169,4 +179,40 @@
     position: relative;
     width: 45vw;
     height: auto;
+}
+.contactrows{
+    display: flex;
+    align-items: center;
+}
+@media (max-width: 767px) {
+    .contactrows{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .whiterect{
+        top: -48px;
+        padding: 10px;
+        border-radius: 14px 14px 0 0;
+    }
+    .gettouchtext{
+        font-size: 15px;
+        line-height: 10px;
+    }
+    .homeandcontact {
+        font-size: 15px;
+    }
+    .contacttext{
+        width: 100vw;
+        text-align: center;
+    }
+    .title{
+        display: inline-block;
+    }
+    .forminput{
+        display: block;
+    }
+    .contactcolumns{
+        padding: 0 5px;
+        margin: 20px 0;
+    }
 }
