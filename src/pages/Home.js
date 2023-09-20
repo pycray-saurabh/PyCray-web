@@ -326,9 +326,9 @@ function Home() {
               </p>
             </div>
             <div className="consultationButton">
-              <button className="no-credit-card" onClick={handleButtonClick}>
+              <Link to="/contactus"><button className="no-credit-card">
                 Book Free Consultation
-              </button>
+              </button></Link>
             </div>
           </div>
           {/* <svg className="rectangle" viewBox="0 0 960 105" fill="none" xmlns="http://www.w3.org/2000/svg">
