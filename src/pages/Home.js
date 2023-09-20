@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 // import { Routes, Route, Link } from 'react-router-dom';
 import ConditionalRenderComponent from '../components/ConditionalRenderingComponent'
 import '../styles/Home.css'
@@ -25,7 +26,7 @@ import ellipsepic from '../assets/ellipse.svg'
 function Home() {
   const handleButtonClick = () => {
     // Handle button click logic here
-    alert('hello');
+    // alert('hello');
   };
   return (
     <div className='homepagediv' >
@@ -459,7 +460,7 @@ function Home() {
               <div className='caserows'>
 
                 <div className="datelabel">
-                  <div className="tw1">Interview</div>
+                  <div className="tw1">Case Study</div>
                   <div className="september">SEPTEMBER 1, 2023</div>
                 </div>
 
@@ -595,17 +596,17 @@ function Home() {
         <div className='helpbuttons'>
           <div className='emailsection'>
             <img className="emailus" alt="clpic" src={emailus} />
-            <button className="emailbutton" onClick={handleButtonClick}></button>
+            <Link to="/contactus"><button className="emailbutton"></button></Link>
           </div>
 
           <div className='dropinsection'>
             <img className="dropinus" alt="clpic" src={dropinus} />
-            <button className="dropbutton" onClick={handleButtonClick}></button>
+            <button className="dropbutton" onClick={() => { window.open("https://www.google.com/maps/place/PyCray+Technologies+Private+Limited/@28.5851774,77.310305,17z/data=!3m1!4b1!4m6!3m5!1s0x390ce5816bd07aad:0xb2833d276ff0eb4c!8m2!3d28.5851727!4d77.3128799!16s%2Fg%2F11khqfwlfp?entry=ttu") }}></button>
           </div>
 
           <div className='booksection'>
             <img className="bookcons" alt="clpic" src={bookcons} />
-            <button className="bookbutton" onClick={handleButtonClick}></button>
+            <Link to="/contactus"><button className="bookbutton"></button></Link>
           </div>
         </div>
       </div>

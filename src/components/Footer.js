@@ -12,14 +12,14 @@ function Footer() {
   const [val, setData] = useState('null');
   const handleEmailClick = () => {
     // Handle button click logic here
-    alert(val);
+    // alert(val);
   };
   const change = event => {
     setData(event.target.value)
   }
   const handleButtonClick = () => {
     // Handle button click logic here
-    alert('hello');
+    // alert('hello');
   };
 
   // function getData(val) {
@@ -57,10 +57,10 @@ function Footer() {
                 <br />
                 110025
               </div>
-              <div className="calgary-alberta">
+              {/* <div className="calgary-alberta">
                 Calgary, Alberta, Canada <br />
                 T3P0W2
-              </div>
+              </div> */}
             </div>
           </div>
 
@@ -89,10 +89,10 @@ function Footer() {
             <br />
             110025
           </div>
-          <div className="calgary-alberta">
+          {/* <div className="calgary-alberta">
             Calgary, Alberta, Canada <br />
             T3P0W2
-          </div>
+          </div> */}
         </div>
 
         <svg className='firstline' width="703" height="2" viewBox="0 0 703 2" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -127,11 +127,11 @@ function Footer() {
               <div className="text-wrapper">Product Genesis</div>
             </div>
             <div className="new-product-build">
-              <button className="newproductbutton" onClick={handleButtonClick}>New Product Build</button>
+              <Link to="/"><button className="newproductbutton" onClick={handleButtonClick}>New Product Build</button></Link>
               <br />
-              <button className="apbutton" onClick={handleButtonClick}>Application Modernization</button>
+              <Link to="/"><button className="apbutton" onClick={handleButtonClick}>Application Modernization</button></Link>
               <br />
-              <button className="accelbutton" onClick={handleButtonClick}>Accelerators</button>
+              <Link to="/"><button className="accelbutton" onClick={handleButtonClick}>Accelerators</button></Link>
             </div>
           </div>
           <div>
@@ -140,10 +140,10 @@ function Footer() {
               <div className="text-wrapper">Follows</div>
             </div>
             <div className="facebook-twitter">
-              Facebook <br />
-              Twitter <br />
-              Instagram <br />
-              LinkedIn
+              <div onClick={() => { window.open("https://www.facebook.com/people/PyCray-Technologies-Pvt-Ltd/100094770512742/?refid=17") }} style={{ cursor: "pointer" }}>Facebook</div>
+              {/* Twitter <br />
+              Instagram <br /> */}
+              <div onClick={() => { window.open("https://www.linkedin.com/company/pycray/?originalSubdomain=in") }} style={{ cursor: "pointer" }}>LinkedIn</div>
             </div>
           </div>
         </div>

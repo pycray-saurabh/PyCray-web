@@ -1387,29 +1387,6 @@
     margin: 5vw 0vw;
   }
 
-  .learnmorebuttondiv {
-    padding: 0vw 4vw;
-    display: flex;
-    height: auto;
-    width: auto;
-    gap: 0vw;
-    left: auto;
-    top: auto;
-    align-items: center;
-  }
-
-  .casedividerline {
-    display: none;
-  }
-
-  .casebuttonwp {
-    margin: 4vw;
-  }
-
-  .rarrow {
-    top: auto;
-  }
-
 }
 
 @media (max-width: 450px) {
@@ -1626,6 +1603,27 @@
     padding: 4vw;
   }
 
+  .learnmorebuttondiv {
+    padding: 0vw 4vw;
+    display: flex;
+    height: auto;
+    width: auto;
+    gap: 0vw;
+    left: auto;
+    top: auto;
+    align-items: center;
+  }
 
+  .casedividerline {
+    display: none;
+  }
+
+  .casebuttonwp {
+    margin: 4vw;
+  }
+
+  .rarrow {
+    top: auto;
+  }
 
 }
