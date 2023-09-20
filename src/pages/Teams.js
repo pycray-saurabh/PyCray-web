@@ -1,14 +1,35 @@
 import React from "react";
-import teamBanner from "../assets/teamBanner.png";
+import "../styles/About.css";
+import aboutpic from "../assets/team_banner.svg";
+import aboutcard from "../assets/aboutuscard.svg";
+import profilepic1 from "../assets/profilepic1.svg";
+import createTeam from "../assets/TeamCreate.png";
+// import SimpleSlider from "./SimpleSlider";
+
+
 
 const Teams = () => {
   return (
     <div className="aboutpage">
       <div className="aboutsec">
-        <img className="aboutpic" alt="aspic" src={teamBanner} />
-        <div className="whiterect">
-          <div className="aboutustext">ABOUT US</div>
-          <div className="homeandabout">Home / About</div>
+        <img className="aboutpic teamPic" alt="aspic" src={aboutpic} />
+        <div className="whiterect whiterectTeam">
+          <div className="aboutustext">Our Team </div>
+          <div className="homeandabout">Home / Team</div>
+        </div>
+      </div>
+
+      <div className="wrapper_teamCreative">
+        <div className="teamMarginManage">
+          <div className="teamCreative">
+            <div className="teamCreateFirst">
+              <h2>We Are <br /> <span style={{ color: "#000" }}>Creative <br /> Team</span> </h2>
+            </div>
+            <div className="teamCreateSecond">
+              <img className="" alt="aspic" src={createTeam} />
+            </div>
+          </div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et doloreLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et doloreLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et doloreLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et doloreLorem</p>
         </div>
       </div>
     </div>

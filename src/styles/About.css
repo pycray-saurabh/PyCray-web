@@ -51,7 +51,9 @@
     /* place-self: center; */
     position: relative;
 }
-
+.teamPic{
+    width: 40vw;
+}
 .whiterect {
     position: relative;
     background-color: #ffffff;
@@ -62,6 +64,9 @@
     width: 40vw;
     top: -11vw;
     /* left: 16vw; */
+}
+.whiterectTeam{
+    height: 7wh;
 }
 
 .aboutustext {
@@ -185,6 +190,57 @@
 .profilep1 {
     width: 3vw;
     height: auto;
+}
+.wrapper_teamCreative{
+    background: #FAFBFF;
+    padding: 0 50px;
+}
+.teamMarginManage{
+    margin: 50px 0;
+}
+.wrapper_teamCreative p{
+    color: #4D5053;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 206%; /* 41.2px */
+    letter-spacing: 0.2px;
+}
+.teamCreative{
+    display: flex;
+    justify-content: space-between;
+    background: #FAFBFF;
+    
+}
+.teamCreateFirst{
+    width: 30%;
+}
+.teamCreateFirst h2{
+    color: #4DD2B2;
+    font-size: 65px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 125%; /* 81.25px */
+    letter-spacing: 1.3px;
+    position: relative;
+}
+.teamCreateFirst h2::after {
+    content: ""; /* Required to create the pseudo-element */
+    display: block; /* Makes the pseudo-element a block-level element */
+    width: 73px; /* Adjust the width of the border as needed */
+    height: 7px; /* Adjust the height of the border as needed */
+    background-color: #0C67B4; 
+    border-radius: 2px;
+    position: absolute; /* Position the border absolutely */
+    top: 100%; /* Position it just below the heading text */
+    left: 0; /* Align it with the left edge of the heading */
+  }
+.teamCreateSecond{
+    width: 70%;
+    display: flex;
+    justify-content: center;
 }
 @media (max-width: 767px) {
     .customContainer{
