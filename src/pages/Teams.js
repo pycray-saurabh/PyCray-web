@@ -4,9 +4,6 @@ import aboutpic from "../assets/team_banner.svg";
 import aboutcard from "../assets/aboutuscard.svg";
 import profilepic1 from "../assets/profilepic1.svg";
 import createTeam from "../assets/TeamCreate.png";
-// import SimpleSlider from "./SimpleSlider";
-
-
 
 const Teams = () => {
   return (
@@ -23,13 +20,24 @@ const Teams = () => {
         <div className="teamMarginManage">
           <div className="teamCreative">
             <div className="teamCreateFirst">
-              <h2>We Are <br /> <span style={{ color: "#000" }}>Creative <br /> Team</span> </h2>
+              <h2>
+                We Are <br />{" "}
+                <span style={{ color: "#000" }}>
+                  Creative <br /> Team
+                </span>{" "}
+              </h2>
             </div>
             <div className="teamCreateSecond">
               <img className="" alt="aspic" src={createTeam} />
             </div>
           </div>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et doloreLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et doloreLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et doloreLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et doloreLorem</p>
+          <p>
+            Our team of experienced professionals takes the time to understand
+            your unique ideas and then skillfully transforms them into fully
+            functional products. From the start to the finish, we use the best
+            methods and tools to ensure that the end result meets all your
+            requirements.{" "}
+          </p>
         </div>
       </div>
     </div>

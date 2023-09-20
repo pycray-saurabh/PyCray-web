@@ -31,7 +31,7 @@ function About() {
         </div>
       </div>
 
-      <div className="customContainer">
+      {/* <div className="customContainer">
         <div className="reviews">
           <div className="reviewrows">
             <div className="reviewHead">
@@ -82,7 +82,7 @@ function About() {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
 
       <div className="customContainer">
         <div className="projectidea">
@@ -107,7 +107,15 @@ function About() {
               <input className="inputlabel" type="text"></input>
             </div>
 
-            <button className="ourConcept">Send Message</button>
+            <button
+              onClick={(e) => {
+                e.preventDefault();
+                console.log("msg sent");
+              }}
+              className="ourConcept"
+            >
+              Send Message
+            </button>
           </form>
         </div>
       </div>
