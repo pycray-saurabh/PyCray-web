@@ -60,7 +60,7 @@
     padding-bottom: 2vw;
     height: 9vw;
     width: 40vw;
-    top: -13vw;
+    /* top: -13vw; */
     /* left: 16vw; */
 }
 
@@ -190,7 +190,7 @@
         align-items: center;
     }
     .whiterect{
-        top: -48px;
+        top: -45px;
         padding: 10px;
         border-radius: 14px 14px 0 0;
     }
@@ -214,5 +214,8 @@
     .contactcolumns{
         padding: 0 5px;
         margin: 20px 0;
+    }
+    .contactform {
+        padding: 0 12px;
     }
 }

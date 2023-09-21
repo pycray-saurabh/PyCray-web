@@ -272,4 +272,10 @@
     .contactform{
         width: auto;
     }
+    .reviewHead {
+        font-size: 20px;
+    }
+    .whatwedo {
+        padding: 0 10px;
+    }
 }
