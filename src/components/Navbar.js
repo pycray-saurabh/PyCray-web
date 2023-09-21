@@ -29,7 +29,7 @@ function Navbar() {
             </div>
             <div className="rightSide">
                 <Link to="/"> Home </Link>
-                <Link to="/productgenesis"> Product Genesis </Link>
+                {/* <Link to="/productgenesis"> Product Genesis </Link> */}
                 <Link to="/Teams"> Team </Link>
                 <Link to="/about"> About </Link>
                 <Link to="/contactus"> Contact Us </Link>
