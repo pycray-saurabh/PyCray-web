@@ -105,7 +105,7 @@ function Footer() {
 
         <div className="textheaders">
           <div>
-            <div className="title">
+            <div className="pageTitle">
               <img className="icon" alt="Icon" src={foldersicon} />
               <div className="text-wrapper">Pages</div>
             </div>

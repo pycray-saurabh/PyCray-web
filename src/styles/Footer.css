@@ -140,7 +140,7 @@
   border-color: transparent;
   /* justify-self: center;
   place-self: center; */
-  /* text-align: center; */
+  text-align: center;
   text-transform: capitalize;
   /* margin-left: 5%;
   margin-right: 5%; */
@@ -260,7 +260,7 @@
   margin-top: 20px;
 }
 
-.title,
+.pageTitle,
 .div,
 .title-2 {
   display: grid;
@@ -431,7 +431,7 @@
   border-color: transparent;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 1200px) {
   .footer {
     grid-template-columns: auto;
     grid-template-rows: auto auto;
@@ -628,7 +628,7 @@
     width: fit-content;
   }
 
-  .title, .div, .title-2 {
+  .pageTitle, .div, .title-2 {
     width: fit-content;
   }
 
@@ -645,7 +645,7 @@
     justify-content: center;
   }
 
-  .title {
+  .pageTitle {
     margin-right: 0px;
   }
 
@@ -661,9 +661,9 @@
     justify-self: flex-start;
     width: 53vw;
   }
-}
 
-@media (min-width: 577px) and (max-width: 992px) {
+
+
   .p {
     font-size: 0.87rem;
     line-height: 1.3rem;
@@ -730,4 +730,81 @@
   .accelbutton {
     font-size: 0.98rem;
   }
+
+
+
+
+
+
+
+
+}
+
+@media (min-width: 577px) and (max-width: 992px) {
+  /* .p {
+    font-size: 0.87rem;
+    line-height: 1.3rem;
+  }
+  
+  .emailtext .enotifheader {
+    font-size: 0.98rem;
+    line-height: 1.57rem;
+  }
+
+  .emailtext .emailbuttontext {
+    font-size: 0.98rem;
+    line-height: 1.57rem;
+  }
+  
+  .emailtext .submitbuttontext {
+    font-size: 1.09rem;
+    line-height: 1.74rem;
+  }
+
+  .locationgroup .loctitle{
+    font-size: 1.36rem;
+    line-height: 1.5rem;
+  }
+  
+  .noida-uttar-pradesh {
+    font-size: 0.98rem;
+    line-height: 1.53rem;
+  }
+  
+  .calgary-alberta {
+    font-size: 0.98rem;
+    line-height: 1.53rem;
+  }
+
+  .text-wrapper {
+    font-size: 0.98rem;
+    line-height: 1.2rem;
+  }
+
+  .home-about-case {
+    font-size: 0.98rem;
+    line-height: 2.07rem;
+  }
+  
+  .new-product-build {
+    font-size: 0.98rem;
+    line-height: 2.07rem;
+  }
+  
+  .facebook-twitter {
+    font-size: 0.98rem;
+    line-height: 2.07rem;
+  }
+
+  .newproductbutton {
+    font-size: 0.98rem;
+  }
+  
+  .apbutton {
+    font-size: 0.98rem;
+  }
+  
+  .accelbutton {
+    font-size: 0.98rem;
+  } */
 }

@@ -471,10 +471,7 @@ function Home() {
                     design and beyond.
                   </h1>
                   <p className="text-wrapper10">
-                    Bring to the table win-win strategies to proactive domination. At the end of the day, going forward.Bring to
-                    the table win-win strategies to proactive domination. At the end of the day, going forward.Bring to the table
-                    win-win strategies to proactive domination. At the end of the day, going forward.Bring to the table win-win
-                    strategies to proactive domination. At the end of the day, going forward.
+                    Bola approached us with the vision of creating a shared mobility platform tailored to post-procedure travel needs. We worked closely with Bola to design and develop a user-friendly platform where individuals could effortlessly share or book seats for their journeys. The result was a successful platform that not only connected users effectively but also improved post-procedure transportation options, fostering a sense of community and trust among its users.  
                   </p>
                 </div>
 

@@ -108,6 +108,7 @@
   min-height: 30px;
   position: relative;
   margin-top: 12px;
+  padding: 1vw;
 }
 
 /* Media queries for different screen sizes */
@@ -157,7 +158,7 @@
   }
 
   .ellipsebutton {
-    font-size: 1rem;
+    font-size: 0.8rem;
     line-height: 1rem;
     left: 0vw;
     width: 24vw;
@@ -343,6 +344,7 @@
   width: 36vw;
   position: relative;
   z-index: 2;
+  padding: 1vw;
 }
 
 .label2 .your-music-your2 {
@@ -895,7 +897,8 @@
   border-style: solid;
   border-radius: 50px;
   width: 8.3vw;
-  min-width: 75px;
+  min-width: 9vw;
+  padding: 0.5vw;
 }
 
 .september {
@@ -907,6 +910,8 @@
   line-height: 1.47rem;
   position: relative;
   white-space: nowrap;
+  display: flex;
+  align-items: center;
   /* width: 10vw; */
 }
 
