@@ -152,6 +152,7 @@
         line-height: 150%; /* 25.5px */
         letter-spacing: 0.17px;
         padding: 5vw 0vw;
+        cursor: pointer;
     }
 
     .menubarDividerLine {
