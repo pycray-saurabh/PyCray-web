@@ -1065,23 +1065,16 @@
 .helpbuttons {
   display: grid;
   grid-template-columns: auto auto auto;
-  place-items: center;
-  margin-bottom: 7%;
-}
-
-.emailsection {
-  margin-left: 25%;
-}
-
-.booksection {
-  margin-right: 25%;
+  margin-top: 2vw;
+  gap: 5vw;
+  margin-bottom: 5vw;
 }
 
 .emailsection,
 .dropinsection,
 .booksection {
   position: relative;
-  width: 80%;
+  width: 100%;
   height: auto;
 }
 
@@ -1127,6 +1120,52 @@
   border-color: transparent;
 }
 
+.card {
+  border-radius: 4px;
+  padding: 1vw;
+  flex-shrink: 0;
+  background-color: #FFF;
+  width: 25vw;
+  height: 90%
+}
+
+.card .card-img {
+  margin: 2vw 1vw;
+}
+
+.card-content {
+  margin: 0vw 2vw;
+}
+
+.card-content h2 {
+  color: #333;
+  font-family: "Poppins-SemiBold", Helvetica;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 34px; /* 121.429% */
+}
+
+.card-content p {
+  color: #858A8F;
+  font-family: "Poppins-Regular", Helvetica;
+  font-size: 1.13rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 30px; /* 166.667% */
+}
+
+.card-content .blueText {
+  color: #397EFF;
+  font-family: "Poppins-Regular", Helvetica;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px; /* 120% */
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
 
 /* Media query for smaller screens */
 @media (max-width: 600px) {
@@ -1580,6 +1619,7 @@
 
   .tw1 {
     padding: 0vw 1vw;
+    min-width: vw;
   }
 
   .gestalt-psychology {
