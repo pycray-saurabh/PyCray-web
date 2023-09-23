@@ -887,7 +887,7 @@
 .tw1 {
   color: #292930;
   font-family: "Poppins-Inter", Helvetica;
-  font-size: 1rem;
+  font-size: 0.9rem;
   font-weight: 500;
   letter-spacing: 0;
   line-height: 1.8rem;
@@ -1618,8 +1618,8 @@
   }
 
   .tw1 {
-    padding: 0vw 1vw;
-    min-width: vw;
+    padding: 1vw 1vw;
+    min-width: 22vw;
   }
 
   .gestalt-psychology {
@@ -1671,4 +1671,13 @@
     top: auto;
   }
 
+  .helpbuttons {
+    grid-template-rows: auto auto auto;
+    grid-template-columns: auto;
+  }
+
+  .card {
+    width: 85vw;
+    padding: 2vw;
+  }
 }
