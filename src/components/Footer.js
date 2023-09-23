@@ -104,25 +104,25 @@ function Footer() {
         </svg>
 
         <div className="textheaders">
+          
+
           <div>
             <div className="pageTitle">
               <img className="icon" alt="Icon" src={foldersicon} />
               <div className="text-wrapper">Pages</div>
             </div>
-            <div className="number">
-              <div className="home-about-case">
-                <Link to="/"> Home </Link>
-                <br />
-                <Link to="/about"> About </Link>
-                <br />
-                <Link to="/"> Case Studies </Link>
-                {/* <button className="casesbutton" onClick={handleButtonClick}>Case Studies</button> */}
-                <br />
-                <Link to="/contactus"> Contact Us </Link>
-                <br />
-                <Link to="/"> Services </Link>
-                {/* <button className="servicesbutton" onClick={handleButtonClick}>Services</button> */}
-              </div>
+            <div className="new-product-build">
+              <Link to="/"><button className="newproductbutton">Home</button></Link>
+              <br />
+              <Link to="/about"><button className="newproductbutton">About</button></Link>
+              <br />
+              <Link to="/"><button className="newproductbutton">Case Studies</button></Link>
+              {/* <button className="casesbutton" onClick={handleButtonClick}>Case Studies</button> */}
+              <br />
+              <Link to="/contactus"><button className="newproductbutton">Contact Us</button></Link>
+              <br />
+              <Link to="/"><button className="newproductbutton">Services</button></Link>
+              {/* <button className="servicesbutton" onClick={handleButtonClick}>Services</button> */}
             </div>
           </div>
           <div>

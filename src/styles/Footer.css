@@ -604,9 +604,8 @@
   }
 
   .textheaders {
-    /* left: -60px; */
     position: relative;
-    /* gap: 15vw; */
+    gap: 0vw;
     display: flex;
   }
 
@@ -673,12 +672,12 @@
   }
 
   .p {
-    font-size: 0.87rem;
+    font-size: 1rem;
     line-height: 1.3rem;
   }
   
   .emailtext .enotifheader {
-    font-size: 0.98rem;
+    font-size: 1.5rem;
     line-height: 1.57rem;
     width: 100%;
   }
@@ -686,11 +685,13 @@
   .emailtext .emailbuttontext {
     font-size: 0.98rem;
     line-height: 1.57rem;
+    width: 100%;
   }
   
   .emailtext .submitbuttontext {
     font-size: 1.09rem;
     line-height: 1.74rem;
+    width: 100%;
   }
 
   .locationgroup .loctitle{
@@ -738,5 +739,15 @@
   
   .accelbutton {
     font-size: 0.98rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .emailtext .enotifheader {
+    font-size: 0.98rem;
+  }
+
+  .p {
+    font-size: 0.87rem;
   }
 }
