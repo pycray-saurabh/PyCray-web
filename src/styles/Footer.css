@@ -454,7 +454,7 @@
   }
 
   .footerText {
-    font-size: 2vw;
+    font-size: 1rem;
   }
 
   .emailinputbox {
@@ -527,7 +527,7 @@
   .locationgroup2 .loctitle{
     color: #ffffff;
     font-family: "Inter-SemiBold", Helvetica;
-    font-size: 1rem;
+    font-size: 2rem;
     font-weight: 600;
     letter-spacing: 0;
     line-height: 1rem;
@@ -749,5 +749,36 @@
 
   .p {
     font-size: 0.87rem;
+  }
+
+  .locationgroup2 .loctitle {
+    font-size: 1rem;
+  }
+
+  .icon, .pencimg, .icon-2 {
+    width: 4vw;
+  }
+}
+
+@media (max-width: 400px) {
+  .emailtext .enotifheader {
+    font-size: 0.8rem;
+  }
+
+  .p {
+    font-size: 0.7rem;
+  }
+
+  .noida-uttar-pradesh {
+    font-size: 0.7rem;
+    line-height: 1rem;
+  }
+  
+  .emailtext .emailbuttontext {
+    font-size: 0.8rem;
+  }
+    
+  .emailtext .submitbuttontext {
+    font-size: 0.98rem;
   }
 }
