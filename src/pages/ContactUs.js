@@ -34,7 +34,7 @@ function ContactUs() {
                   </label>
                   <input
                     className="contactInput"
-                    defaultValue={"Sejal"}
+                    // defaultValue={"Sejal"}
                     type="text"
                     required
                   ></input>
@@ -47,7 +47,7 @@ function ContactUs() {
                   </label>
                   <input
                     className="contactInput"
-                    defaultValue={"yes@company.com"}
+                    // defaultValue={"yes@company.com"}
                     type="text"
                     required
                   ></input>
@@ -60,7 +60,7 @@ function ContactUs() {
                   </label>
                   <input
                     className="contactInput"
-                    defaultValue={"123456789"}
+                    // defaultValue={"123456789"}
                     type="text"
                     required
                   ></input>
