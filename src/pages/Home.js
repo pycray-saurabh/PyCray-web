@@ -18,6 +18,7 @@ import emailus from '../assets/emailus.png'
 import dropinus from '../assets/dropinus.png'
 import bookcons from '../assets/bookacons.png'
 import ellipsepic from '../assets/ellipse.svg'
+import bolaMockup from '../assets/bolaMockup.svg'
 // import ellipsebg from 
 // import toolComponent from '../components/toolComponent'
 // import ptoolz from '../components/toolComponents/Ptools'
@@ -452,7 +453,7 @@ function Home() {
                     </linearGradient>
                   </defs>
                 </svg>
-                <img className="ltpic" alt="lpic" src={laptopPic} />
+                <img className="ltpic" alt="lpic" src={bolaMockup} />
               </div>
             </div>
 
