@@ -761,24 +761,108 @@
 }
 
 @media (max-width: 400px) {
+  .emailcolumns > div:nth-child(1) {
+    padding: 4vw 2vw;
+  }
+
+  .emailtext {
+    place-items: left;
+  }
+
   .emailtext .enotifheader {
-    font-size: 0.8rem;
+    font-size: 0.6rem;
   }
 
   .p {
-    font-size: 0.7rem;
+    font-size: 0.5rem;
+    line-height: 1rem;
   }
 
   .noida-uttar-pradesh {
-    font-size: 0.7rem;
-    line-height: 1rem;
+    font-size: 0.4rem;
+    line-height: 0.8rem;
   }
   
   .emailtext .emailbuttontext {
-    font-size: 0.8rem;
+    font-size: 0.5rem;
+    line-height: 0.57rem;
+    width: 65%;
   }
     
   .emailtext .submitbuttontext {
-    font-size: 0.98rem;
+    font-size: 0.5rem;
+    line-height: 0.8rem;
+    width: 67%;
   }
+
+  .logo3pic {
+    width: 30vw;
+  }
+
+  .locationgroup2 {
+    left: 0vw;
+    padding: 0vw 3vw;
+  }
+  
+  .locationgroup2 .locationsymbol {
+    min-width: 2px;
+  }
+  
+  .addressgroup2 {
+    padding: 0vw 3vw;
+  }
+
+  .emailrows2 {
+    padding: 2vw 4vw;
+  }
+
+  .locationgroup2 .loctitle {
+    font-size: 0.52rem;
+  }
+
+  .rightsidetext {
+    margin-bottom: 5vw;
+  }
+
+  .textheaders {
+    width: 88vw;
+  }
+
+  .text-wrapper {
+    /* font-size: 0.98rem; */
+    /* line-height: 1.2rem; */
+    font-size: 0.7rem;
+  }
+  .new-product-build {
+    font-size: 0.4rem;
+    line-height: 0.07rem;
+  }
+
+  .newproductbutton {
+    font-size: 0.4rem;
+  }
+
+  .apbutton {
+    font-size: 0.4rem;
+  }
+
+  .accelbutton {
+    font-size: 0.4rem;
+  }
+
+  .facebook-twitter {
+    font-size: 0.4rem; 
+    line-height: 0.7rem;
+  }
+  
+  .secondline {
+    width: 80vw;
+  }
+
+  .footerText {
+    font-size: 0.7rem;
+    margin: 0vw;
+  }
+
+
 }
