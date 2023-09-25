@@ -899,6 +899,7 @@
   width: 8.3vw;
   min-width: 9vw;
   padding: 0.5vw;
+  border-width: thin;
 }
 
 .september {
@@ -1612,14 +1613,19 @@
   }
 
   .datelabel {
-    display: grid;
-    grid-template-columns: auto 90%;
-    gap: 20vw;
+    display: flex;
+    /* grid-template-columns: auto 90%; */
+    /* gap: 20vw; */
+    width: 75vw;
+    justify-content: space-between;
   }
 
   .tw1 {
-    padding: 1vw 1vw;
-    min-width: 22vw;
+    padding: 2vw 3vw;
+    min-width: auto;
+    font-size: 0.5rem;
+    width: auto;
+    line-height: normal;
   }
 
   .gestalt-psychology {
@@ -1679,5 +1685,11 @@
   .card {
     width: 85vw;
     padding: 2vw;
+    height: auto;
+    text-align: center;
+  }
+
+  .card-content .blueText {
+    justify-content: center;
   }
 }
