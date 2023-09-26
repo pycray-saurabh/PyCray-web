@@ -12,7 +12,7 @@ const Teams = () => {
         <img className="aboutpic teamPic" alt="aspic" src={aboutpic} />
         <div className="whiterect whiterectTeam">
           <div className="aboutustext">Our Team </div>
-          <div className="homeandabout">Home / Team</div>
+          {/* <div className="homeandabout">Home / Team</div> */}
         </div>
       </div>
 

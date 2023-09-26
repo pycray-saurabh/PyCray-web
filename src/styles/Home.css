@@ -639,12 +639,44 @@
 }
 
 .industrycontainer {
-  margin: 3vw 0 1vw 0;
-  height: 30vw;
+  margin: 3vw 0vw;
   width: 75vw;
-  display: grid;
-  justify-self: center;
-  align-items: center;
+}
+
+.industryDesktop {
+  display: block;
+}
+
+.industryMobile {
+  display: none;
+}
+
+.industryRow {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.industryBox {
+  padding: 3vw 0vw;
+  width: 33%;
+}
+
+.industryRow.row1 {
+  border-bottom: 1px solid #DDD;
+}
+
+.industryRow.row1 .industryBox:not(:last-child),.industryRow.row2 .industryBox:not(:last-child){
+  border-right: 1px solid #DDD;
+}
+
+.industryImg {
+  width: 100%; 
+  display: flex;
+  justify-content:center;
+}
+
+.industryText {
+  text-align: center;
 }
 
 .industryPic {
@@ -1278,17 +1310,15 @@
     top: 55px; */
   }
 
-  .industrycontainer {
-    /* margin-top: -5vw; */
+  /* .industrycontainer {
     position: relative;
     height: 140vw;
     width: 75vw;
-    /* background-image: url(../assets/indussmall.svg); */
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
     justify-self: center;
-  }
+  } */
 
   .clientsh .our-fetaured-clients {
     color: #333333;
@@ -1548,30 +1578,6 @@
   }
 }
 
-@media (max-width: 600px) {
-
-  .linebreak {
-    display: block;
-  }
-
-  .label2 {
-    width: 50vw;
-    text-align: center;
-    justify-self: center;
-  }
-
-  .you-can-import-your {
-    width: 60vw;
-  }
-
-  .textthenbutton {
-    grid-template-columns: auto;
-    grid-template-rows: auto auto;
-    gap: 0.1vw;
-    padding-bottom: 3vw;
-  }
-}
-
 @media (max-width: 900px) {
 
   .caseleftside {
@@ -1691,5 +1697,60 @@
 
   .card-content .blueText {
     justify-content: center;
+  }
+
+  .industrycontainer {
+    width: auto;
+  }
+
+}
+
+@media (max-width: 600px) {
+
+  .linebreak {
+    display: block;
+  }
+
+  .label2 {
+    width: 50vw;
+    text-align: center;
+    justify-self: center;
+  }
+
+  .you-can-import-your {
+    width: 60vw;
+  }
+
+  .textthenbutton {
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+    gap: 0.1vw;
+    padding-bottom: 3vw;
+  }
+
+  .industrycontainer {
+    width: 50%;
+    justify-self: center;
+  }
+
+  .industryDesktop {
+    display: none;
+  }
+
+  .industryMobile {
+    display: block;
+    padding: 5vw 0vw;
+  }
+
+  .industryBox {
+    width: 48%;
+  }
+
+  .industryImg {
+    padding: 5vw 0vw;
+  }
+
+  .industryText {
+    font-size: 0.7rem;
   }
 }

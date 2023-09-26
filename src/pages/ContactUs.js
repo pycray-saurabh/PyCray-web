@@ -10,7 +10,7 @@ function ContactUs() {
         <img className="gtpic" alt="gpic" src={gtpic} />
         <div className="whiterect">
           <div className="gettouchtext">GET IN TOUCH</div>
-          <div className="homeandcontact">Home / Contact Us</div>
+          {/* <div className="homeandcontact">Home / Contact Us</div> */}
         </div>
       </div>
 
@@ -81,10 +81,10 @@ function ContactUs() {
                   <span className="span">*</span>
                 </label>
                 <input className="contactInput" type="text" required></input>
-                <div style={{ marginTop: "7px" }}>
+                {/* <div style={{ marginTop: "7px" }}>
                   <input type="checkbox" required></input>
                   <span className="teamCheck">checkbox here</span>
-                </div>
+                </div> */}
               </div>
 
               <div>
