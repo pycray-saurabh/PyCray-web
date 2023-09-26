@@ -11,7 +11,7 @@ function About() {
         <img className="aboutpic" alt="aspic" src={aboutpic} />
         <div className="whiterect">
           <div className="aboutustext">ABOUT US</div>
-          <div className="homeandabout">Home / About</div>
+          {/* <div className="homeandabout">Home / About</div> */}
         </div>
       </div>
 

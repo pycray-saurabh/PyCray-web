@@ -33,13 +33,11 @@
     grid-template-rows: auto auto;
     place-items: center;
     gap: 5vw;
-    /* top: -827px; */
 }
 
 .toolstext {
     display: grid;
     grid-template-rows: auto auto auto;
-    /* gap: 1vw; */
     place-items: center;
     width: 100%;
     height: auto;
@@ -50,18 +48,11 @@
     font-family: "Poppins-SemiBold", Helvetica;
     font-size: 2.5rem;
     font-weight: 400;
-    /* left: 200px; */
     letter-spacing: -0.8px;
     line-height: 2.5rem;
-    /* place-self: center;
-    justify-self: center; */
     text-align: center;
-    /* top: 100px; */
     margin-top: 6vw;
     width: 50%;
-    /* margin-left: 17.5vw;
-    margin-right: 17.5vw; */
-    /* position: relative; */
     display: flex;
     justify-content: center;
 }
@@ -77,10 +68,6 @@
 }
 
 .toolUnderline {
-    /* position: relative; */
-    /* left: 50%; */
-    /* top: 3vw; */
-    /* justify-self: center; */
     display: flex;
     justify-content: center;
 }
@@ -89,7 +76,6 @@
     border: 0px none;
     height: auto;
     width: 50%;
-    /* position: relative; */
 }
 
 .toolp .toolps {
@@ -97,31 +83,21 @@
     font-family: "Poppins-Regular", Helvetica;
     font-size: 1rem;
     font-weight: 400;
-    /* left: 240px; */
     letter-spacing: -0.1px;
     line-height: 1.563rem;
-    /* justify-self: center; */
     text-align: center;
-    /* top: 2vw; */
     width: 100%;
-    /* position: relative; */
     display: flex;
     justify-content: center;
 }
 
 .component {
+    min-height: 39vw;
     height: auto;
-    /* position: relative; */
     width: 80%;
-    /* left: 140px; */
-    /* transform: translateX(-12%); */
     display: grid;
     grid-template-columns: 1fr 1fr;
-    /* gap: 3vw; */
-    /* margin-left: 2vw; */
     margin-bottom: 5vw;
-    /* top: 175px; */
-    /* justify-content: center; */
     justify-items: center;
 }
 
@@ -129,9 +105,6 @@
     display: grid;
     grid-template-rows: auto auto auto auto auto auto auto;
     gap: 2vw;
-    /* width: 30vw; */
-    /* height: 45vw; */
-    /* width: 107%; */
 }
 
 .buttonformat {
@@ -144,10 +117,6 @@
     position: relative;
     white-space: nowrap;
     padding: 0.1vw 1.25vw;
-    /* padding-left: 1.25vw;
-    padding-right: 0.25vw;
-    padding-top: 0.1vw;
-    padding-bottom: 0.1vw; */
     border-radius: 5px;
     border-color: #0b67b3;
     background-color: transparent;
@@ -157,21 +126,15 @@
 }
 
 .buttonformat.selected {
- 
     border-color: transparent;
     background-color: #3884c4;
     cursor: pointer;
 }
 
 .displayedTools {
-    /* position: relative; */
-    /* left: 425px; */
-    /* top: -10px; */
-    /* justify-self: center; */
-    /* width: 65%; */
-    /* display: flex; */
-    /* justify-content: center; */
-    /* align-items: center; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
     justify-self: center;
 }
 
@@ -189,30 +152,47 @@
     max-width: 90%;
 }
 
+.toolsnTechRow {
+    grid-template-columns: auto auto auto auto;
+    gap: 3vw;
+}
+
+.toolsnTechCard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #85BAE7;
+    border-radius: 12px;
+    padding: 1vw;
+    flex-shrink: 0;
+    width: 5vw;
+    height: 5vw
+}
+
+.toolsnTechText {
+    font-size: 1rem;
+    font-family: "Poppins-SemiBold", Helvetica;
+    font-style: normal;
+    font-weight: 600;
+    text-align: center;
+}
+
 @media (max-width: 576px) {
     .component {
         height: auto;
         position: relative;
         width: 90vw;
-        /* left: 140px; */
-        /* transform: translateX(-12%); */
         display: grid;
         grid-template-columns: auto;
         grid-template-rows: auto auto;
         gap: 3vw;
-        /* margin-left: 2vw; */
         margin-bottom: 5vw;
-        /* top: 175px; */
     }
 
     .componentbuttons {
         display: grid;
         grid-template-columns: auto auto;
         grid-template-rows: auto auto auto auto;
-        /* row-gap: 1vw;
-        gap: 1vw; */
-        /* width: 30vw; */
-        /* height: 20vw; */
         gap: 0vw;
         width: 90vw;
         justify-content: center;
@@ -221,13 +201,24 @@
     .displayedTools {
         display: flex;
         position: relative;
-        /* left: 425px; */
-        /* top: 20px; */
-        justify-self: center;
         width: 78vw;
         margin: 5vw;
         min-height: 62vw;
         align-items: center;
+    }
+
+    .toolsnTechCard {
+        width: 16vw;
+        height: 16vw;   
+    }
+
+    .toolsnTechText {
+        font-size: 0.54rem;
+        font-weight: 500;
+    }
+
+    img.card-img {
+        width: 8vw;
     }
 
     .picv1 {
@@ -235,7 +226,10 @@
         width: 80vw;
         height: auto;
         max-width: 90%;
-        /* left: 1vw; */
+    }
+
+    .toolsnTechRow {
+        grid-template-rows: auto auto auto auto;
     }
     
     .displayedTools > div:nth-child(1) {
@@ -255,7 +249,6 @@
         font-size: 0.513rem;
         line-height: 0.9rem;
         padding: 1.5vw 1.25vw;
-        /* height: 5vw; */
         width: 40vw;
         margin: 2vw;
     }
@@ -291,30 +284,6 @@
         font-size: 1rem;
         line-height: 1.563rem;
     }
-
-    /* .be-in-the-trend-of {
-        color: #333333;
-        font-family: "Poppins-SemiBold", Helvetica;
-        font-size: 2.18rem;
-        font-weight: 600;
-        height: auto;
-        letter-spacing: 0;
-        line-height: 5.5vw;
-        position: relative;
-        white-space: nowrap;
-      }
-      
-      .every-week-we-create {
-        color: #858a8f;
-        font-family: "Poppins-Regular", Helvetica;
-        font-size: 1.13rem;
-        font-weight: 400;
-        height: auto;
-        letter-spacing: 0;
-        line-height: 2.9vw;
-        position: relative;
-        width: 45vw;
-      } */
 
     .buttonformat {
         font-size: 0.625rem;

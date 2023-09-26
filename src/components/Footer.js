@@ -31,7 +31,7 @@ function Footer() {
         <div className="emailrows">
           <img className="element" alt="Element" src={logo2} />
 
-          <p className="p">Generate outside the box thinking with the possibility to target the low.</p>
+          <p className="p">Do More With Less.</p>
 
           <div className="emailtext">
             <h1 className="enotifheader">Get Email Notification</h1>

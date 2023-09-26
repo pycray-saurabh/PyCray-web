@@ -18,6 +18,13 @@ import emailus from '../assets/emailus.png'
 import dropinus from '../assets/dropinus.png'
 import bookcons from '../assets/bookacons.png'
 import ellipsepic from '../assets/ellipse.svg'
+import financial from '../assets/financial.png'
+import ecommerce from '../assets/ecommerce.png'
+import retail from '../assets/retail.png'
+import manufacturing from '../assets/manufacturing.png'
+import logistics from '../assets/logistics.png'
+import supplychain  from '../assets/supplychain.png'
+
 // import ellipsebg from 
 // import toolComponent from '../components/toolComponent'
 // import ptoolz from '../components/toolComponents/Ptools'
@@ -388,9 +395,98 @@ function Home() {
           </div>
         </div>
 
+
         <div className='industrycontainer'>
-          <img className="industryPic" alt="ipic" src={indPic} />
-          <img className='industryMobileView' alt='industries' src={industriesMobileView} />
+          <div className='industryDesktop'>
+            <div className='industryRow row1'>
+              <div className='industryBox'>
+                <div className='industryImg'>
+                  <img src={financial} alt='financial' />
+                </div>
+                <p className='industryText'>Financial Services</p>
+              </div>
+              <div className='industryBox'>
+                <div className='industryImg'>
+                  <img src={ecommerce} alt='ecommerce' />
+                </div>
+                <p className='industryText'>E-commerce</p>
+              </div>
+              <div className='industryBox'>
+                <div className='industryImg'>
+                  <img src={retail} alt='retail' />
+                </div>
+                <p className='industryText'>Retail</p>
+              </div>
+            </div>
+
+            <div className='industryRow row2'>
+              <div className='industryBox'>
+                <div className='industryImg'>
+                  <img src={manufacturing} alt='manufacturing' />
+                </div>
+                <p className='industryText'>Manufacturing</p>
+              </div>
+              <div className='industryBox'>
+                <div className='industryImg'>
+                  <img src={logistics} alt='logistics' />
+                </div>
+                <p className='industryText'>Logistics</p>
+              </div>
+              <div className='industryBox'>
+                <div className='industryImg'>
+                  <img src={supplychain} alt='supplychain' />
+                </div>
+                <p className='industryText'>Supply Chain</p>
+              </div>
+            </div>
+          </div>
+
+          <div className='industryMobile'>
+            <div className='industryRow row1'>
+              <div className='industryBox'>
+                <div className='industryImg'>
+                  <img src={financial} alt='financial' />
+                </div>
+                <p className='industryText'>Financial Services</p>
+              </div>
+              <div className='industryBox'>
+                <div className='industryImg'>
+                  <img src={ecommerce} alt='ecommerce' />
+                </div>
+                <p className='industryText'>E-commerce</p>
+              </div>
+            </div>
+
+            <div className='industryRow row1'>
+              <div className='industryBox'>
+                <div className='industryImg'>
+                  <img src={retail} alt='retail' />
+                </div>
+                <p className='industryText'>Retail</p>
+              </div>
+              <div className='industryBox'>
+                <div className='industryImg'>
+                  <img src={manufacturing} alt='manufacturing' />
+                </div>
+                <p className='industryText'>Manufacturing</p>
+              </div>
+            </div>
+
+            <div className='industryRow row2'>
+              <div className='industryBox'>
+                <div className='industryImg'>
+                  <img src={logistics} alt='logistics' />
+                </div>
+                <p className='industryText'>Logistics</p>
+              </div>
+              <div className='industryBox'>
+                <div className='industryImg'>
+                  <img src={supplychain} alt='supplychain' />
+                </div>
+                <p className='industryText'>Supply Chain</p>
+              </div>
+            </div>
+          </div>
         </div>
 
         {/* <img className="industryPic" alt="ipic" src={indPic} /> */}
@@ -421,8 +517,7 @@ function Home() {
             <rect width="73" height="7" rx="2" fill="#0C67B4" />
           </svg>
           <p className="subtitle">
-            Completely synergize resource taxing relationships via premier niche markets.
-            Professionally&nbsp;&nbsp;cultivate one-to-one customer service with robust ideas.
+            Read about our success stories illustrating our expertise and client-focused solutions.
           </p>
         </div>
 
@@ -459,10 +554,10 @@ function Home() {
             <div className='caserightside'>
               <div className='caserows'>
 
-                <div className="datelabel">
+                {/* <div className="datelabel">
                   <div className="tw1">Case Study</div>
                   <div className="september">SEPTEMBER 1, 2023</div>
-                </div>
+                </div> */}
 
                 <div className="casetext">
                   <h1 className="gestalt-psychology">
