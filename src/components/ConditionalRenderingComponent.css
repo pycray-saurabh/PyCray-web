@@ -104,7 +104,7 @@
 .componentbuttons {
     display: grid;
     grid-template-rows: auto auto auto auto auto auto auto;
-    gap: 2vw;
+    gap: 2.2vw;
 }
 
 .buttonformat {
@@ -116,7 +116,7 @@
     line-height: 2.188rem;
     position: relative;
     white-space: nowrap;
-    padding: 0.1vw 1.25vw;
+    padding: 0.1vw 0.94vw;
     border-radius: 5px;
     border-color: #0b67b3;
     background-color: transparent;
@@ -134,8 +134,7 @@
 .displayedTools {
     display: flex;
     justify-content: center;
-    align-items: center;
-    justify-self: center;
+    align-items: flex-start;
 }
 
 .picv1 {
