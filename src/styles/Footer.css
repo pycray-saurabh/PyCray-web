@@ -267,9 +267,7 @@
 .pageTitle,
 .div,
 .title-2 {
-  display: grid;
-  grid-template-columns: auto auto;
-  gap: 0.5vw;
+  display: flex;
   margin-bottom: 2vw;
   align-items: center;
 }
@@ -291,7 +289,7 @@
   height: auto;
   width: 2vw;
   position: relative;
-  top: -0.25vw; /* Adjust vertically if needed */
+  padding-right: 1vw;
 }
 
 
