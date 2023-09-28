@@ -102,7 +102,7 @@
 
     .navbar .rightSide button {
         display: inherit;
-        margin: 20px;
+        margin-right: 3vw;
     }
 
     .navbar .rightSide button img {
@@ -184,5 +184,11 @@
 
     .hiddenLinks {
         display: none;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    .mobile-menu-window {
+        width: 70%;
     }
 }
