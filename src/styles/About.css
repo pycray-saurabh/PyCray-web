@@ -319,11 +319,11 @@
     border-radius: 50%;
 }
   
-.card-content {
+.memberCard .card-content {
     margin: 0vw 1vw;
 }
   
-.card-content h2 {
+.memberCard .card-content h2 {
     color: #000;
     font-family: "Poppins-SemiBold", Helvetica;
     font-size: 30px;
@@ -334,7 +334,7 @@
     margin: 0.5vw;
 }
 
-.card-content h3 {
+.memberCard .card-content h3 {
     color: #7F7F7F;
     font-family: "Poppins-Regular", Helvetica;
     font-size: 23px;
@@ -345,7 +345,7 @@
     margin: 0vw;
 }
   
-.card-content p {
+.memberCard .card-content p {
     color: #4C4C4C;
     text-align: center;
     font-family: "Poppins-Regular", Helvetica;
@@ -484,17 +484,17 @@
         height: 11.8vw;
     }
 
-    .card-content h2 {
+    .memberCard .card-content h2 {
         font-size: 10.504px;
         letter-spacing: 0.21px;
     }
 
-    .card-content h3 {
+    .memberCard .card-content h3 {
         font-size: 8.053px;
         letter-spacing: 0.805px;
     }
 
-    .card-content p {
+    .memberCard .card-content p {
         font-size: 5.602px;
         letter-spacing: 0.112px;
     }
