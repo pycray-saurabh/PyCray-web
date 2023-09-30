@@ -758,7 +758,7 @@
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 450px) {
   .emailcolumns > div:nth-child(1) {
     padding: 4vw 2vw;
   }

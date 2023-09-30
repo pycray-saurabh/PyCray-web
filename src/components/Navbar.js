@@ -31,9 +31,9 @@ function Navbar() {
             <div className="rightSide">
                 <Link to="/"> Home </Link>
                 {/* <Link to="/productgenesis"> Product Genesis </Link> */}
-                <Link to="/Teams"> Team </Link>
-                <Link to="/about"> About </Link>
-                <Link to="/contactus"> Contact Us </Link>
+                <Link to="/Team"> Team </Link>
+                <Link to="/About"> About </Link>
+                <Link to="/ContactUs"> Contact Us </Link>
                 <button onClick={toggleMenu}>
                     <img src={menuBtn} alt="menu-btn"/>
                 </button>
@@ -57,7 +57,7 @@ function Navbar() {
                             </svg>
                         </div>
                         
-                        <div className="item text-center" role="button" onClick={() => { window.location.href = "/about"; }}>About Us</div>
+                        <div className="item text-center" role="button" onClick={() => { window.location.href = "/About"; }}>About Us</div>
                         
                         <div className="menubarDividerLine">
                             <svg width="153" height="1" viewBox="0 0 153 1" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -65,7 +65,7 @@ function Navbar() {
                             </svg>
                         </div>
                         
-                        <div className="item text-center" role="button" onClick={() => { window.location.href = "/contactus"; }}>Contact Us</div>
+                        <div className="item text-center" role="button" onClick={() => { window.location.href = "/ContactUs"; }}>Contact Us</div>
 
                         <div className="menubarDividerLine">
                             <svg width="153" height="1" viewBox="0 0 153 1" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -73,7 +73,7 @@ function Navbar() {
                             </svg>
                         </div>
 
-                        <div className="item text-center" role="button" onClick={() => { window.location.href = "/Teams"; }}>Team</div>
+                        <div className="item text-center" role="button" onClick={() => { window.location.href = "/Team"; }}>Team</div>
 
                         <div className="menubarDividerLine">
                             <svg width="153" height="1" viewBox="0 0 153 1" fill="none" xmlns="http://www.w3.org/2000/svg">

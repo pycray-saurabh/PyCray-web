@@ -192,11 +192,10 @@
     height: auto;
 }
 .wrapper_teamCreative{
-    background: #FAFBFF;
-    padding: 0 50px;
+    width: 100vw;
 }
 .teamMarginManage{
-    margin: 50px 0;
+    margin: 50px 50px;
 }
 .wrapper_teamCreative p{
     color: #4D5053;
@@ -210,14 +209,24 @@
 }
 .teamCreative{
     display: flex;
-    justify-content: space-between;
-    background: #FAFBFF;
+    /* justify-content: space-between;
+    background: #FAFBFF; */
     
 }
-.teamCreateFirst{
-    width: 30%;
+
+.teamCreateImg {
+    width: 63.6vw;
 }
-.teamCreateFirst h2{
+
+.teamCreateFirst{
+    width: auto;
+}
+
+.meetTheTeam {
+    width: auto;
+}
+
+.teamCreateFirst h2, .meetTheTeam h2{
     color: #4DD2B2;
     font-size: 65px;
     font-style: normal;
@@ -226,7 +235,8 @@
     letter-spacing: 1.3px;
     position: relative;
 }
-.teamCreateFirst h2::after {
+
+.teamCreateFirst h2::after{
     content: ""; /* Required to create the pseudo-element */
     display: block; /* Makes the pseudo-element a block-level element */
     width: 73px; /* Adjust the width of the border as needed */
@@ -236,7 +246,151 @@
     position: absolute; /* Position the border absolutely */
     top: 100%; /* Position it just below the heading text */
     left: 0; /* Align it with the left edge of the heading */
-  }
+}
+
+.meetTheTeam {
+    width: 100vw;
+    text-align: center;
+}
+
+.meetTheTeam h2 {
+    margin-bottom: 1vw;
+}
+
+.meetTheTeam .meetTheTeamUnderline {
+    position: relative;
+    justify-self: center;
+}
+
+.teamMemberSection {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    margin-top: 6vw;
+    margin-bottom: 15vw;
+}
+
+.teamCardsBox {
+    width: 100vw;
+    display: flex;
+    gap: 4vw;   
+    justify-content: center;
+    z-index: 2;
+    position: relative;
+}
+
+.blueBackground {
+    background-color: #C9E0F5;
+    width: 100vw;    
+    height: 15.8vw;
+    position: absolute;
+    z-index: 1;
+}
+
+.prevButton {
+    width: 1.7vw;
+    position: absolute;
+    left: 0;
+    z-index: 3;
+    padding: 1vw;
+    cursor: pointer;
+}
+
+.nextButton {
+    width: 1.7vw;
+    position: absolute;
+    right: 0;
+    z-index: 3;
+    padding: 1vw;
+    cursor: pointer;
+}
+
+.memberCard {
+    border-radius: 10px;
+    padding: 1vw;
+    flex-shrink: 0;
+    background-color: #EAF5FF;
+    width: 24.2vw;
+    /* height: 90% */
+    text-align: center;
+}
+
+.memberCard .card-img {
+    width: 8.6vw;
+    height: 8.6vw;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 2vw auto;
+}
+
+.memberCard .card-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: 2px solid #fff;
+    border-radius: 50%;
+}
+  
+.memberCard .card-content {
+    margin: 0vw 1vw;
+}
+  
+.memberCard .card-content h2 {
+    color: #000;
+    font-family: "Poppins-SemiBold", Helvetica;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 125%; /* 121.429% */
+    letter-spacing: 0.6px;
+    margin: 0.5vw;
+}
+
+.memberCard .card-content h3 {
+    color: #7F7F7F;
+    font-family: "Poppins-Regular", Helvetica;
+    font-size: 23px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 125%; /* 121.429% */
+    letter-spacing: 2.3px;
+    margin: 0vw;
+}
+  
+.memberCard .card-content p {
+    color: #4C4C4C;
+    text-align: center;
+    font-family: "Poppins-Regular", Helvetica;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 125%; /* 20px */
+    letter-spacing: 0.32px;
+}
+
+.socialMediaIcons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1vw 0vw;
+    gap: 2vw
+}
+
+.socialMediaButton {
+    cursor: pointer;
+}
+
+.linkedinButton {
+    width: 28px;
+    height: 28px;
+}
+
+.threadButton {
+    width: 20px;
+    height: 20px;
+}
+
 .teamCreateSecond{
     width: 70%;
     display: flex;
@@ -277,5 +431,148 @@
     }
     .whatwedo {
         padding: 0 10px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .card-content h2 {
+        font-size: 18px;
+    }
+
+    .card-content h3 {
+        font-size: 15px;
+    }
+
+    .card-content p {
+        font-size: 11px;
+    }
+    
+    .linkedinButton {
+        width: 20px;
+        height: 20px;
+    }
+  
+    .threadButton {
+        width: 15px;
+        height: 15px;
+    }
+  
+    .wrapper_teamCreative {
+        padding: 0;
+    }
+  
+    .teamCreateFirst {
+        position: relative;
+        z-index: 2;
+        width: auto;
+    }
+  
+    .teamCreative {
+        padding: 0px 20px;
+        display: block;
+    }
+  
+    .teamCreateSecond {
+        position: relative;
+        top: -50px;
+        display: block;
+    }
+  
+    .teamCreateFirst h2::after {
+        left: 10px;
+    }
+  
+    .teamCreateFirst h2{
+      font-size: 65px;
+      letter-spacing: 0.52px;
+    }
+  
+    .wrapper_teamCreative p {
+        font-size: 20px;
+        position: relative;
+        letter-spacing: 0.12px;
+        margin: 0px 20px;
+        top: -47px;
+    }
+  
+    .teamMarginManage {
+        margin: 50px 0 0 0;
+    }
+
+    .teamCreateSecond > .teamCreateImg {
+        width: 90vw;
+    }
+}
+
+@media (max-width: 600px) {
+    .meetTheTeam h2 {
+        font-size: 35px;
+        letter-spacing: 0.7px;
+    }
+    
+    .teamMemberSection {
+        margin-top: 12vw;
+        margin-bottom: 20vw;
+    }
+
+    .blueBackground {
+        height: 23.5vw;
+    }
+
+    .prevButton {
+        width: 1vw;
+        padding: 3vw;
+    }
+
+    .nextButton {
+        width: 1vw;
+        padding: 3vw;
+    }
+
+    .memberCard {
+        width: 34.1vw;
+    }
+
+    .memberCard .card-img {
+        width: 11.8vw;
+        height: 11.8vw;
+    }
+
+    .memberCard .card-content h2 {
+        font-size: 10.504px;
+        letter-spacing: 0.21px;
+    }
+
+    .memberCard .card-content h3 {
+        font-size: 8.053px;
+        letter-spacing: 0.805px;
+    }
+
+    .memberCard .card-content p {
+        font-size: 5.602px;
+        letter-spacing: 0.112px;
+    }
+
+    .linkedinButton {
+        width: 9.8px;
+        height: 9.8px;
+    }
+    
+    .threadButton {
+        width: 7px;
+        height: 7px;
+    }
+
+    .teamCreateFirst h2::after {
+        width: 45px;
+        left: 4px;
+    }
+  
+    .teamCreateFirst h2{
+      font-size: 26px;
+    }
+  
+    .wrapper_teamCreative p {
+        font-size: 12px;
     }
 }
