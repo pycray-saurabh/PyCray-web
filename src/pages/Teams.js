@@ -1,15 +1,92 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "../styles/About.css";
 import aboutpic from "../assets/team_banner.svg";
 import aboutcard from "../assets/aboutuscard.svg";
 import profilepic1 from "../assets/profilepic1.svg";
+import nextIcon from "../assets/nextIcon.png";
 import createTeam from "../assets/TeamCreate.png";
-import memberImage from "../assets/member-img.png";
+import rahulDasCEO from "../assets/rahul_das_ceo.jpg";
+import saurabhKumarCTO from "../assets/saurabh_kumar_cto.jpg";
+import maheshSangadeCOO from "../assets/mahesh_sangade_coo.png";
 import instaIcon from "../assets/team-mem-insta-icon.png";
 import threadIcon from "../assets/team-mem-thread-icon.png";
 import facebookIcon from "../assets/team-mem-facebook-icon.png";
 
 const Teams = () => {
+  const teamMembers = [
+    {
+      "profile_photo": rahulDasCEO,
+      "name": "Rahul Das",
+      "designation": "CEO",
+      "description": "IIM Udaipur, 7+ years of IT products development and testing.",
+      "social_media": {
+        "facebook": "",
+        "insta": "",
+        "thread": ""
+      }
+    },
+    {
+      "profile_photo": saurabhKumarCTO,
+      "name": "Saurabh Kumar",
+      "designation": "CTO",
+      "description": "Tech leader with 7+ years of experience across tech stacks.",
+      "social_media": {
+        "facebook": "",
+        "insta": "",
+        "thread": ""
+      }
+    },
+    {
+      "profile_photo": maheshSangadeCOO,
+      "name": "Mahesh Sangade",
+      "designation": "COO",
+      "description": "IIM Ahmedabad, IIT Guwahati, Project management excellence of 8+ years.",
+      "social_media": {
+        "facebook": "",
+        "insta": "",
+        "thread": ""
+      }
+    }
+  ];
+
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const [itemsPerRow, setItemsPerRow] = useState(3);
+
+  useEffect(() => {
+    const updateScreenSize = () => {
+      const width = window.innerWidth;
+      if (width <= 600) {
+        setItemsPerRow(2);
+      } else {
+        setItemsPerRow(3);
+      } 
+    };
+
+    updateScreenSize();
+
+    window.addEventListener('resize', updateScreenSize);
+
+    return () => {
+      window.removeEventListener('resize', updateScreenSize);
+    };
+  }, []);
+
+  const nextItems = () => {
+    setCurrentIndex((prevIndex) =>
+      prevIndex + itemsPerRow >= teamMembers.length
+        ? 0
+        : teamMembers.length - (prevIndex + itemsPerRow) > itemsPerRow 
+        ? prevIndex + itemsPerRow 
+        : teamMembers.length - itemsPerRow
+    );
+  };
+
+  const openSocialMedia = (social_media_link) => {
+    if(social_media_link != "") {
+      window.open(social_media_link);
+    }
+  }
+
   return (
     <div className="aboutpage">
       <div className="aboutsec">
@@ -53,56 +130,30 @@ const Teams = () => {
         </div>
 
         <div className="teamMemberSection">
-        <div className="blueBackground"></div>
-        <div className="teamCardsBox">
-          <div className="memberCard">
-            <div class="card-img">
-              <img src={memberImage} alt="team-member" />
-            </div>
-            <div className="card-content">
-              <h2>Name</h2>
-              <h3>Designation</h3>
-              <p>NamLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
-              <div className="socialMediaIcons">
-                <img style={{width: "28px", height: "28px"}} src={facebookIcon} alt="facebook" />
-                <img style={{width: "20px", height: "20px", margin: "0vw 2vw"}} src={threadIcon} alt="thread" />
-                <img style={{width: "23px", height: "23px"}} src={instaIcon} alt="instagram" />
-              </div>
-            </div>
-          </div>
+          <div className="blueBackground"></div>
 
-          <div className="memberCard d-none">
-            <div class="card-img">
-              <img src={memberImage} alt="team-member" />
-            </div>
-            <div className="card-content">
-              <h2>Name</h2>
-              <h3>Designation</h3>
-              <p>NamLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
-              <div className="socialMediaIcons">
-                <img style={{width: "28px", height: "28px"}} src={facebookIcon} alt="facebook" />
-                <img style={{width: "20px", height: "20px", margin: "0vw 2vw"}} src={threadIcon} alt="thread" />
-                <img style={{width: "23px", height: "23px"}} src={instaIcon} alt="instagram" />
-              </div>
-            </div>
+          <div className="teamCardsBox">
+            {teamMembers.slice(currentIndex, currentIndex + itemsPerRow).map((members, index) => {
+              return (
+                <div className="memberCard">
+                  <div class="card-img">
+                    <img src={members.profile_photo} alt="team-member" />
+                  </div>
+                  <div className="card-content">
+                    <h2>{members.name}</h2>
+                    <h3>{members.designation}</h3>
+                    <p>{members.description}</p>
+                    <div className="socialMediaIcons">
+                      <img className="socialMediaButton facebookButton" src={facebookIcon} alt="facebook" onClick={() => { openSocialMedia(members.social_media.facebook) }} />
+                      <img className="socialMediaButton threadButton" src={threadIcon} alt="thread" onClick={() => { openSocialMedia(members.social_media.thread) }} />
+                      <img className="socialMediaButton instaButton" src={instaIcon} alt="instagram" onClick={() => { openSocialMedia(members.social_media.insta) }} />
+                    </div>
+                  </div>
+                </div>
+              );
+            })}
           </div>
-
-          <div className="memberCard">
-            <div class="card-img">
-              <img src={memberImage} alt="team-member" />
-            </div>
-            <div className="card-content">
-              <h2>Name</h2>
-              <h3>Designation</h3>
-              <p>NamLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
-              <div className="socialMediaIcons">
-                <img style={{width: "28px", height: "28px"}} src={facebookIcon} alt="facebook" />
-                <img style={{width: "20px", height: "20px", margin: "0vw 2vw"}} src={threadIcon} alt="thread" />
-                <img style={{width: "23px", height: "23px"}} src={instaIcon} alt="instagram" />
-              </div>
-            </div>
-          </div>
-        </div>
+          <img className="nextButton" src={nextIcon} alt="next" onClick={nextItems} />
         </div>
       </div>
     </div>

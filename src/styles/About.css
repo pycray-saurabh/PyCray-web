@@ -261,18 +261,16 @@
 .teamMemberSection {
     display: flex;
     align-items: center;
-    /* justify-content: center; */
+    justify-content: center;
+    width: 100vw;
     margin-top: 6vw;
     margin-bottom: 15vw;
 }
 
 .teamCardsBox {
     width: 100vw;
-    display: grid;
-    grid-template-columns: auto auto auto;
-    /* margin-top: 2vw; */
+    display: flex;
     gap: 4vw;   
-    /* margin-bottom: 5vw; */
     justify-content: center;
     z-index: 2;
     position: relative;
@@ -286,6 +284,15 @@
     z-index: 1;
 }
 
+.nextButton {
+    width: 1.7vw;
+    position: absolute;
+    right: 0;
+    z-index: 3;
+    padding: 1vw;
+    cursor: pointer;
+}
+
 .memberCard {
     border-radius: 10px;
     padding: 1vw;
@@ -297,7 +304,19 @@
 }
 
 .memberCard .card-img {
-    margin: 2vw 0vw 1vw 0vw;
+    width: 8.6vw;
+    height: 8.6vw;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 2vw auto;
+}
+
+.memberCard .card-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: 2px solid #fff;
+    border-radius: 50%;
 }
   
 .card-content {
@@ -344,6 +363,26 @@
     margin: 1vw 0vw;
 }
 
+.socialMediaButton {
+    cursor: pointer;
+}
+
+.facebookButton {
+    width: 28px;
+    height: 28px;
+}
+
+.threadButton {
+    width: 20px;
+    height: 20px;
+    margin: 0vw 2vw;
+}
+
+.instaButton {
+    width: 23px;
+    height: 23px;
+}
+
 .teamCreateSecond{
     width: 70%;
     display: flex;
@@ -384,5 +423,95 @@
     }
     .whatwedo {
         padding: 0 10px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .card-content h2 {
+        font-size: 18px;
+    }
+
+    .card-content h3 {
+        font-size: 15px;
+    }
+
+    .card-content p {
+        font-size: 11px;
+    }
+    
+    .facebookButton {
+        width: 20px;
+        height: 20px;
+    }
+  
+    .threadButton {
+        width: 15px;
+        height: 15px;
+    }
+  
+    .instaButton {
+        width: 18px;
+        height: 18px;
+    }
+}
+
+@media (max-width: 600px) {
+    .teamCreateFirst h2, .meetTheTeam h2 {
+        font-size: 35px;
+        letter-spacing: 0.7px;
+    }
+    
+    .teamMemberSection {
+        margin-top: 12vw;
+        margin-bottom: 20vw;
+    }
+
+    .blueBackground {
+        height: 23.5vw;
+    }
+
+    .nextButton {
+        width: 1vw;
+        padding: 3vw;
+    }
+
+    .memberCard {
+        width: 34.1vw;
+    }
+
+    .memberCard .card-img {
+        width: 11.8vw;
+        height: 11.8vw;
+    }
+
+    .card-content h2 {
+        font-size: 10.504px;
+        letter-spacing: 0.21px;
+    }
+
+    .card-content h3 {
+        font-size: 8.053px;
+        letter-spacing: 0.805px;
+    }
+
+    .card-content p {
+        font-size: 5.602px;
+        letter-spacing: 0.112px;
+    }
+
+    .facebookButton {
+        width: 9.8px;
+        height: 9.8px;
+    }
+    
+    .threadButton {
+        width: 7px;
+        height: 7px;
+        /* margin: 0vw 2vw; */
+    }
+    
+    .instaButton {
+        width: 8.05px;
+        height: 8.05px;
     }
 }
