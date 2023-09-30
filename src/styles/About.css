@@ -192,11 +192,10 @@
     height: auto;
 }
 .wrapper_teamCreative{
-    background: #FAFBFF;
-    padding: 0 50px;
+    width: 100vw;
 }
 .teamMarginManage{
-    margin: 50px 0;
+    margin: 50px 50px;
 }
 .wrapper_teamCreative p{
     color: #4D5053;
@@ -210,12 +209,17 @@
 }
 .teamCreative{
     display: flex;
-    justify-content: space-between;
-    background: #FAFBFF;
+    /* justify-content: space-between;
+    background: #FAFBFF; */
     
 }
+
+.teamCreateImg {
+    width: 63.6vw;
+}
+
 .teamCreateFirst{
-    width: 30%;
+    width: auto;
 }
 
 .meetTheTeam {
@@ -282,6 +286,15 @@
     height: 15.8vw;
     position: absolute;
     z-index: 1;
+}
+
+.prevButton {
+    width: 1.7vw;
+    position: absolute;
+    left: 0;
+    z-index: 3;
+    padding: 1vw;
+    cursor: pointer;
 }
 
 .nextButton {
@@ -361,13 +374,14 @@
     justify-content: center;
     align-items: center;
     margin: 1vw 0vw;
+    gap: 2vw
 }
 
 .socialMediaButton {
     cursor: pointer;
 }
 
-.facebookButton {
+.linkedinButton {
     width: 28px;
     height: 28px;
 }
@@ -375,12 +389,6 @@
 .threadButton {
     width: 20px;
     height: 20px;
-    margin: 0vw 2vw;
-}
-
-.instaButton {
-    width: 23px;
-    height: 23px;
 }
 
 .teamCreateSecond{
@@ -439,7 +447,7 @@
         font-size: 11px;
     }
     
-    .facebookButton {
+    .linkedinButton {
         width: 20px;
         height: 20px;
     }
@@ -449,14 +457,55 @@
         height: 15px;
     }
   
-    .instaButton {
-        width: 18px;
-        height: 18px;
+    .wrapper_teamCreative {
+        padding: 0;
+    }
+  
+    .teamCreateFirst {
+        position: relative;
+        z-index: 2;
+        width: auto;
+    }
+  
+    .teamCreative {
+        padding: 0px 20px;
+        display: block;
+    }
+  
+    .teamCreateSecond {
+        position: relative;
+        top: -50px;
+        display: block;
+    }
+  
+    .teamCreateFirst h2::after {
+        left: 10px;
+    }
+  
+    .teamCreateFirst h2{
+      font-size: 65px;
+      letter-spacing: 0.52px;
+    }
+  
+    .wrapper_teamCreative p {
+        font-size: 20px;
+        position: relative;
+        letter-spacing: 0.12px;
+        margin: 0px 20px;
+        top: -47px;
+    }
+  
+    .teamMarginManage {
+        margin: 50px 0 0 0;
+    }
+
+    .teamCreateSecond > .teamCreateImg {
+        width: 90vw;
     }
 }
 
 @media (max-width: 600px) {
-    .teamCreateFirst h2, .meetTheTeam h2 {
+    .meetTheTeam h2 {
         font-size: 35px;
         letter-spacing: 0.7px;
     }
@@ -468,6 +517,11 @@
 
     .blueBackground {
         height: 23.5vw;
+    }
+
+    .prevButton {
+        width: 1vw;
+        padding: 3vw;
     }
 
     .nextButton {
@@ -499,7 +553,7 @@
         letter-spacing: 0.112px;
     }
 
-    .facebookButton {
+    .linkedinButton {
         width: 9.8px;
         height: 9.8px;
     }
@@ -507,11 +561,18 @@
     .threadButton {
         width: 7px;
         height: 7px;
-        /* margin: 0vw 2vw; */
     }
-    
-    .instaButton {
-        width: 8.05px;
-        height: 8.05px;
+
+    .teamCreateFirst h2::after {
+        width: 45px;
+        left: 4px;
+    }
+  
+    .teamCreateFirst h2{
+      font-size: 26px;
+    }
+  
+    .wrapper_teamCreative p {
+        font-size: 12px;
     }
 }

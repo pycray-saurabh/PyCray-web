@@ -3,14 +3,14 @@ import "../styles/About.css";
 import aboutpic from "../assets/team_banner.svg";
 import aboutcard from "../assets/aboutuscard.svg";
 import profilepic1 from "../assets/profilepic1.svg";
+import prevIcon from "../assets/prevIcon.png";
 import nextIcon from "../assets/nextIcon.png";
 import createTeam from "../assets/TeamCreate.png";
 import rahulDasCEO from "../assets/rahul_das_ceo.jpg";
 import saurabhKumarCTO from "../assets/saurabh_kumar_cto.jpg";
 import maheshSangadeCOO from "../assets/mahesh_sangade_coo.png";
-import instaIcon from "../assets/team-mem-insta-icon.png";
+import linkedinIcon from "../assets/team-mem-linkedin-icon.png";
 import threadIcon from "../assets/team-mem-thread-icon.png";
-import facebookIcon from "../assets/team-mem-facebook-icon.png";
 
 const Teams = () => {
   const teamMembers = [
@@ -20,8 +20,7 @@ const Teams = () => {
       "designation": "CEO",
       "description": "IIM Udaipur, 7+ years of IT products development and testing.",
       "social_media": {
-        "facebook": "",
-        "insta": "",
+        "linkedin": "https://www.linkedin.com/company/pycray/",
         "thread": ""
       }
     },
@@ -31,8 +30,7 @@ const Teams = () => {
       "designation": "CTO",
       "description": "Tech leader with 7+ years of experience across tech stacks.",
       "social_media": {
-        "facebook": "",
-        "insta": "",
+        "linkedin": "https://www.linkedin.com/in/saurabh-kumar-9105b3158/",
         "thread": ""
       }
     },
@@ -42,8 +40,7 @@ const Teams = () => {
       "designation": "COO",
       "description": "IIM Ahmedabad, IIT Guwahati, Project management excellence of 8+ years.",
       "social_media": {
-        "facebook": "",
-        "insta": "",
+        "linkedin": "https://www.linkedin.com/in/mahesh-sangade/",
         "thread": ""
       }
     }
@@ -81,6 +78,16 @@ const Teams = () => {
     );
   };
 
+  const prevItems = () => {
+    setCurrentIndex((prevIndex) =>
+      prevIndex - itemsPerRow < 0
+        ? prevIndex == 0 
+        ? teamMembers.length - itemsPerRow
+        : 0
+        : prevIndex - itemsPerRow
+    );
+  };
+
   const openSocialMedia = (social_media_link) => {
     if(social_media_link != "") {
       window.open(social_media_link);
@@ -109,7 +116,7 @@ const Teams = () => {
               </h2>
             </div>
             <div className="teamCreateSecond">
-              <img className="" alt="aspic" src={createTeam} />
+              <img className="teamCreateImg" alt="aspic" src={createTeam} />
             </div>
           </div>
           <p>
@@ -131,7 +138,7 @@ const Teams = () => {
 
         <div className="teamMemberSection">
           <div className="blueBackground"></div>
-
+          {teamMembers.length != itemsPerRow ? (<img className="prevButton" src={prevIcon} alt="prev" onClick={prevItems} />) : ""}
           <div className="teamCardsBox">
             {teamMembers.slice(currentIndex, currentIndex + itemsPerRow).map((members, index) => {
               return (
@@ -144,16 +151,15 @@ const Teams = () => {
                     <h3>{members.designation}</h3>
                     <p>{members.description}</p>
                     <div className="socialMediaIcons">
-                      <img className="socialMediaButton facebookButton" src={facebookIcon} alt="facebook" onClick={() => { openSocialMedia(members.social_media.facebook) }} />
+                      <img className="socialMediaButton linkedinButton" src={linkedinIcon} alt="linkedin" onClick={() => { openSocialMedia(members.social_media.linkedin) }} />
                       <img className="socialMediaButton threadButton" src={threadIcon} alt="thread" onClick={() => { openSocialMedia(members.social_media.thread) }} />
-                      <img className="socialMediaButton instaButton" src={instaIcon} alt="instagram" onClick={() => { openSocialMedia(members.social_media.insta) }} />
                     </div>
                   </div>
                 </div>
               );
             })}
           </div>
-          <img className="nextButton" src={nextIcon} alt="next" onClick={nextItems} />
+          {teamMembers.length != itemsPerRow ? (<img className="nextButton" src={nextIcon} alt="next" onClick={nextItems} />) : ""}
         </div>
       </div>
     </div>

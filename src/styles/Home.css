@@ -196,6 +196,7 @@
   height: auto;
   margin-left: 5vw;
   margin-top: 1vw;
+  align-self: center;
 }
 
 .genesistextarea {
@@ -291,7 +292,7 @@
 .we-analyze-your {
   color: #858a8f;
   font-family: "Poppins-Regular", Helvetica;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   font-weight: 400;
   letter-spacing: 0;
   line-height: 2.4vw;
@@ -442,10 +443,10 @@
   .we-analyze-your {
     color: #858a8f;
     font-family: "Poppins-Regular", Helvetica;
-    font-size: 0.76rem;
+    font-size: 0.8rem;
     font-weight: 400;
     letter-spacing: 0;
-    line-height: 4.75vw;
+    line-height: 4.9vw;
     position: relative;
     width: 61vw;
   }
