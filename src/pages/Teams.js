@@ -18,7 +18,7 @@ const Teams = () => {
       "profile_photo": rahulDasCEO,
       "name": "Rahul Das",
       "designation": "CEO",
-      "description": "IIM Udaipur, 7+ years of IT products development and testing.",
+      "description": "IIM Udaipur, Rich Experience in IT Products Development",
       "social_media": {
         "linkedin": "https://www.linkedin.com/company/pycray/",
         "thread": ""
@@ -28,7 +28,7 @@ const Teams = () => {
       "profile_photo": saurabhKumarCTO,
       "name": "Saurabh Kumar",
       "designation": "CTO",
-      "description": "Tech leader with 7+ years of experience across tech stacks.",
+      "description": "Tech leader with 7+ years of experience across tech stacks",
       "social_media": {
         "linkedin": "https://www.linkedin.com/in/saurabh-kumar-9105b3158/",
         "thread": ""
@@ -38,7 +38,7 @@ const Teams = () => {
       "profile_photo": maheshSangadeCOO,
       "name": "Mahesh Sangade",
       "designation": "COO",
-      "description": "IIM Ahmedabad, IIT Guwahati, Project management excellence of 8+ years.",
+      "description": "IIM Ahmedabad, IIT Guwahati, Project management excellence of 8+ years",
       "social_media": {
         "linkedin": "https://www.linkedin.com/in/mahesh-sangade/",
         "thread": ""
