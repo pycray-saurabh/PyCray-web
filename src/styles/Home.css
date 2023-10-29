@@ -107,14 +107,44 @@
   min-width: 80px;
   min-height: 30px;
   position: relative;
-  margin-top: 12px;
+  margin-top: 19px;
   padding: 1vw;
+}
+
+.textBodyMainContainer {
+  height: 33px;
+  margin-bottom: 30px;
+}
+
+.textBodyMain {
+  background: linear-gradient(91deg, #073E90 13.56%, rgba(12, 145, 187, 0.55) 78.51%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-family: "Poppins-SemiBold", Helvetica;
+  font-size: 33px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 60px;
+  letter-spacing: 1px;
+  white-space: nowrap;
+  margin-left: 10vw;
+  position: absolute;
 }
 
 /* Media queries for different screen sizes */
 @media (max-width: 1200px) {
   /* Adjust styles for screens up to 1200px wide */
   /* ... your styles ... */
+}
+
+@media only screen and (max-width: 600px) {
+
+
+  .textBodyMain {
+    white-space: inherit;
+  }
 }
 
 @media (max-width: 950px) {
@@ -148,6 +178,16 @@
     justify-self: left;
     left: 0vw;
     width: 70vw;
+  }
+
+  .textBodyMain {
+    margin-left: 0px;
+    font-size: 20px;
+    line-height: normal;
+  }
+
+  .textBodyMainContainer {
+    margin: 10px 0px;
   }
 
   .peopleTalking {
@@ -471,7 +511,7 @@
   .genesistextarea {
     order: 1;
   }
-  
+
   .initialtext {
     display: grid;
     grid-auto-columns: auto auto auto;
@@ -496,6 +536,7 @@
     width: 80vw;
   }
 }
+
 .linebreak {
   display: none;
 }
@@ -666,14 +707,15 @@
   border-bottom: 1px solid #DDD;
 }
 
-.industryRow.row1 .industryBox:not(:last-child),.industryRow.row2 .industryBox:not(:last-child){
+.industryRow.row1 .industryBox:not(:last-child),
+.industryRow.row2 .industryBox:not(:last-child) {
   border-right: 1px solid #DDD;
 }
 
 .industryImg {
-  width: 100%; 
+  width: 100%;
   display: flex;
-  justify-content:center;
+  justify-content: center;
 }
 
 .industryText {
@@ -1115,7 +1157,8 @@
 .emailus,
 .dropinus,
 .bookcons {
-  width: 100%; /* Make sure the image takes up the entire container */
+  width: 100%;
+  /* Make sure the image takes up the entire container */
   height: auto;
 }
 
@@ -1124,7 +1167,8 @@
 .bookbutton {
   position: absolute;
   z-index: 1;
-  width: 17vw; /* Adjust the width of the button as needed */
+  width: 17vw;
+  /* Adjust the width of the button as needed */
   height: 2.5vw;
   min-height: 10px;
   background-color: transparent;
@@ -1134,22 +1178,28 @@
 
 /* Define the position of buttons based on percentage */
 .emailbutton {
-  top: 78%; /* Adjust the percentage as needed */
-  left: 5%; /* Adjust the percentage as needed */
+  top: 78%;
+  /* Adjust the percentage as needed */
+  left: 5%;
+  /* Adjust the percentage as needed */
   border-radius: 25px;
   border-color: transparent;
 }
 
 .dropbutton {
-  top: 78%; /* Adjust the percentage as needed */
-  left: 5%; /* Adjust the percentage as needed */
+  top: 78%;
+  /* Adjust the percentage as needed */
+  left: 5%;
+  /* Adjust the percentage as needed */
   border-radius: 25px;
   border-color: transparent;
 }
 
 .bookbutton {
-  top: 78%; /* Adjust the percentage as needed */
-  left: 5%; /* Adjust the percentage as needed */
+  top: 78%;
+  /* Adjust the percentage as needed */
+  left: 5%;
+  /* Adjust the percentage as needed */
   border-radius: 25px;
   border-color: transparent;
 }
@@ -1177,7 +1227,8 @@
   font-size: 28px;
   font-style: normal;
   font-weight: 600;
-  line-height: 34px; /* 121.429% */
+  line-height: 34px;
+  /* 121.429% */
 }
 
 .card-content p {
@@ -1186,7 +1237,8 @@
   font-size: 1.13rem;
   font-style: normal;
   font-weight: 500;
-  line-height: 30px; /* 166.667% */
+  line-height: 30px;
+  /* 166.667% */
 }
 
 .card-content .blueText {
@@ -1195,7 +1247,8 @@
   font-size: 20px;
   font-style: normal;
   font-weight: 600;
-  line-height: 24px; /* 120% */
+  line-height: 24px;
+  /* 120% */
   display: flex;
   align-items: center;
   cursor: pointer;
@@ -1274,7 +1327,7 @@
     /* left: 599px; */
     /* top: -45px; */
   }
-  
+
   .industrytbox .contact-us-if-you {
     color: #858a8f;
     font-family: "Poppins-Regular", Helvetica;
@@ -1597,7 +1650,7 @@
 
   .caserightside {
     position: relative;
-    margin: 0vw; 
+    margin: 0vw;
   }
 
   .laptopbackground {
