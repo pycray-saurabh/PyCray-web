@@ -776,7 +776,7 @@ function Home() {
               <div className="picWithText">
                 <img className="image" alt="Image1" src={pic1} />
                 <div className="ptb">
-                  <div className="we-adapt-to-you">New product build</div>
+                  <div className="we-adapt-to-you">New Product Build</div>
                   <p className="we-analyze-your">
                     We turn your business ideas into reality. Expertly crafting
                     custom solutions, empowering success in the digital world.
@@ -930,7 +930,7 @@ function Home() {
             </svg>
 
             <p className="contact-us-if-you">
-              PyCray has created immense impact and gained domain knowledge
+              PyCray has created substantial impact and gained domain knowledge
               across industries
             </p>
           </div>
