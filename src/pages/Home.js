@@ -930,8 +930,7 @@ function Home() {
             </svg>
 
             <p className="contact-us-if-you">
-              PyCray has created substantial impact and gained domain knowledge
-              across industries
+              PyCray has created substantial impact and gained expertise in different domains across industries.
             </p>
           </div>
         </div>
