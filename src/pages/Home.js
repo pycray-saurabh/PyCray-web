@@ -1312,8 +1312,7 @@ function Home() {
 
         <div className="helptext">
           <p className="contact-us-if-you">
-            Contact us if you have any questions about our company or products.
-            We will try to provide an answer within a few days.
+           Contact us. Our expert consultants will answer your queries and let you know the best way in which we can help you out
           </p>
         </div>
 
@@ -1488,7 +1487,7 @@ function Home() {
                 </defs>
               </svg>
               <div className="card-content">
-                <h2>Drop in us</h2>
+                <h2>Drop By</h2>
                 <p>
                   You can meet us at our office and discuss the details of your
                   question.
