@@ -22,10 +22,10 @@ function About() {
         <div className="whatwedorows">
           <div className="title">What We Do</div>
           <p className="body">
-            We're here to help business owners like you. Bring your visions to life by building custom products from scratch. Whether you have a vision for an advanced mobile app, a sophisticated multi-sided platform, a thriving online marketplace, a robust e-commerce website, or an engaging e-sports platform, we're a reliable partner to design a strong foundation for your business to run smoothly. 
+  We're here to help business owners like you. Bring your visions to life by building custom products from scratch. Whether you have a vision for an advanced mobile app, a sophisticated multi-sided platform, a thriving online marketplace, a robust e-commerce website, or an engaging e-sports platform, we're a reliable partner to design a strong foundation for your business to run smoothly.  
           </p>  
           <p className="body">
-            Our team of experienced professionals takes the time to understand your unique ideas and then skillfully transforms them into fully functional products. From the start to finish, we use the best processes and technologies to ensure that the end result meets all your requirements. 
+           Our team of experienced professionals takes the time to understand your unique ideas and then skillfully transforms them into fully functional products. From start to finish, we use the best processes and technologies to ensure that the end result meets all your requirements.
           </p>
           <button className="ourConcept">Our Concept</button>
         </div>
