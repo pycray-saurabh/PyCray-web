@@ -67,7 +67,7 @@ function Footer() {
           </div>
 
           <div className="emailrows2">
-            <p className="p">Generate outside the box thinking with the possibility to target the low.</p>
+
 
             <div className="emailtext">
               <h1 className="enotifheader">Get Email Notification</h1>
