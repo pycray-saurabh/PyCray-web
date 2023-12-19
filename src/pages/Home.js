@@ -759,16 +759,16 @@ function Home() {
                 <rect width="73" height="7" rx="2" fill="#0C67B4" />
               </svg>
               <p className="every-week-we-create">
-                This is where your product vision transforms into a marvel
-                with our way of Doing More With Less! We harness the power of
-                design, user experience (UX), and engineering to craft
-                exceptional digital products. Our goal is to develop reliable,
-                scalable, and sustainable custom products that resonate with
-                our clients and delight their users.
+                With our way of Doing More with Less, we harness the power of
+                design, UX and engineering to craft exceptional digital
+                products.  
+                Our goal is to develop reliable, scalable,
+                and sustainable custom products that resonate with our clients
+                and delight their users.
               </p>
 
               <p className="every-week-we-create">
-                Together, let's embark on a journey of innovation and make your digital dreams a reality.
+                 Together, let's embark on a journey of innovation and make your digital dreams a reality.
               </p>
             </div>
 
