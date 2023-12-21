@@ -5,6 +5,7 @@ function ProductGenesis() {
   return (
     <div className='productGenesisPage'>
       product genesis
+      <h1>Hello</h1>
     </div>
   )
 }

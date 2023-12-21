@@ -1,425 +1,299 @@
 @font-face {
-    font-family: "Poppins-Regular";
-    src: local("Poppins-Regular"),
-        url("../fonts/Poppins/Poppins-Regular.ttf") format("truetype")
+  font-family: 'Poppins-Regular';
+  src: local('Poppins-Regular'),
+    url('../fonts/Poppins/Poppins-Regular.ttf') format('truetype');
 }
 
 @font-face {
-    font-family: "Poppins-SemiBold";
-    src: local("Poppins-SemiBold"),
-        url("../fonts/Poppins/Poppins-SemiBold.ttf") format("truetype")
+  font-family: 'Poppins-SemiBold';
+  src: local('Poppins-SemiBold'),
+    url('../fonts/Poppins/Poppins-SemiBold.ttf') format('truetype');
 }
 
 @font-face {
-    font-family: "Poppins-BoldItalic";
-    src: local("Poppins-BoldItalic"),
-        url("../fonts/Poppins/Poppins-BoldItalic.ttf") format("truetype")
+  font-family: 'Poppins-BoldItalic';
+  src: local('Poppins-BoldItalic'),
+    url('../fonts/Poppins/Poppins-BoldItalic.ttf') format('truetype');
 }
 
 @font-face {
-    font-family: "Inter-SemiBold";
-    src: local("Inter-SemiBold"),
-        url("../fonts/Inter/static/Inter-SemiBold.ttf") format("truetype")
+  font-family: 'Inter-SemiBold';
+  src: local('Inter-SemiBold'),
+    url('../fonts/Inter/static/Inter-SemiBold.ttf') format('truetype');
 }
 
 .toolsComponent {
-    background-image: url(../assets/blueimg.png);
-    background-position: -1000px -700px;
-    background-repeat: no-repeat;
-    height: 1000px;
-    position: relative;
-    top: -827px;
+  background-image: url(../assets/blueimg.png);
+  background-repeat: no-repeat;
+  height: auto;
+  width: 100vw;
+  position: relative;
+  display: grid;
+  grid-template-rows: auto auto;
+  place-items: center;
+  gap: 5vw;
+}
+
+.toolstext {
+  display: grid;
+  grid-template-rows: auto auto auto;
+  place-items: center;
+  width: 100%;
+  height: auto;
 }
 
 .tooltitle {
-    color: #272d37;
-    font-family: "Poppins-SemiBold", Helvetica;
-    font-size: 40px;
-    font-weight: 400;
-    left: 200px;
-    letter-spacing: -0.8px;
-    line-height: 40px;
-    position: fixed;
-    text-align: center;
-    top: 100px;
-    width: 800px;
-    position: relative;
+  color: #272d37;
+  font-family: 'Poppins-SemiBold', Helvetica;
+  font-size: 2.5rem;
+  font-weight: 400;
+  letter-spacing: -0.8px;
+  line-height: 2.5rem;
+  text-align: center;
+  margin-top: 6vw;
+  width: 50%;
+  display: flex;
+  justify-content: center;
 }
 
 .tooltextwrapper {
-    font-weight: 600;
+  font-weight: 600;
 }
 
 .span {
-    font-family: "Poppins-BoldItalic", Helvetica;
-    font-style: italic;
-    font-weight: 700;
+  font-family: 'Poppins-BoldItalic', Helvetica;
+  font-style: italic;
+  font-weight: 700;
 }
 
 .toolUnderline {
-    position: relative;
-    left: 395px;
-    top: 33px;
+  display: flex;
+  justify-content: center;
 }
 
 .toolp {
-    border: 0px none;
-    height: 50px;
-    width: 800px;
-    position: relative;
+  border: 0px none;
+  height: auto;
+  width: 50%;
 }
 
 .toolp .toolps {
-    color: #5b646f;
-    font-family: "Poppins-Regular", Helvetica;
-    font-size: 16px;
-    font-weight: 400;
-    left: 240px;
-    letter-spacing: -0.1px;
-    line-height: 25px;
-    position: fixed;
-    text-align: center;
-    top: 115px;
-    width: 800px;
-    position: relative;
+  color: #5b646f;
+  font-family: 'Poppins-Regular', Helvetica;
+  font-size: 1rem;
+  font-weight: 400;
+  letter-spacing: -0.1px;
+  line-height: 1.563rem;
+  text-align: center;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 .component {
-    height: 554px;
-    position: relative;
-    width: 1039px;
-    left: 140px;
-    top: 175px;
+  min-height: 39vw;
+  height: auto;
+  width: 80%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 5vw;
+  justify-items: center;
 }
 
-.component .group {
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: 322px;
+.componentbuttons {
+  display: grid;
+  grid-template-rows: auto auto auto auto auto auto auto;
+  gap: 2.2vw;
 }
 
-.component .overlap {
-    border-radius: 10px;
-    height: 53px;
-    left: 0;
-    position: relative;
-    top: 0;
-    width: 308px;
+.buttonformat {
+  color: #000000;
+  font-family: 'Poppins-SemiBold', Helvetica;
+  font-size: 1.25rem;
+  font-weight: 600;
+  letter-spacing: 0;
+  line-height: 2.188rem;
+  position: relative;
+  white-space: nowrap;
+  padding: 0.1vw 0.94vw;
+  border-radius: 5px;
+  border-color: #0b67b3;
+  background-color: transparent;
+  cursor: pointer;
+  border-style: solid;
+  border-width: 1px;
 }
 
-.component .text-wrapper {
-    color: #000000;
-    font-family: "Poppins-SemiBold", Helvetica;
-    font-size: 20px;
-    font-weight: 600;
-    letter-spacing: 0;
-    line-height: 35px;
-    position: absolute;
-    white-space: nowrap;
-    height: 53px;
-    width: 308px;
-    border-radius: 10px;
-    border-color: #0b67b3;
-    background-color: transparent;
-    cursor: pointer;
-    border-style: solid;
-    border-width: 1px;
-}
-
-.component .text-wrapper.selected {
-    color: #000000;
-    font-family: "Poppins-SemiBold", Helvetica;
-    font-size: 20px;
-    font-weight: 600;
-    letter-spacing: 0;
-    line-height: 35px;
-    position: absolute;
-    white-space: nowrap;
-    height: 53px;
-    width: 308px;
-    border-radius: 10px;
-    border-color: transparent;
-    background-color: #3884c4;
-    cursor: pointer;
-}
-
-.component .overlap-group {
-    border-radius: 10px;
-    height: 53px;
-    left: 0;
-    position: absolute;
-    top: 82px;
-    width: 308px;
-}
-
-.component .div {
-    color: #000000;
-    font-family: "Poppins-SemiBold", Helvetica;
-    font-size: 20px;
-    font-weight: 600;
-    letter-spacing: 0;
-    line-height: 35px;
-    position: absolute;
-    text-align: center;
-    white-space: nowrap;
-    height: 53px;
-    width: 308px;
-    border-radius: 10px;
-    border-color: #0b67b3;
-    background-color: transparent;
-    cursor: pointer;
-    border-style: solid;
-    border-width: 1.5px;
-}
-
-.component .div.selected {
-    color: #000000;
-    font-family: "Poppins-SemiBold", Helvetica;
-    font-size: 20px;
-    font-weight: 600;
-    letter-spacing: 0;
-    line-height: 35px;
-    position: absolute;
-    text-align: center;
-    white-space: nowrap;
-    height: 53px;
-    width: 308px;
-    border-radius: 10px;
-    border-color: transparent;
-    background-color: #3884c4;
-    cursor: pointer;
-}
-
-
-.component .div-wrapper {
-    border-radius: 10px;
-    height: 53px;
-    left: 0;
-    position: absolute;
-    top: 164px;
-    width: 308px;
-}
-
-.component .text-wrapper-2 {
-    color: #000000;
-    font-family: "Poppins-SemiBold", Helvetica;
-    font-size: 20px;
-    font-weight: 600;
-    letter-spacing: 0;
-    line-height: 35px;
-    position: absolute;
-    text-align: center;
-    white-space: nowrap;
-    height: 53px;
-    width: 308px;
-    border-radius: 10px;
-    border-color: #0b67b3;
-    background-color: transparent;
-    cursor: pointer;
-    border-style: solid;
-    border-width: 1.5px;
-}
-
-.component .text-wrapper-2.selected {
-    color: #000000;
-    font-family: "Poppins-SemiBold", Helvetica;
-    font-size: 20px;
-    font-weight: 600;
-    letter-spacing: 0;
-    line-height: 35px;
-    position: absolute;
-    white-space: nowrap;
-    height: 53px;
-    width: 308px;
-    border-radius: 10px;
-    border-color: transparent;
-    background-color: #3884c4;
-    cursor: pointer;
-}
-
-.component .overlap-2 {
-    border-radius: 10px;
-    height: 53px;
-    left: 0;
-    position: absolute;
-    top: 246px;
-    width: 308px;
-}
-
-.component .text-wrapper-3 {
-    color: #000000;
-    font-family: "Poppins-SemiBold", Helvetica;
-    font-size: 20px;
-    font-weight: 600;
-    letter-spacing: 0;
-    line-height: 35px;
-    position: absolute;
-    white-space: nowrap;
-    height: 53px;
-    width: 308px;
-    border-radius: 10px;
-    border-color: #0b67b3;
-    background-color: transparent;
-    cursor: pointer;
-    border-style: solid;
-    border-width: 1.5px;
-}
-
-.component .text-wrapper-3.selected {
-    color: #000000;
-    font-family: "Poppins-SemiBold", Helvetica;
-    font-size: 20px;
-    font-weight: 600;
-    letter-spacing: 0;
-    line-height: 35px;
-    position: absolute;
-    white-space: nowrap;
-    height: 53px;
-    width: 308px;
-    border-radius: 10px;
-    border-color: transparent;
-    background-color: #3884c4;
-    cursor: pointer;
-}
-
-.component .overlap-3 {
-    border-radius: 10px;
-    height: 53px;
-    left: 0;
-    position: absolute;
-    top: 328px;
-    width: 308px;
-}
-
-.component .text-wrapper-4 {
-    color: #000000;
-    font-family: "Poppins-SemiBold", Helvetica;
-    font-size: 20px;
-    font-weight: 600;
-    letter-spacing: 0;
-    line-height: 35px;
-    position: absolute;
-    white-space: nowrap;
-    height: 53px;
-    width: 308px;
-    border-radius: 10px;
-    border-color: #0b67b3;
-    background-color: transparent;
-    cursor: pointer;
-    border-style: solid;
-    border-width: 1.5px;
-}
-
-.component .text-wrapper-4.selected {
-    color: #000000;
-    font-family: "Poppins-SemiBold", Helvetica;
-    font-size: 20px;
-    font-weight: 600;
-    letter-spacing: 0;
-    line-height: 35px;
-    position: absolute;
-    white-space: nowrap;
-    height: 53px;
-    width: 308px;
-    border-radius: 10px;
-    border-color: transparent;
-    background-color: #3884c4;
-    cursor: pointer;
-}
-
-.component .overlap-4 {
-    border-radius: 10px;
-    height: 53px;
-    left: 0;
-    position: absolute;
-    top: 410px;
-    width: 308px;
-}
-
-.component .text-wrapper-5 {
-    color: #000000;
-    font-family: "Poppins-SemiBold", Helvetica;
-    font-size: 20px;
-    font-weight: 600;
-    letter-spacing: 0;
-    line-height: 35px;
-    position: absolute;
-    white-space: nowrap;
-    height: 53px;
-    width: 308px;
-    border-radius: 10px;
-    border-color: #0b67b3;
-    background-color: transparent;
-    cursor: pointer;
-    border-style: solid;
-    border-width: 1.5px;
-}
-
-.component .text-wrapper-5.selected {
-    color: #000000;
-    font-family: "Poppins-SemiBold", Helvetica;
-    font-size: 20px;
-    font-weight: 600;
-    letter-spacing: 0;
-    line-height: 35px;
-    position: absolute;
-    white-space: nowrap;
-    height: 53px;
-    width: 308px;
-    border-radius: 10px;
-    border-color: transparent;
-    background-color: #3884c4;
-    cursor: pointer;
-}
-
-.component .overlap-5 {
-    border-radius: 10px;
-    height: 53px;
-    left: 0;
-    position: absolute;
-    top: 492px;
-    width: 308px;
-}
-
-.component .text-wrapper-6 {
-    color: #000000;
-    font-family: "Poppins-SemiBold", Helvetica;
-    font-size: 20px;
-    font-weight: 600;
-    letter-spacing: 0;
-    line-height: 35px;
-    position: absolute;
-    white-space: nowrap;
-    height: 53px;
-    width: 308px;
-    border-radius: 10px;
-    border-color: #0b67b3;
-    background-color: transparent;
-    cursor: pointer;
-    border-style: solid;
-    border-width: 1.5px;
-}
-
-.component .text-wrapper-6.selected {
-    color: #000000;
-    font-family: "Poppins-SemiBold", Helvetica;
-    font-size: 20px;
-    font-weight: 600;
-    letter-spacing: 0;
-    line-height: 35px;
-    position: absolute;
-    white-space: nowrap;
-    height: 53px;
-    width: 308px;
-    border-radius: 10px;
-    border-color: transparent;
-    background-color: #3884c4;
-    cursor: pointer;
+.buttonformat.selected {
+  border-color: transparent;
+  background-color: #3884c4;
+  cursor: pointer;
 }
 
 .displayedTools {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.picv1 {
+  position: relative;
+  width: 38vw;
+  height: auto;
+  max-width: 90%;
+}
+
+.picv2 {
+  position: relative;
+  width: 45vw;
+  height: auto;
+  max-width: 90%;
+}
+
+.toolsnTechRow {
+  grid-template-columns: auto auto auto auto;
+  gap: 3vw;
+}
+
+.toolsnTechCard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #85bae7;
+  border-radius: 12px;
+  padding: 1vw;
+  flex-shrink: 0;
+  width: 5vw;
+  height: 5vw;
+  cursor: pointer;
+  transition: all 0.3s linear;
+
+}
+
+.toolsnTechCard:hover{
+    background-color: #6DABEC;
+  /* transform: translateY(-5px); */
+
+}
+
+.toolsnTechText {
+  font-size: 1rem;
+  font-family: 'Poppins-SemiBold', Helvetica;
+  font-style: normal;
+  font-weight: 600;
+  text-align: center;
+}
+
+@media (max-width: 576px) {
+  .component {
+    height: auto;
     position: relative;
-    left: 425px;
-    top: -10px;
+    width: 90vw;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+    gap: 3vw;
+    margin-bottom: 5vw;
+  }
+
+  .componentbuttons {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto auto;
+    gap: 0vw;
+    width: 90vw;
+    justify-content: center;
+  }
+
+  .displayedTools {
+    display: flex;
+    position: relative;
+    width: 78vw;
+    margin: 5vw;
+    min-height: 62vw;
+    align-items: center;
+  }
+
+  .toolsnTechCard {
+    width: 16vw;
+    height: 16vw;
+  }
+
+  .toolsnTechText {
+    font-size: 0.54rem;
+    font-weight: 500;
+  }
+
+  img.card-img {
+    width: 8vw;
+  }
+
+  .picv1 {
+    position: relative;
+    width: 80vw;
+    height: auto;
+    max-width: 90%;
+  }
+
+  .toolsnTechRow {
+    grid-template-rows: auto auto auto auto;
+  }
+
+  .displayedTools > div:nth-child(1) {
+    justify-content: center;
+  }
+
+  .picv2 {
+    position: relative;
+    width: 53vw;
+    height: auto;
+    max-width: 90%;
+    left: 10vw;
+  }
+
+  .buttonformat {
+    font-weight: 500;
+    font-size: 0.513rem;
+    line-height: 0.9rem;
+    padding: 1.5vw 1.25vw;
+    width: 40vw;
+    margin: 2vw;
+  }
+
+  .tooltextwrapper {
+    font-weight: 500;
+  }
+
+  .tooltitle {
+    font-size: 2rem;
+    letter-spacing: 0px;
+    margin-top: 10vw;
+    width: 90vw;
+  }
+
+  .toolp {
+    width: 90vw;
+  }
+
+  .toolp .toolps {
+    font-size: 0.8rem;
+  }
+}
+
+@media (min-width: 577px) and (max-width: 992px) {
+  .tooltitle {
+    font-size: 2.18rem;
+    line-height: 2.18rem;
+  }
+
+  .toolp .toolps {
+    font-size: 1rem;
+    line-height: 1.563rem;
+  }
+
+  .buttonformat {
+    font-size: 0.625rem;
+    line-height: 1.09rem;
+    height: 5vw;
+  }
 }

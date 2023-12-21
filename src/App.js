@@ -11,23 +11,18 @@ import ContactUs from './pages/ContactUs';
 // import { Link } from 'react-router-dom';
 import { Routes, Route } from 'react-router-dom';
 
-
-
 function App() {
   return (
-    <div className="App">
-      <Navbar/>
+    <div className='App'>
+      <Navbar />
       <Routes>
-
-        <Route path="/" element={<Home />}></Route>
-        <Route path="/ProductGenesis" element={<ProductGenesis />}></Route>
-        <Route path="/Teams" element={<Teams />}></Route>
-        <Route path="/Career" element={<Career />}></Route>
-        <Route path="/ContactUs" element={<ContactUs />}></Route>
-
+        <Route path='/' element={<Home />}></Route>
+        <Route path='/ProductGenesis' element={<ProductGenesis />}></Route>
+        <Route path='/Team' element={<Teams />}></Route>
+        <Route path='/About' element={<Career />}></Route>
+        <Route path='/ContactUs' element={<ContactUs />}></Route>
       </Routes>
-      <Footer/>
-
+      <Footer />
     </div>
   );
 }

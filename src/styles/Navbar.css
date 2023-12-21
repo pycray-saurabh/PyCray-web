@@ -4,7 +4,7 @@
         url("../fonts/Poppins/Poppins-Regular.ttf") format("truetype")
 }
 
-.navbar {
+.navbar, .menubar {
     width: 100%;
     height: 80px;
     background-color: #e0f0ff;
@@ -13,7 +13,7 @@
     border-color: #e6e6e6;
     display: flex;
     flex-direction: row;
-    z-index: 5;
+    z-index: 500;
 }
 
 .navbar .leftSide {
@@ -25,7 +25,7 @@
 }
 
 .navbar .leftSide img {
-    width: 148px;
+    width: 200px;
 }
 
 .navbar .rightSide {
@@ -86,7 +86,7 @@
     }
 
     .navbar .leftSide {
-        padding-left: 50px;
+        padding-left: 0px;
     }
 }
 
@@ -97,11 +97,83 @@
 
     .navbar .rightSide {
         justify-content: flex-end;
-        padding-right: 3.33%;
+        /* padding-right: 3.33%; */
     }
 
     .navbar .rightSide button {
         display: inherit;
+        margin-right: 3vw;
+    }
+
+    .navbar .rightSide button img {
+        width: 4vw;
+    }
+
+    .navbar .leftSide {
+        padding-left: 0px;
+    }
+
+    .navbar .leftSide img {
+        width: 140px;
+    }
+
+    .mobile-menu-window {
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 50%;
+        height: 100%;
+        background-color: #B9DBF7;
+        color: white;
+        z-index: 1000;
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .menubar {
+        z-index: inherit;
+        background-color: #AAD5F9;
+    }
+
+    .menubarContent {
+        padding: 0vw 5vw;
+    }
+
+    .item {
+        color: #424242;
+        text-align: left;
+        font-family: "Poppins-SemiBold", Helvetica;
+        font-size: 5vw;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 150%; /* 25.5px */
+        letter-spacing: 0.17px;
+        padding: 5vw 0vw;
+        cursor: pointer;
+    }
+
+    .menubarDividerLine {
+        width: 35vw;
+        height: 1px;
+        background-color: #9595956B;
+        display: flex;
+    }
+
+    .menubarFooter {
+        width: 100%;
+        color: #878787;
+        font-family: "Inter-Regular", Helvetica;
+        font-size: 2.5vw;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px; /* 240% */
+        letter-spacing: -0.1px;
+        position: absolute;
+        bottom: 0;
+        text-align: center;
     }
 }
 
@@ -112,5 +184,11 @@
 
     .hiddenLinks {
         display: none;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    .mobile-menu-window {
+        width: 70%;
     }
 }

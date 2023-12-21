@@ -41,10 +41,14 @@
 }
 
 .footer {
-  top: -30px;
+  /* top: -30px; */
   position: relative;
   background-color: #3884c4d9;
-  height: 700px;
+  height: fit-content;
+  display: grid;
+  grid-template-columns: 30% 70%;
+  padding-bottom: 5vw;
+  gap: 4vw;
 }
 
 .footer a {
@@ -52,498 +56,368 @@
   color: white;
 }
 
-.subscribe-box {
+.emailinputbox {
   background-color: #3c3c45;
   border: 1px none;
-  height: 528px;
+  height: auto;
+  padding-bottom: 7vw;
+  padding-top: 2vw;
   position: relative;
-  width: 399px;
+  width: 73%;
   border-radius: 5px;
-  left: 100px;
-  top: 120px;
+  margin-left: 5vw;
+  margin-top: 10vw;
 }
 
-.subscribe-box .content {
-  height: 245px;
-  left: 53px;
-  position: absolute;
-  top: 244px;
-  width: 293px;
+.emailrows {
+  display: grid;
+  grid-row: auto auto auto;
+  /* gap: 1vw; */
+  place-items: center;
 }
 
-.subscribe-box .div {
-  height: 237px;
-  left: -12px;
+.emailcolumns {
+  display: none;
+}
+
+.element {
+  width: 10vw;
+  height: auto;
+  justify-self: center;
+}
+
+.p {
+  color: #9da5af;
+  font-family: "Poppins-Regular", Helvetica;
+  font-size: 1rem;
+  font-weight: 400;
+  letter-spacing: -0.1px;
+  line-height: 1.5rem;
   position: relative;
-}
-
-.subscribe-box .overlap {
-  height: 119px;
-  left: 5px;
-  position: absolute;
-  top: 0;
-  width: 295px;
-}
-
-.subscribe-box .title {
-  height: 77px;
-  left: 0;
-  position: absolute;
-  top: 0;
-  width: 288px;
-}
-
-.subscribe-box .text-wrapper {
-  color: #ffffff;
-  font-family: "Inter-SemiBold", Helvetica;
-  font-size: 25px;
-  font-weight: 600;
-  left: 13px;
-  letter-spacing: 0;
-  line-height: 27.6px;
-  position: absolute;
   text-align: center;
-  top: -1px;
-  white-space: nowrap;
-}
-
-.subscribe-box .button {
-  height: 62px;
-  left: 0;
-  position: absolute;
-  top: 57px;
-  width: 295px;
-}
-
-.subscribe-box .overlap-group {
-  background-image: url(../assets/buttonbg.png);
-  background-size: 100% 100%;
-  height: 62px;
-  position: relative;
-  width: 293px;
-}
-
-.subscribe-box .text-wrapper-2 {
-  color: #ffffff;
-  font-family: "Poppins-Medium", Helvetica;
-  font-size: 18px;
-  font-weight: 500;
-  left: 66px;
-  letter-spacing: 0;
-  line-height: 28.8px;
-  position: absolute;
-  top: 16px;
-  white-space: nowrap;
+  width: 73%;
+  /* top: -0.5vw; */
 }
 
 .emailtext {
+  position: relative;
+  display: grid;
+  grid-template-rows: auto auto auto;
+  gap: 1vw;
+  place-items: center;
+  justify-content: center;
+}
+
+.emailtext .enotifheader {
   color: #ffffff;
   font-family: "Poppins-Medium", Helvetica;
-  font-size: 18px;
-  font-weight: 500;
-  left: 0px;
+  font-size: 1.3rem;
+  font-weight: 600;
   letter-spacing: 0;
-  line-height: 28.8px;
-  position: absolute;
-  top: 0px;
+  line-height: 110.5%;
+  position: relative;
   white-space: nowrap;
   background-color: transparent;
   border-color: transparent;
+  /* text-align: center; */
 }
 
-.subscribe-box .overlap-2 {
-  height: 62px;
-  left: 5px;
-  position: absolute;
-  top: 142px;
-  width: 295px;
-}
-
-.subscribe-box .overlap-wrapper {
-  height: 62px;
-  left: 0;
-  position: absolute;
-  top: 0;
-  width: 295px;
-}
-
-.subscribe-box .div-wrapper {
-  background-image: url(../assets/bluebuttonbg.png);
-  background-size: 100% 100%;
-  height: 62px;
-  position: relative;
-  width: 293px;
-}
-
-.subscribe-box .text-wrapper-3 {
-  color: #6cb5f3;
-  font-family: "Nunito-Medium", Helvetica;
-  font-size: 18px;
+.emailtext .emailbuttontext {
+  background-image: url(../assets/buttonbg.png);
+  background-size: 230% 560%;
+  background-position: 50% 50%;  
+  border-radius: 5px;
+  color: #ffffff;
+  font-family: "Poppins-Medium", Helvetica;
+  font-size: 1.13rem;
   font-weight: 500;
-  left: 106px;
   letter-spacing: 0;
-  line-height: 28.8px;
-  position: absolute;
-  top: 16px;
+  line-height: 160%;
+  /* position: relative; */
+  width: 81%;
   white-space: nowrap;
+  background-color: transparent;
+  border-color: transparent;
+  /* justify-self: center;
+  place-self: center; */
+  text-align: center;
+  text-transform: capitalize;
+  /* margin-left: 5%;
+  margin-right: 5%; */
+  padding: 1vw 0vw;
 }
 
-.subscribe-box .text-wrapper-4 {
+.emailtext .submitbuttontext {
+  background-image: url(../assets/bluebuttonbg.png);
+  background-size: 230% 560%;
+  background-position: 50% 50%;
+  border-radius: 5px;
   color: #ffffff;
   font-family: "Poppins-SemiBold", Helvetica;
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: 600;
-  left:0px;
   letter-spacing: 0;
-  line-height: 32px;
-  position: absolute;
-  top: 1px;
-  width: 295px;
-  height: 60px;
+  line-height: 160%;
+  position: relative;
+  width: 81%;
   white-space: nowrap;
   background-color: transparent;
   border-color: transparent;
   cursor: pointer;
+  top: 2vw;
+  text-transform: capitalize;
+  /* margin-left: 5%;
+  margin-right: 5%; */
+  padding: 1vw 0vw;
 }
 
-.subscribe-box .p {
-  color: #9da5af;
-  font-family: "Poppins-Regular", Helvetica;
-  font-size: 16px;
-  font-weight: 400;
-  left: 53px;
-  letter-spacing: -0.1px;
-  line-height: 24px;
-  position: absolute;
-  text-align: center;
-  top: 142px;
-  width: 288px;
-}
-
-.subscribe-box .element {
-  height: 90px;
-  left: 148px;
-  position: absolute;
-  top: 37px;
-  width: 89px;
-}
-
-.addresss {
-  border: 1px none;
-  height: 152px;
-  overflow-x: hidden;
+.rightsidetext {
+  margin-top: 10vw;
+  /* left: 2vw; */
+  width: 81%;
+  height: auto;
+  display: grid;
+  grid-template-rows: auto auto auto auto auto auto auto;
+  /* place-items: left; */
+  gap: 1vw;
   position: relative;
-  left: 575px;
-  top: -415px;
-  width: 662px;
 }
 
-.addresss .elementone {
-  height: 104px;
-  left: 0;
-  position: absolute;
-  top: 0;
-  width: 297px;
-}
-
-.addresss .noida-uttar-pradesh {
-  color: #ffffff;
-  font-family: "Inter-Medium", Helvetica;
-  font-size: 18px;
-  font-weight: 500;
-  left: 9px;
-  letter-spacing: 0;
-  line-height: 28.2px;
-  position: absolute;
-  top: 47px;
-  width: 231px;
-}
-
-.addresss .locationsymbol {
-  height: 25px;
-  left: 9px;
-  position: absolute;
-  top: 7px;
-  width: 19px;
-}
-
-.addresss .title10 {
-  height: 30px;
-  left: 44px;
-  position: absolute;
-  top: -7px;
-  width: 107px;
-}
-
-.addresss .overlap-group10 {
-  height: 30px;
+.locationgroup {
+  display: grid;
+  grid-template-columns: auto auto;
+  /* gap: 0.1vw; */
   position: relative;
-  width: 105px;
+  width: 11vw;
 }
 
-.addresss .text-wrapper10 {
+.locationgroup .locationsymbol {
+  height: auto;
+  position: relative;
+  width: 0.5vw;
+  min-width: 20px;
+  top: 1vw;
+}
+
+.locationgroup .loctitle{
   color: #ffffff;
   font-family: "Inter-SemiBold", Helvetica;
-  font-size: 25px;
+  font-size: 1.563rem;
   font-weight: 600;
-  left: 0;
   letter-spacing: 0;
-  line-height: 27.6px;
-  position: absolute;
-  top: 0;
+  line-height: 1.725rem;
+  position: relative;
   white-space: nowrap;
 }
 
-.addresss .calgary-alberta {
+.addressgroup {
+  display: grid;
+  grid-template-columns: auto auto;
+  /* gap: 0.5vw; */
+  top: -1vw;
+  position: relative;
+  width: 94%;
+}
+
+.noida-uttar-pradesh {
   color: #ffffff;
   font-family: "Inter-Medium", Helvetica;
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: 500;
-  left: 321px;
+  /* left: 9px; */
   letter-spacing: 0;
-  line-height: 28.2px;
-  position: absolute;
-  top: 47px;
+  line-height: 1.763rem;
+  position: relative;
+  /* top: 47px; */
+  width: 65%;
+}
+
+.calgary-alberta {
+  color: #ffffff;
+  font-family: "Inter-Medium", Helvetica;
+  font-size: 1.125rem;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 1.763rem;
+  position: relative;
+  width: 71%;
 }
 
 .firstline {
   position: relative;
-  left: 575px;
-  top: -425px;
-  width: 625px;
+  /* left: 575px; */
+  /* top: -425px; */
+  /* width: 57vw; */
   overflow-x: hidden;
+  /* left: -1vw; */
 }
 
-.features {
-  border: 1px none;
-  height: 288px;
-  position: relative;
-  width: 642px;
-  left: 575px;
-  top: -390px;
+.locationgroup2 {
+  place-items: center;
 }
 
-.features .pages {
-  align-items: flex-start;
+.textheaders {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8vw; /* Adjust outer column gap */
+  width: 94%;
+  margin-top: 20px;
+}
+
+.pageTitle,
+.div,
+.title-2 {
   display: flex;
-  flex-direction: column;
-  gap: 30px;
-  left: 0;
-  position: absolute;
-  top: 0;
-  width: 120px;
+  margin-bottom: 2vw;
+  align-items: center;
 }
 
-.features .title {
-  height: 30px;
-  position: relative;
-  width: 97px;
-}
-
-.features .text-wrapper {
+.text-wrapper {
   color: #ffffff;
   font-family: "Inter-Medium", Helvetica;
-  font-size: 20px;
+  font-size: 1.25rem; /* Add "rem" unit */
   font-weight: 500;
-  left: 36px;
   letter-spacing: 0;
-  line-height: 22.1px;
-  position: absolute;
-  top: 4px;
+  line-height: 1.381rem;
+  position: relative;
   white-space: nowrap;
 }
 
-.features .icon {
-  height: 30px;
-  left: 0;
-  position: absolute;
-  top: 0;
-  width: 30px;
+.icon,
+.pencimg,
+.icon-2 {
+  height: auto;
+  width: 2vw;
+  position: relative;
+  padding-right: 1vw;
 }
 
-.features .number {
+
+.footerbuttonstext {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  width: 81%;
+}
+
+.footerText {
+  width: 100%;
+  color: #DEDEDE;
+  font-family: "Inter-Regular", Helvetica;
+  font-size: 1.5vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 240% */
+  letter-spacing: -0.1px;
+}
+
+/* .number {
   height: 190px;
   position: relative;
   width: 114px;
-}
+} */
 
-.features .home-about-case {
+.home-about-case {
   color: #ffffff;
   font-family: "Inter-Regular", Helvetica;
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: 400;
-  left: 0;
   letter-spacing: 0;
-  line-height: 38.1px;
-  position: absolute;
-  top: 0;
+  line-height: 2.381rem;
+  position: relative;
   user-select: none;
 }
 
-.features .uitility-pages {
-  align-items: flex-start;
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-  left: 231px;
-  position: absolute;
-  top: 0;
-  width: 183px;
-}
-
-.features .div {
-  height: 28px;
-  margin-right: -11px;
-  position: relative;
-  width: 194px;
-}
-
-.features .text-wrapper-2 {
-  color: #ffffff;
-  font-family: "Inter-Medium", Helvetica;
-  font-size: 20px;
-  font-weight: 500;
-  left: 34px;
-  letter-spacing: 0;
-  line-height: 22.1px;
-  position: absolute;
-  top: 3px;
-  white-space: nowrap;
-}
-
-.features .img {
-  height: 28px;
-  left: 0;
-  position: absolute;
-  top: 0;
-  width: 28px;
-}
-
-.features .new-product-build {
+.new-product-build {
   color: #ffffff;
   font-family: "Inter-Regular", Helvetica;
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: 400;
   letter-spacing: 0;
-  line-height: 38.1px;
-  margin-right: -39px;
+  line-height: 2.381rem;
+  position: relative;
+  width: 80%;
+}
+
+.facebook-twitter {
+  color: #ffffff;
+  font-family: "Inter-Regular", Helvetica;
+  font-size: 1.125rem;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 2.381rem;
   position: relative;
   width: fit-content;
 }
 
-.features .follows {
-  align-items: flex-start;
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-  left: 525px;
-  position: absolute;
-  top: 0;
-  width: 117px;
-}
-
-.features .title-2 {
-  height: 22px;
+.secondline {
   position: relative;
-  width: 103px;
+  /* left: 575px; */
+  /* top: -425px; */
+  /* width: 57vw; */
+  overflow-x: hidden;
+  /* left: -1vw; */
 }
 
-.features .text-wrapper-3 {
-  color: #ffffff;
-  font-family: "Inter-Medium", Helvetica;
-  font-size: 20px;
-  font-weight: 500;
-  left: 29px;
-  letter-spacing: 0;
-  line-height: 22.1px;
-  position: absolute;
-  top: 0;
-  white-space: nowrap;
-}
-
-.features .icon-2 {
-  height: 18px;
-  left: -1px;
-  position: absolute;
-  top: 0;
-  width: 22px;
-}
-
-.features .facebook-twitter {
-  color: #ffffff;
-  font-family: "Inter-Regular", Helvetica;
-  font-size: 18px;
-  font-weight: 400;
-  letter-spacing: 0;
-  line-height: 38.1px;
+.pycraysig {
   position: relative;
-  width: fit-content;
+  /* top: -365px;
+  left: -50px; */
 }
 
-.casesbutton {
+
+
+/* .casesbutton {
   position: relative;
   color: #ffffff;
   font-family: "Inter-Regular", Helvetica;
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: 400;
-  left: 0;
   letter-spacing: 0;
-  /* line-height: 38.1px; */
   text-align: left;
-  top: 0;
   width: 130px;
   cursor: pointer;
   background-color: transparent;
   border-radius: 25px;
   border-color: transparent;
-  left: -8px;
 }
 
 .servicesbutton {
   position: relative;
   color: #ffffff;
   font-family: "Inter-Regular", Helvetica;
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: 400;
-  left: 0;
   letter-spacing: 0;
-  /* line-height: 38.1px; */
   text-align: left;
-  top: 0;
   width: 130px;
   cursor: pointer;
   background-color: transparent;
   border-radius: 25px;
   border-color: transparent;
-  left: -8px;
-}
+} */
 
 .newproductbutton {
   position: relative;
   color: #ffffff;
   font-family: "Inter-Regular", Helvetica;
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: 400;
-  left: 0;
   letter-spacing: 0;
   /* line-height: 38.1px; */
   text-align: left;
-  top: 0;
   width: 175px;
   cursor: pointer;
   background-color: transparent;
   border-radius: 25px;
   border-color: transparent;
-  left: -8px;
 }
 
 .apbutton {
   position: relative;
   color: #ffffff;
   font-family: "Inter-Regular", Helvetica;
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: 400;
-  left: 0;
   letter-spacing: 0;
   /* line-height: 38.1px; */
   text-align: left;
@@ -553,38 +427,440 @@
   background-color: transparent;
   border-radius: 25px;
   border-color: transparent;
-  left: -8px;
 }
 
 .accelbutton {
   position: relative;
   color: #ffffff;
   font-family: "Inter-Regular", Helvetica;
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: 400;
-  left: 0;
   letter-spacing: 0;
   /* line-height: 38.1px; */
   text-align: left;
-  top: 0;
   width: 125px;
   cursor: pointer;
   background-color: transparent;
   border-radius: 25px;
   border-color: transparent;
-  left: -8px;
 }
 
-.secondline {
-  position: relative;
-  left: 575px;
-  top: -415px;
-  width: 625px;
-  overflow-x: hidden;
+@media (max-width: 1200px) {
+  .footer {
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+  }
+
+  .footerText {
+    font-size: 1rem;
+  }
+
+  .emailinputbox {
+    background-color: #3c3c45;
+    border: 1px none;
+    height: auto;
+    padding-left: 3vw;
+    padding-bottom: 5vw;
+    padding-top: 5vw;
+    position: relative;
+    width: 87vw;
+    border-radius: 7px;
+    /* margin-left: 11.5vw; */
+    margin-right: 11.5vw;
+    margin-top: 10vw;
+    justify-self: center;
+  }
+
+  .emailrows {
+    display: none;
+  }
+
+  .firstline {
+    display: none;
+  }
+
+  .emailcolumns {
+    display: grid;
+    grid-template-columns: 40% 60%;
+  }
+
+  .logo3pic {
+    width: 30vw;
+    height: auto;
+    /* left: 5vw; */
+  }
+
+  .emailrows2 {
+    display: grid;
+    grid-row: auto auto auto;
+    place-items: center;
+    /* left: 20vw; */
+  }
+
+  .locationgroup {
+    display: none;
+  }
+
+  .addressgroup {
+    display: none;
+  }
+
+  .locationgroup2 {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 1vw;
+    position: relative;
+    width: 12vw;
+    left: 5vw;
+  }
+
+  .locationgroup2 .locationsymbol {
+    height: auto;
+    position: relative;
+    width: 2vw;
+    min-width: 10px;
+    /* top: 3vw; */
+  }
+  
+  .locationgroup2 .loctitle{
+    color: #ffffff;
+    font-family: "Inter-SemiBold", Helvetica;
+    font-size: 2rem;
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: 1rem;
+    position: relative;
+    white-space: nowrap;
+  }
+
+  .addressgroup2 {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+    gap: 2vw;
+    /* top: -1vw; */
+    position: relative;
+    width: 30vw;
+    padding: 0vw 5vw;
+    /* place-self: center; */
+  }
+
+  .p {
+    font-size: 0.54rem;
+    line-height: 1.06rem;
+    width: 40vw;
+    text-align: left;
+  }
+
+  .emailtext {
+    justify-content: flex-start;
+    width: 40vw;
+  }
+
+  .emailtext .emailbuttontext {
+    justify-self: flex-start;
+    border-radius: 3px;
+    text-align: center;
+  }
+  
+  .emailtext .submitbuttontext {
+    justify-self: flex-start;
+    border-radius: 3px;
+    margin-top: 4px;
+  }
+
+  .locationgroup .loctitle{
+    font-size: 0.544rem;
+    line-height: 0.6rem;
+  }
+  
+  .noida-uttar-pradesh {
+    font-size: 0.5rem;
+    line-height: 0.688rem;
+    color: #CFCFCF;
+    width: 100%;
+  }
+  
+  .calgary-alberta {
+    font-size: 0.5rem;
+    line-height: 0.688rem;
+    color: #CFCFCF;
+    width: 100%;
+  }
+
+  .rightsidetext {
+    /* margin-top: 10vw;
+    left: 15vw;
+    width: 60vw;
+    height: auto; */
+    display: grid;
+    grid-template-rows: auto auto auto auto;
+    place-items: center;
+    /* gap: 1vw; */
+    position: relative;
+    width: 100vw;
+  }
+
+  .textheaders {
+    position: relative;
+    gap: 0vw;
+    display: flex;
+  }
+
+  .text-wrapper {
+    font-size: 0.438rem;
+    line-height: 0.689rem;
+  }
+
+  .home-about-case {
+    font-size: 0.438rem;
+    line-height: 1.188rem;
+  }
+  
+  .new-product-build {
+    font-size: 0.438rem;
+    line-height: 1.188rem;
+    /* left: 10vw; */
+    width: fit-content;
+  }
+  
+  .facebook-twitter {
+    font-size: 0.438rem;
+    line-height: 1.188rem;
+    /* left: -10vw; */
+  }
+
+  .newproductbutton, .apbutton, .accelbutton {
+    font-size: 0.438rem;
+    width: fit-content;
+  }
+
+  .pageTitle, .div, .title-2 {
+    width: fit-content;
+  }
+
+  .textheaders {
+    /* gap: 15vw; */
+    width: 85vw;
+    margin-top: 0px;
+    justify-content: space-between;
+  }
+
+  .rightsidetext {
+    margin-top: 5vw;
+    gap: 3vw;
+    justify-content: center;
+  }
+
+  .pageTitle {
+    margin-right: 0px;
+  }
+
+  .textheaders > div:nth-child(1), .textheaders > div:nth-child(2), .textheaders > div:nth-child(3) {
+    width: fit-content;
+  }
+
+  .secondline {
+    width: 90vw;
+  }
+
+  .pycraysig {
+    justify-self: flex-start;
+    width: 53vw;
+  }
+
+  .p {
+    font-size: 1rem;
+    line-height: 1.3rem;
+  }
+  
+  .emailtext .enotifheader {
+    font-size: 1.5rem;
+    line-height: 1.57rem;
+    width: 100%;
+  }
+
+  .emailtext .emailbuttontext {
+    font-size: 0.98rem;
+    line-height: 1.57rem;
+    width: 100%;
+  }
+  
+  .emailtext .submitbuttontext {
+    font-size: 1.09rem;
+    line-height: 1.74rem;
+    width: 100%;
+  }
+
+  .locationgroup .loctitle{
+    font-size: 1.36rem;
+    line-height: 1.5rem;
+  }
+  
+  .noida-uttar-pradesh {
+    font-size: 0.98rem;
+    line-height: 1.53rem;
+  }
+  
+  .calgary-alberta {
+    font-size: 0.98rem;
+    line-height: 1.53rem;
+  }
+
+  .text-wrapper {
+    font-size: 0.98rem;
+    line-height: 1.2rem;
+  }
+
+  .home-about-case {
+    font-size: 0.98rem;
+    line-height: 2.07rem;
+  }
+  
+  .new-product-build {
+    font-size: 0.98rem;
+    line-height: 2.07rem;
+  }
+  
+  .facebook-twitter {
+    font-size: 0.98rem;
+    line-height: 2.07rem;
+  }
+
+  .newproductbutton {
+    font-size: 0.98rem;
+  }
+  
+  .apbutton {
+    font-size: 0.98rem;
+  }
+  
+  .accelbutton {
+    font-size: 0.98rem;
+  }
 }
 
-.pycraysig {
-  position: relative;
-  top: -365px;
-  left: -50px;
+@media (max-width: 600px) {
+  .emailtext .enotifheader {
+    font-size: 0.98rem;
+  }
+
+  .p {
+    font-size: 0.87rem;
+  }
+
+  .locationgroup2 .loctitle {
+    font-size: 1rem;
+  }
+
+  .icon, .pencimg, .icon-2 {
+    width: 4vw;
+  }
+}
+
+@media (max-width: 450px) {
+  .emailcolumns > div:nth-child(1) {
+    padding: 4vw 2vw;
+  }
+
+  .emailtext {
+    place-items: left;
+  }
+
+  .emailtext .enotifheader {
+    font-size: 0.6rem;
+  }
+
+  .p {
+    font-size: 0.5rem;
+    line-height: 1rem;
+  }
+
+  .noida-uttar-pradesh {
+    font-size: 0.4rem;
+    line-height: 0.8rem;
+  }
+  
+  .emailtext .emailbuttontext {
+    font-size: 0.5rem;
+    line-height: 0.57rem;
+    width: 65%;
+  }
+    
+  .emailtext .submitbuttontext {
+    font-size: 0.5rem;
+    line-height: 0.8rem;
+    width: 67%;
+  }
+
+  .logo3pic {
+    width: 30vw;
+  }
+
+  .locationgroup2 {
+    left: 0vw;
+    padding: 0vw 3vw;
+  }
+  
+  .locationgroup2 .locationsymbol {
+    min-width: 2px;
+  }
+  
+  .addressgroup2 {
+    padding: 0vw 3vw;
+  }
+
+  .emailrows2 {
+    padding: 2vw 4vw;
+  }
+
+  .locationgroup2 .loctitle {
+    font-size: 0.52rem;
+  }
+
+  .rightsidetext {
+    margin-bottom: 5vw;
+  }
+
+  .textheaders {
+    width: 88vw;
+  }
+
+  .text-wrapper {
+    /* font-size: 0.98rem; */
+    /* line-height: 1.2rem; */
+    font-size: 0.7rem;
+  }
+  .new-product-build {
+    font-size: 0.4rem;
+    line-height: 0.07rem;
+  }
+
+  .newproductbutton {
+    font-size: 0.4rem;
+  }
+
+  .apbutton {
+    font-size: 0.4rem;
+  }
+
+  .accelbutton {
+    font-size: 0.4rem;
+  }
+
+  .facebook-twitter {
+    font-size: 0.4rem; 
+    line-height: 0.7rem;
+  }
+  
+  .secondline {
+    width: 80vw;
+  }
+
+  .footerText {
+    font-size: 0.7rem;
+    margin: 0vw;
+  }
+
+
 }
