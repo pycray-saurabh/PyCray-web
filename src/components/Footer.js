@@ -31,7 +31,7 @@ function Footer() {
           <div className="div">
             <div className="overlap">
               <div className="title">
-                <h1 className="text-wrapper">Get Email Notification</h1>
+                <h1 className="text-wrapper">Get Email Notifications</h1>
               </div>
               <div className="button">
                 <div className="overlap-group">
