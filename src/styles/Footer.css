@@ -50,7 +50,7 @@
   padding-bottom: 5vw;
   gap: 4vw;
 }
-
+ 
 .footer a {
   text-decoration: none;
   color: white;
@@ -134,7 +134,7 @@
   letter-spacing: 0;
   line-height: 160%;
   /* position: relative; */
-  width: 81%;
+  /* width: 91%; */
   white-space: nowrap;
   background-color: transparent;
   border-color: transparent;

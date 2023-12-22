@@ -21,7 +21,7 @@ function Footer() {
     // Handle button click logic here
     // alert('hello');
   };
-
+ 
   // function getData(val) {
   //   setData(val.target.value)
   // }

@@ -731,11 +731,6 @@
   transition: transform 0.5s ease;
 }
 
-.industryImg:hover {
-  /* opacity: 0.5; */
-  /* transform: translateZ(50px); */
-}
-
 .industryText {
   text-align: center;
 }
@@ -1161,6 +1156,7 @@
   margin-top: 2vw;
   gap: 2vw;
   margin-bottom: 5vw;
+  cursor: pointer;
 }
 
 .emailsection,
@@ -1228,6 +1224,11 @@
   background-color: #fff;
   width: 25.25vw;
   height: 90%;
+  transition: all 0.3s linear;
+}
+
+.card:hover {
+  background-color: #f1f5f8;
 }
 
 .card .card-img {
@@ -1241,7 +1242,7 @@
 .card-content h2 {
   color: #333;
   font-family: 'Poppins-SemiBold', Helvetica;
-  font-size: 28px;
+  font-size: 24px;
   font-style: normal;
   font-weight: 600;
   line-height: 34px;
@@ -1252,6 +1253,7 @@
   color: #858a8f;
   font-family: 'Poppins-Regular', Helvetica;
   font-size: 1.13rem;
+
   font-style: normal;
   font-weight: 500;
   line-height: 30px;
@@ -1261,7 +1263,7 @@
 .card-content .blueText {
   color: #397eff;
   font-family: 'Poppins-Regular', Helvetica;
-  font-size: 20px;
+  /* font-size: 18px; */
   font-style: normal;
   font-weight: 600;
   line-height: 24px;
@@ -1756,6 +1758,11 @@
     grid-template-columns: auto;
   }
 
+  .emailsection:hover {
+    /* background-color: #f1f5f8; */
+    background-color: #d3d4d4;
+  }
+
   .card {
     width: 85vw;
     padding: 2vw;
@@ -1766,6 +1773,10 @@
   .card-content .blueText {
     justify-content: center;
   }
+
+  /* .card-content {
+    font-size: 25px;
+  } */
 
   .industrycontainer {
     width: auto;
