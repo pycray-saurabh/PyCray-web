@@ -100,7 +100,7 @@ const ContactSection = () => {
            <p
              className='blueText'
              onClick={() => {
-               window.location.href = '/contactus';
+               window.location.href = '/contact-us';
              }}
            >
              Leave a message
@@ -123,7 +123,7 @@ const ContactSection = () => {
          </div>
        </div>
        {/* <img className="emailus" alt="clpic" src={emailus} />
-       <Link to="/contactus"><button className="emailbutton"></button></Link> */}
+       <Link to="/contact-us"><button className="emailbutton"></button></Link> */}
      </div>
 
      <div className='dropinsection'>
@@ -293,7 +293,7 @@ const ContactSection = () => {
            <p
              className='blueText'
              onClick={() => {
-               window.location.href = '/contactus';
+               window.location.href = '/contact-us';
              }}
            >
              Book Now

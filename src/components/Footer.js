@@ -119,7 +119,7 @@ function Footer() {
               <Link to="/"><button className="newproductbutton">Case Studies</button></Link>
               {/* <button className="casesbutton" onClick={handleButtonClick}>Case Studies</button> */}
               <br />
-              <Link to="/contactus"><button className="newproductbutton">Contact Us</button></Link>
+              <Link to="/contact-us"><button className="newproductbutton">Contact Us</button></Link>
               <br />
               <Link to="/"><button className="newproductbutton">Services</button></Link>
               {/* <button className="servicesbutton" onClick={handleButtonClick}>Services</button> */}
@@ -206,7 +206,7 @@ function Footer() {
               <br />
               <button className="casesbutton" onClick={handleButtonClick}>Case Studies</button>
               <br />
-              <Link to="/contactus"> Contact Us </Link>
+              <Link to="/contact-us"> Contact Us </Link>
               <br />
               <button className="servicesbutton" onClick={handleButtonClick}>Services</button>
             </div>

@@ -448,7 +448,7 @@ const ProductGenesisSection = () => {
             </p>
           </div>
           <div className='consultationButton'>
-            <Link to='/contactus'>
+            <Link to='/contact-us'>
               <button className='no-credit-card'>Book Free Consultation</button>
             </Link>
           </div>
